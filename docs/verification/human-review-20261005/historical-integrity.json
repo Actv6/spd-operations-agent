@@ -1,0 +1,7 @@
+{
+  "raw_failure": "docs/verification/v11-live-20261004/round/target-project.json",
+  "sha256": "8d17b1ce878ec0388e94dbd0ad42015666b924a5f087eae2414eda3e9e617da6",
+  "matches_published_hash": true,
+  "round_status": "halted_semantic_failure",
+  "additional_model_calls": 0
+}

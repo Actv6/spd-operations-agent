@@ -1,0 +1,32 @@
+[
+  {
+    "id": "SIM-S01",
+    "name": "演示供应商 01",
+    "synthetic": true
+  },
+  {
+    "id": "SIM-S02",
+    "name": "演示供应商 02",
+    "synthetic": true
+  },
+  {
+    "id": "SIM-S03",
+    "name": "演示供应商 03",
+    "synthetic": true
+  },
+  {
+    "id": "SIM-S04",
+    "name": "演示供应商 04",
+    "synthetic": true
+  },
+  {
+    "id": "SIM-S05",
+    "name": "演示供应商 05",
+    "synthetic": true
+  },
+  {
+    "id": "SIM-S06",
+    "name": "演示供应商 06",
+    "synthetic": true
+  }
+]

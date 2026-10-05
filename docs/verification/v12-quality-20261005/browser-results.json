@@ -1,0 +1,19 @@
+{
+  "kind": "isolated_browser_controlled_provider",
+  "real_model_calls": 0,
+  "cloud_uploads": 0,
+  "checks": [
+    "reason counts and named positions remain separate",
+    "existing risk counts preserved",
+    "fact quote advice and unknown labels displayed",
+    "fact button opens actual immutable tool evidence",
+    "quoted policy opens matching original excerpt",
+    "390px claim ledger stays within viewport",
+    "legacy history receives no invented verification"
+  ],
+  "errors": [],
+  "dimensions": {
+    "client": 390,
+    "scroll": 390
+  }
+}

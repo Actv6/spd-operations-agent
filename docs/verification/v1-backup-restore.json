@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-09-28T18:52:50.052207",
+  "method": "SQLite online backup into temporary file, restore into second temporary file; no live restore",
+  "integrity_check": "ok",
+  "foreign_key_violations": 0,
+  "backup_restored_dump_sha256_equal": true,
+  "table_count": 19
+}

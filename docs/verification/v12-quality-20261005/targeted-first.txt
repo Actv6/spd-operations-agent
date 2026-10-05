@@ -1,0 +1,131 @@
+.......FF.....................F..                                        [100%]
+=================================== FAILURES ===================================
+_ test_correct_counts_objects_and_local_negation[\u53cd\u5e94\u676f\u7f3a\u65e5\uff1b\u91c7\u6837\u7ba1\u65e7\u5feb\u7167\u3002] _
+
+text = '反应杯缺日；采样管旧快照。'
+
+    @pytest.mark.parametrize('text', ['缺日1个位置；旧快照1个位置；零消耗1个位置。',
+                                    '反应杯缺日；采样管旧快照。', '采样管不是缺日，反应杯缺日。'])
+    def test_correct_counts_objects_and_local_negation(text):
+>       validate_reason_text(text, rows())
+
+backend/tests/test_v12_claims.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '反应杯缺日;采样管旧快照。'
+rows = [{'item_id': 'cup', 'department_id': 'lab', 'name': '反应杯', 'department_name': '检验科', ...}, {'item_id': 'tube', 'depart...partment_name': '检验科', ...}, {'item_id': 'low', 'department_id': 'lab', 'name': '低频耗材', 'department_name': '检验科', ...}]
+
+    def validate_reason_text(text, rows):
+        """Known affirmative reason counts/objects; not arbitrary entailment."""
+        text = re.sub(r'[*_`#]', '', unicodedata.normalize('NFKC', text))
+        for clause in re.split(r'[。！？；，\n]', text):
+            for code, pattern in REASON_PATTERNS.items():
+                matches = list(re.finditer(pattern, clause))
+                if not matches:
+                    continue
+                # Exempt locally negated reasons, not an entire mixed clause.
+                positive = [m for m in matches if not re.search(r'(?:不是|并非|不属于|没有|未出现|不等于)\s*$', clause[:m.start()])]
+                if not positive:
+                    continue
+                eligible = [r for r in rows if code in row_reasons(r)]
+                forward = re.finditer(pattern + r'\s*[：:]?\s*(?:(?:数量|物资|位置|组合|记录)\s*)?(?:(?:共有|共计|总共|合计|共|为|有|是)\s*)?(' + NUMBER + r')\s*(个|项|处|种)', clause)
+                reverse = re.finditer('(' + NUMBER + r')\s*(个|项|处|种)(?:(?:物资科室组合|位置|物资|记录|因|由于|是|为|有|存在|14日|十四日|消耗|记录|的|\s))*' + pattern, clause)
+                for match in list(forward) + list(reverse):
+                    if re.search(r'(?:不是|并非|不等于)\s*$', clause[:match.start()]):
+                        continue
+                    count, unit = match.group(1), match.group(2)
+                    expected = len({r['item_id'] for r in eligible}) if unit == '种' else len({(r['item_id'], r['department_id']) for r in eligible})
+                    if count_value(count) != expected:
+                        raise AppError('QUALITY_REASON_MISATTRIBUTION', '原因数量与本轮物资科室事实不一致', 502)
+                named = [r for r in rows if r['name'] in clause or (r.get('display_code') and r['display_code'] in clause)]
+                departments = {r['department_name'] for r in rows if r['department_name'] and r['department_name'] in clause}
+                if departments:
+                    named = [r for r in named if r['department_name'] in departments]
+                if named and any(code not in row_reasons(r) for r in named):
+>                   raise AppError('QUALITY_REASON_OBJECT_MISMATCH', '原因归属与所指物资科室不一致，请明确对象', 502)
+E                   app.errors.AppError: 原因归属与所指物资科室不一致，请明确对象
+
+backend/app/claim_support.py:167: AppError
+_ test_correct_counts_objects_and_local_negation[\u91c7\u6837\u7ba1\u4e0d\u662f\u7f3a\u65e5\uff0c\u53cd\u5e94\u676f\u7f3a\u65e5\u3002] _
+
+text = '采样管不是缺日，反应杯缺日。'
+
+    @pytest.mark.parametrize('text', ['缺日1个位置；旧快照1个位置；零消耗1个位置。',
+                                    '反应杯缺日；采样管旧快照。', '采样管不是缺日，反应杯缺日。'])
+    def test_correct_counts_objects_and_local_negation(text):
+>       validate_reason_text(text, rows())
+
+backend/tests/test_v12_claims.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '采样管不是缺日,反应杯缺日。'
+rows = [{'item_id': 'cup', 'department_id': 'lab', 'name': '反应杯', 'department_name': '检验科', ...}, {'item_id': 'tube', 'depart...partment_name': '检验科', ...}, {'item_id': 'low', 'department_id': 'lab', 'name': '低频耗材', 'department_name': '检验科', ...}]
+
+    def validate_reason_text(text, rows):
+        """Known affirmative reason counts/objects; not arbitrary entailment."""
+        text = re.sub(r'[*_`#]', '', unicodedata.normalize('NFKC', text))
+        for clause in re.split(r'[。！？；，\n]', text):
+            for code, pattern in REASON_PATTERNS.items():
+                matches = list(re.finditer(pattern, clause))
+                if not matches:
+                    continue
+                # Exempt locally negated reasons, not an entire mixed clause.
+                positive = [m for m in matches if not re.search(r'(?:不是|并非|不属于|没有|未出现|不等于)\s*$', clause[:m.start()])]
+                if not positive:
+                    continue
+                eligible = [r for r in rows if code in row_reasons(r)]
+                forward = re.finditer(pattern + r'\s*[：:]?\s*(?:(?:数量|物资|位置|组合|记录)\s*)?(?:(?:共有|共计|总共|合计|共|为|有|是)\s*)?(' + NUMBER + r')\s*(个|项|处|种)', clause)
+                reverse = re.finditer('(' + NUMBER + r')\s*(个|项|处|种)(?:(?:物资科室组合|位置|物资|记录|因|由于|是|为|有|存在|14日|十四日|消耗|记录|的|\s))*' + pattern, clause)
+                for match in list(forward) + list(reverse):
+                    if re.search(r'(?:不是|并非|不等于)\s*$', clause[:match.start()]):
+                        continue
+                    count, unit = match.group(1), match.group(2)
+                    expected = len({r['item_id'] for r in eligible}) if unit == '种' else len({(r['item_id'], r['department_id']) for r in eligible})
+                    if count_value(count) != expected:
+                        raise AppError('QUALITY_REASON_MISATTRIBUTION', '原因数量与本轮物资科室事实不一致', 502)
+                named = [r for r in rows if r['name'] in clause or (r.get('display_code') and r['display_code'] in clause)]
+                departments = {r['department_name'] for r in rows if r['department_name'] and r['department_name'] in clause}
+                if departments:
+                    named = [r for r in named if r['department_name'] in departments]
+                if named and any(code not in row_reasons(r) for r in named):
+>                   raise AppError('QUALITY_REASON_OBJECT_MISMATCH', '原因归属与所指物资科室不一致，请明确对象', 502)
+E                   app.errors.AppError: 原因归属与所指物资科室不一致，请明确对象
+
+backend/app/claim_support.py:167: AppError
+_________ test_history_untouched_and_fact_catalog_same_evidence_scope __________
+
+client = <starlette.testclient.TestClient object at 0x10c1e6660>
+app = <fastapi.applications.FastAPI object at 0x10cc939e0>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10cc93620>
+
+    def test_history_untouched_and_fact_catalog_same_evidence_scope(client,app,monkeypatch):
+        project=register(client)['projects'][0]['id']
+        old=create_run(client,project,body=request_body())
+        work_once(app.state.factory,app.state.settings)
+        old=client.get('/api/v1/runs/'+old['run_id']).json()
+        oldbody=client.get('/api/v1/analyses/'+old['analysis_id']).json()
+        oldsources={c['evidence_id']:client.get('/api/v1/evidence/'+c['evidence_id']).json() for c in oldbody['citations']}
+        app.state.settings.llm_provider='deepseek'
+>       new=create_run(client,project,'new-v12',request_body())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend/tests/test_v12_claims.py:177: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+client = <starlette.testclient.TestClient object at 0x10c1e6660>
+project_id = 'ac452642-2757-4110-93f8-2725fa632af5', key = 'new-v12'
+body = {'schema_version': '1', 'mode': 'analyze', 'question': '生化清洗液缺货补货核查', 'session_id': None, ...}
+
+    def create_run(client, project_id, key="test-run-key", body=None):
+        response = client.post(f"/api/v1/projects/{project_id}/runs", json=body or request_body(), headers={"Idempotency-Key": key})
+>       assert response.status_code == 202, response.text
+E       AssertionError: {"code":"VALIDATION_ERROR","message":"请求字段不符合接口约束","details":{"fields":["header.idempotency-key"]},"trace_id":"5899efae-7d8a-41ce-ab34-d1e10e48a364","retryable":false}
+E       assert 422 == 202
+E        +  where 422 = <Response [422 Unprocessable Content]>.status_code
+
+backend/tests/conftest.py:42: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/test_v12_claims.py::test_correct_counts_objects_and_local_negation[\u53cd\u5e94\u676f\u7f3a\u65e5\uff1b\u91c7\u6837\u7ba1\u65e7\u5feb\u7167\u3002]
+FAILED backend/tests/test_v12_claims.py::test_correct_counts_objects_and_local_negation[\u91c7\u6837\u7ba1\u4e0d\u662f\u7f3a\u65e5\uff0c\u53cd\u5e94\u676f\u7f3a\u65e5\u3002]
+FAILED backend/tests/test_v12_claims.py::test_history_untouched_and_fact_catalog_same_evidence_scope
+3 failed, 30 passed in 1.97s

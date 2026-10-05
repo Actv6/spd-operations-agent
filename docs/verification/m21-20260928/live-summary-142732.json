@@ -1,0 +1,100 @@
+{
+  "source": "live-20260928-142732.json",
+  "sha256": "d8bb0dede96617f50d43b205d639f5ed95baf9e097289f323d5fae18e7bf00d6",
+  "model": "deepseek-flash",
+  "cases": [
+    {
+      "case": "project",
+      "status": "succeeded",
+      "elapsed_seconds": 6.3,
+      "recorded_tokens": 12752,
+      "answer_chars": 567,
+      "tool_steps": [
+        "compute_risks"
+      ],
+      "citations_from_current_run": true,
+      "usage_complete": true,
+      "correction_attempts": 0
+    },
+    {
+      "case": "missing",
+      "status": "succeeded",
+      "elapsed_seconds": 5.87,
+      "recorded_tokens": 10844,
+      "answer_chars": 483,
+      "tool_steps": [
+        "get_consumption",
+        "search_knowledge"
+      ],
+      "citations_from_current_run": true,
+      "usage_complete": true,
+      "correction_attempts": 0
+    },
+    {
+      "case": "zero",
+      "status": "succeeded",
+      "elapsed_seconds": 6.96,
+      "recorded_tokens": 8395,
+      "answer_chars": 530,
+      "tool_steps": [
+        "get_consumption",
+        "compute_risks"
+      ],
+      "citations_from_current_run": true,
+      "usage_complete": true,
+      "correction_attempts": 0
+    },
+    {
+      "case": "no-evidence",
+      "status": "succeeded",
+      "elapsed_seconds": 3.43,
+      "recorded_tokens": 7374,
+      "answer_chars": 174,
+      "tool_steps": [
+        "search_knowledge"
+      ],
+      "citations_from_current_run": true,
+      "usage_complete": true,
+      "correction_attempts": 0
+    },
+    {
+      "case": "follow-up",
+      "status": "succeeded",
+      "elapsed_seconds": 5.46,
+      "recorded_tokens": 18669,
+      "answer_chars": 215,
+      "tool_steps": [
+        "get_consumption",
+        "search_knowledge",
+        "search_knowledge"
+      ],
+      "citations_from_current_run": true,
+      "usage_complete": true,
+      "correction_attempts": 0
+    },
+    {
+      "case": "draft",
+      "status": "succeeded",
+      "elapsed_seconds": 6.69,
+      "recorded_tokens": 12345,
+      "answer_chars": 481,
+      "tool_steps": [
+        "get_consumption",
+        "search_knowledge"
+      ],
+      "citations_from_current_run": true,
+      "usage_complete": true,
+      "correction_attempts": 0
+    }
+  ],
+  "model_requests": 19,
+  "recorded_tokens": 70379,
+  "prompt_tokens": 65010,
+  "completion_tokens": 5369,
+  "elapsed_seconds_sum": 34.71,
+  "elapsed_seconds_median": 6.085,
+  "personal_tasks": 0,
+  "drafts": 1,
+  "cost": null,
+  "semantic_review": "See M2.1真实模型复测-20260928.md; structural success is not full semantic approval"
+}

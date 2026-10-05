@@ -1,0 +1,23 @@
+{
+  "AGENTS.md": "04619cb50b6db4e4fd593b6c59da9f5b6daf21843848e1494b241b8c1bc12b42",
+  "backend/app/operations.py": "fbcc907c3186bd4d726bba68d3ad202e6c5f1b4e4f4a9bb52b4c5a6c5b88788a",
+  "backend/app/m2.py": "a83d77aaa42a3422696d6b23b45b7a92823e64f9ae79563656931b66aba25d4c",
+  "backend/app/agent.py": "8f9e2e566d6be8df3303b7f08b2563c81d7c4968eb855d03158a219c6afe3cee",
+  "backend/app/providers.py": "44ab8dff8b76a8095151b4b204ea3d8cb5704b222f7eda472fd55bad7d20adac",
+  "backend/app/main.py": "21d06c3fc83b4b3bf525ab47372e440507ce0636a1fbadef076d501985081305",
+  "backend/app/models.py": "5b89f7ce833d6f79b8d145348f5a9ee1e6d003fab34535ab5d8edb24f6ee7476",
+  "backend/app/schemas.py": "4419aee357895e7649bd96448a415e97a3861959913b4abcee95b392d50d8cb4",
+  "backend/app/config.py": "ccd67189f0f5658530007381abc6df536e797be5c204f1e093b24834d96831a4",
+  "backend/migrations/versions/m2001_personal_tasks.py": "8ba3173f9a95d2d20bf00dbdb0e2c3d5c7809d216cf6370f691194f6079a0385",
+  "backend/tests/test_m2.py": "21a2a75b3c2e9763faa3fc22acd6c74d6e8ed0b8658a112ff91151a6a104f582",
+  "backend/tests/conftest.py": "fe8d4b9692473a6221e3124643ad74aa5cffa92649e92e421e85de089bd50724",
+  "frontend/src/m1/M2Panels.tsx": "54710cc96f964368ebc126c2e9384dc91773ec3b534a2d6b148490e47026f265",
+  "frontend/src/m1/WorkbenchApp.tsx": "19e73fd61f4c1a8aa57aa8599c9cd3c3ca129ab116b490aa1937f001370a99cf",
+  "frontend/src/m1/InventoryPanel.tsx": "59c2522146dea53fd492bc1eab329c5bb7a470030d9ee32b4b3b8ab4805c1e8a",
+  "frontend/src/m1/ResultPanel.tsx": "c001d69a197e48f3fbf169478faeee23f91856b26df636fe793e042e3d90e541",
+  "frontend/src/m1/m2.css": "c3aff766e9c678159aebaf9daa4db93bfdb5c2099636fe93fe6537421d127ea6",
+  "frontend/src/m1/types.ts": "065eaf055f867f08afbc0ed0a19655bcde31d1a82cad8f286a7b3194ea4a639e",
+  "docs/verification/m1-openapi.json": "00d76b7793468575484d1dd7abbfb50f13b24df211b75e31ca029ed957d09475",
+  "scripts/export_m2_evidence.py": "fd8168747fbeb4e643955efa77b575ae212f2e66ef034c041ec715531f6c1123",
+  "scripts/start_m1.py": "5d2627e0ca734e412d7226a26985aee9aba491afe74cc62f634291f8f03ff530"
+}

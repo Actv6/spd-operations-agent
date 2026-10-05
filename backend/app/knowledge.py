@@ -1,0 +1,150 @@
+import hashlib
+import json
+import math
+import re
+from collections import Counter
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+from sqlalchemy import select, or_
+from .config import DATA
+from .models import Document, Chunk
+from .errors import AppError
+
+RETRIEVAL_RELEASE = 'lexical-quality-3'
+
+
+def scoring_text(text):
+    """Bounded domain synonyms for scoring only; stored sources stay untouched."""
+    # A whole fortnight of explicit zero records is a zero-consumption topic.
+    # Do not classify a few missing dates or a proposal to fill zeros this way.
+    text = re.sub(r'(?:(?:14|十四)(?:日|天)|两周).{0,6}?(?:都是|都为|全为|全是|全部为|均为)(?:零|0)(?:记录)?', lambda match: match.group(0) + ' 零消耗', text)
+    replacements = [
+        (r'用量', '消耗'),
+        (r'漏填|未填|没填|少填|缺日|缺了', '缺失'),
+        (r'快到期|快过期|效期临近', '临期'),
+    ]
+    for pattern, replacement in replacements:
+        text = re.sub(pattern, replacement, text)
+    return text
+
+
+def query_tokens(query):
+    text = scoring_text(query)
+    # Generic wording cannot supply evidence for an otherwise unknown topic.
+    text = re.sub(r'核查流程|流程说明|核查|核对|记录|资料|制度|说明|流程|处理|怎么办|咋办', ' ', text)
+    return set(tokens(text))
+
+
+def retrieval_topics(text):
+    # Narrow disambiguation: a consumption-only match is not a missing-day rule.
+    return {topic for topic in ('缺失', '零消耗', '临期') if topic in text}
+
+
+def today():
+    return datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+
+
+def chunks(text):
+    chapter = "导言"
+    start = 0
+    for line in text.splitlines(keepends=True):
+        if line.startswith("#"):
+            chapter = line.lstrip("#").strip()[:300]
+        elif line.strip():
+            for offset in range(0, len(line), 600):
+                fragment = line[offset:offset+600]
+                if fragment.strip():
+                    yield chapter, start + offset, start + offset + len(fragment), fragment
+        start += len(line)
+
+
+def ingest(db, project, manifest_path=None):
+    from .catalog import lock_project
+    lock_project(db, project.id)
+    default_manifest = manifest_path is None
+    manifest_path = manifest_path or DATA / "knowledge_manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    count = 0
+    for entry in manifest:
+        if project.source_hospital not in entry["allowed_hospitals"]:
+            continue
+        path = (manifest_path.parent / entry["path"]).resolve()
+        if not path.is_relative_to(manifest_path.parent.resolve()) or path.suffix.lower() not in {".md", ".txt"}:
+            raise AppError("INVALID_DOCUMENT", "文档路径或类型不合法", 422)
+        raw = path.read_bytes()
+        source_hash = hashlib.sha256(raw).hexdigest()
+        if len(raw) > 1_000_000 or source_hash != entry["sha256"]:
+            raise AppError("SOURCE_HASH_MISMATCH", "源文件 hash 不匹配或体积过大", 422)
+        existing = db.scalar(select(Document).where(Document.project_id == project.id, Document.external_id == entry["id"]))
+        if existing:
+            if existing.source_hash != source_hash:
+                raise AppError("IMMUTABLE_VERSION", "同一文档版本不能覆盖，请创建新版本", 409)
+            continue
+        content = raw.decode("utf-8")
+        doc = Document(project_id=project.id, external_id=entry["id"], title=entry["title"], version=entry["version"], status=entry["status"],
+                       effective_from=entry["effective_from"], effective_until=entry["effective_until"], source_hash=source_hash, source_path=entry["path"], content=content)
+        db.add(doc)
+        db.flush()
+        for chapter, start, end, text in chunks(content):
+            db.add(Chunk(document_id=doc.id, chapter=chapter, start_offset=start, end_offset=end, text=text))
+        count += 1
+    db.flush()
+    if default_manifest and (DATA / "enterprise_manifest.json").exists():
+        count += ingest(db, project, DATA / "enterprise_manifest.json")
+    return count
+
+
+def tokens(text):
+    # Chinese overlapping bigrams preserve word fragments without an external dictionary.
+    result = re.findall(r"[a-z0-9_-]+", text.lower())
+    for sequence in re.findall(r"[\u4e00-\u9fff]+", text):
+        result += [sequence[i:i+2] for i in range(len(sequence) - 1)]
+    return result
+
+
+def active(doc, on=None):
+    on = on or today()
+    return doc.status == "approved_demo" and doc.effective_from <= on and (doc.effective_until is None or doc.effective_until >= on)
+
+
+def search(db, project_id, query, on=None, limit=6):
+    on = on or today()
+    # ACL and effective version filters are applied BEFORE scoring any candidate.
+    rows = db.execute(select(Chunk, Document).join(Document).where(Document.project_id == project_id, Document.status == "approved_demo", Document.effective_from <= on,
+                      or_(Document.effective_until.is_(None), Document.effective_until >= on))).all()
+    # Version metadata is retained for source offsets but must not crowd out operational passages.
+    rows = [(chunk, doc) for chunk, doc in rows if not re.match(r"^版本[：:]", chunk.text.strip())]
+    # Overlapping published versions are ambiguous: do not arbitrarily choose one.
+    titles = {}
+    for _, doc in rows:
+        titles.setdefault(doc.title, set()).add(doc.id)
+    conflicts = [title for title, ids in titles.items() if len(ids) > 1]
+    if conflicts:
+        raise AppError("KNOWLEDGE_CONFLICT", "存在重叠生效的知识版本，需先核查", 409)
+    normalized_query = scoring_text(query)
+    q = query_tokens(query)
+    topics = retrieval_topics(normalized_query)
+    scoring_sources = [scoring_text(chunk.text + " " + doc.title + " " + chunk.chapter) for chunk, doc in rows]
+    corpus = [Counter(tokens(text)) for text in scoring_sources]
+    avg_len = sum(sum(c.values()) for c in corpus) / max(len(corpus), 1)
+    scored = []
+    for (chunk, doc), counts, source in zip(rows, corpus, scoring_sources):
+        if topics and not topics.intersection(retrieval_topics(source)):
+            continue
+        # A lone shared fragment (e.g. the suffix of a private document title)
+        # cannot establish relevance for a multi-fragment query.
+        if len(q) >= 3 and sum(term in counts for term in q) < 2:
+            continue
+        score = 0.0
+        for term in q:
+            tf = counts[term]
+            if tf:
+                df = sum(term in other for other in corpus)
+                idf = math.log(1 + (len(corpus) - df + .5) / (df + .5))
+                score += idf * tf * 2.2 / (tf + 1.2 * (.25 + .75 * sum(counts.values()) / max(avg_len, 1)))
+        if score > 0:
+            scored.append((score, chunk.id, chunk, doc))
+    scored.sort(key=lambda item: (-item[0], item[1]))
+    return [{"chunk_id": c.id, "document_id": d.id, "document_external_id": d.external_id, "title": d.title, "version": d.version,
+             "chapter": c.chapter, "start_offset": c.start_offset, "end_offset": c.end_offset, "excerpt": c.text, "source_hash": d.source_hash,
+             "source_path": d.source_path, "synthetic": d.synthetic, "score": round(score, 5)} for score, _, c, d in scored[:limit]]

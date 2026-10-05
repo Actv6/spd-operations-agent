@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "fixture login succeeded",
+    "server-derived priority counts 3/5 displayed",
+    "feedback failure retained input and retry succeeded",
+    "feedback required reason and save succeeded",
+    "editing invalidates publication preview",
+    "manual publication succeeded",
+    "published content retrieved by actual lexical search",
+    "manual retirement succeeded"
+  ],
+  "errors": [],
+  "error": "Error: locator.waitFor: Error: strict mode violation: getByRole('button', { name: '消耗缺日与零消耗核验流程', exact: true }) resolved to 2 elements:\n    1) <button type=\"button\" class=\"ant-btn css-dev-only-do-not-override-oc1rc0 css-var-_r_0_ ant-btn-link ant-btn-color-link ant-btn-variant-link\">…</button> aka getByRole('button', { name: '消耗缺日与零消耗核验流程' }).first()\n    2) <button type=\"button\" class=\"ant-btn css-dev-only-do-not-override-oc1rc0 css-var-_r_0_ ant-btn-link ant-btn-color-link ant-btn-variant-link\">…</button> aka getByRole('button', { name: '消耗缺日与零消耗核验流程' }).nth(1)\n\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '消耗缺日与零消耗核验流程', exact: true }) to be visible\u001b[22m\n"
+}

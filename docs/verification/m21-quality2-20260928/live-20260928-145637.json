@@ -1,0 +1,2549 @@
+{
+  "cases": [
+    {
+      "case": "project",
+      "run_id": "a1aff0d4-e028-43f6-985b-2f070cda9d6a",
+      "question": "请扫描当前项目全部物资的库存覆盖、批次效期和数据质量异常，说明扫描范围与跳过估算数量，并按关注级别汇总下一步核查建议。",
+      "status": "succeeded",
+      "error": null,
+      "elapsed_seconds": 7.18,
+      "tokens_recorded": 13436,
+      "usage_complete": true,
+      "calls": [
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3317,
+            "completion_tokens": 68,
+            "total_tokens": 3385,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 3317
+          },
+          "input_chars": 8885,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4442,
+            "completion_tokens": 436,
+            "total_tokens": 4878,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 1242
+          },
+          "input_chars": 12114,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4663,
+            "completion_tokens": 510,
+            "total_tokens": 5173,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 4023
+          },
+          "input_chars": 12820,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "tool_steps": [
+        "compute_risks"
+      ],
+      "final_validations": 1,
+      "analysis": {
+        "analysis_id": "aced2d14-3a2e-4ed8-89ef-094589e31ee0",
+        "run_id": "a1aff0d4-e028-43f6-985b-2f070cda9d6a",
+        "project_id": "8bb3a4e1-a064-4941-b67b-2f5464b93999",
+        "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+        "as_of": "2026-09-27T09:00:00+08:00",
+        "ruleset_version": "m2-screening-1",
+        "knowledge_release_id": [],
+        "model_release_id": "deepseek-flash",
+        "generation_mode": "model",
+        "retrieval_mode": "lexical",
+        "answer": "本轮已对本次许可的全部 24 个物资-科室位置完成包含批次效期的风险筛查，其中 3 个位置因数据不足跳过覆盖天数估算：2 个属记录质量问题（反应杯 14 日消耗缺日、采样管库存记录超过 24 小时），1 个属零消耗；零消耗仅为快照记录事实且记录完整，不属于数据质量异常。共命中 8 条异常，高关注 3 条、中关注 5 条。\n\n高关注：检验科检验质控材料有 1 个在库批次已过期；检验科反应杯与采样管因记录缺口暂停覆盖估算。中关注：检验科生化清洗液、样本稀释液、样本杯、一次性吸头覆盖天数低于 7 天关注阈值；检验科尿液分析试纸有 1 个批次 30 天内到期、暂无已过期。\n\n待人工核实事项：检验质控材料过期批次的实际状态与在用情况、反应杯缺日消耗记录、采样管库存记录时间、4 项低覆盖物资的近期领用与供应信息、尿液分析试纸临期批次剩余量与使用进度，以及零消耗记录是真实停用还是漏记。上述均为需核实事项，非已执行处置或采购承诺；具体隔离、处置与记录要求待以现行制度确认。",
+        "insufficient_evidence": false,
+        "citations": [
+          {
+            "evidence_id": "365ef946-3133-4839-97f4-11977783fe76",
+            "source_kind": "tool",
+            "source_version": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+            "title": "授权范围异常扫描",
+            "location": {
+              "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+              "source_rows": [
+                "SIM-HA-SIM-P001",
+                "LOT-SIM-HA-SIM-P001-1",
+                "LOT-SIM-HA-SIM-P001-2",
+                "LOT-SIM-HA-SIM-P001-3",
+                "USE-SIM-HA-SIM-P001-2026-09-13",
+                "USE-SIM-HA-SIM-P001-2026-09-14",
+                "USE-SIM-HA-SIM-P001-2026-09-15",
+                "USE-SIM-HA-SIM-P001-2026-09-16",
+                "USE-SIM-HA-SIM-P001-2026-09-17",
+                "USE-SIM-HA-SIM-P001-2026-09-18",
+                "USE-SIM-HA-SIM-P001-2026-09-19",
+                "USE-SIM-HA-SIM-P001-2026-09-20",
+                "USE-SIM-HA-SIM-P001-2026-09-21",
+                "USE-SIM-HA-SIM-P001-2026-09-22",
+                "USE-SIM-HA-SIM-P001-2026-09-23",
+                "USE-SIM-HA-SIM-P001-2026-09-24",
+                "USE-SIM-HA-SIM-P001-2026-09-25",
+                "USE-SIM-HA-SIM-P001-2026-09-26",
+                "SIM-HA-SIM-P002",
+                "LOT-SIM-HA-SIM-P002-1",
+                "LOT-SIM-HA-SIM-P002-2",
+                "LOT-SIM-HA-SIM-P002-3",
+                "USE-SIM-HA-SIM-P002-2026-09-13",
+                "USE-SIM-HA-SIM-P002-2026-09-14",
+                "USE-SIM-HA-SIM-P002-2026-09-15",
+                "USE-SIM-HA-SIM-P002-2026-09-16",
+                "USE-SIM-HA-SIM-P002-2026-09-17",
+                "USE-SIM-HA-SIM-P002-2026-09-18",
+                "USE-SIM-HA-SIM-P002-2026-09-19",
+                "USE-SIM-HA-SIM-P002-2026-09-20",
+                "USE-SIM-HA-SIM-P002-2026-09-21",
+                "USE-SIM-HA-SIM-P002-2026-09-22",
+                "USE-SIM-HA-SIM-P002-2026-09-23",
+                "USE-SIM-HA-SIM-P002-2026-09-24",
+                "USE-SIM-HA-SIM-P002-2026-09-25",
+                "USE-SIM-HA-SIM-P002-2026-09-26",
+                "SIM-HA-SIM-P003",
+                "LOT-SIM-HA-SIM-P003-1",
+                "LOT-SIM-HA-SIM-P003-2",
+                "LOT-SIM-HA-SIM-P003-3",
+                "USE-SIM-HA-SIM-P003-2026-09-13",
+                "USE-SIM-HA-SIM-P003-2026-09-14",
+                "USE-SIM-HA-SIM-P003-2026-09-15",
+                "USE-SIM-HA-SIM-P003-2026-09-16",
+                "USE-SIM-HA-SIM-P003-2026-09-17",
+                "USE-SIM-HA-SIM-P003-2026-09-18",
+                "USE-SIM-HA-SIM-P003-2026-09-19",
+                "USE-SIM-HA-SIM-P003-2026-09-20",
+                "USE-SIM-HA-SIM-P003-2026-09-21",
+                "USE-SIM-HA-SIM-P003-2026-09-22",
+                "USE-SIM-HA-SIM-P003-2026-09-23",
+                "USE-SIM-HA-SIM-P003-2026-09-24",
+                "USE-SIM-HA-SIM-P003-2026-09-25",
+                "USE-SIM-HA-SIM-P003-2026-09-26",
+                "SIM-HA-SIM-P004",
+                "LOT-SIM-HA-SIM-P004-1",
+                "LOT-SIM-HA-SIM-P004-2",
+                "LOT-SIM-HA-SIM-P004-3",
+                "USE-SIM-HA-SIM-P004-2026-09-13",
+                "USE-SIM-HA-SIM-P004-2026-09-14",
+                "USE-SIM-HA-SIM-P004-2026-09-15",
+                "USE-SIM-HA-SIM-P004-2026-09-16",
+                "USE-SIM-HA-SIM-P004-2026-09-17",
+                "USE-SIM-HA-SIM-P004-2026-09-18",
+                "USE-SIM-HA-SIM-P004-2026-09-19",
+                "USE-SIM-HA-SIM-P004-2026-09-20",
+                "USE-SIM-HA-SIM-P004-2026-09-21",
+                "USE-SIM-HA-SIM-P004-2026-09-22",
+                "USE-SIM-HA-SIM-P004-2026-09-23",
+                "USE-SIM-HA-SIM-P004-2026-09-24",
+                "USE-SIM-HA-SIM-P004-2026-09-25",
+                "USE-SIM-HA-SIM-P004-2026-09-26",
+                "SIM-HA-SIM-P005",
+                "LOT-SIM-HA-SIM-P005-1",
+                "LOT-SIM-HA-SIM-P005-2",
+                "LOT-SIM-HA-SIM-P005-3",
+                "USE-SIM-HA-SIM-P005-2026-09-13",
+                "USE-SIM-HA-SIM-P005-2026-09-14",
+                "USE-SIM-HA-SIM-P005-2026-09-15",
+                "USE-SIM-HA-SIM-P005-2026-09-16",
+                "USE-SIM-HA-SIM-P005-2026-09-17",
+                "USE-SIM-HA-SIM-P005-2026-09-18",
+                "USE-SIM-HA-SIM-P005-2026-09-19",
+                "USE-SIM-HA-SIM-P005-2026-09-20",
+                "USE-SIM-HA-SIM-P005-2026-09-21",
+                "USE-SIM-HA-SIM-P005-2026-09-22",
+                "USE-SIM-HA-SIM-P005-2026-09-23",
+                "USE-SIM-HA-SIM-P005-2026-09-24",
+                "USE-SIM-HA-SIM-P005-2026-09-25",
+                "USE-SIM-HA-SIM-P005-2026-09-26",
+                "SIM-HA-SIM-P006",
+                "LOT-SIM-HA-SIM-P006-1",
+                "LOT-SIM-HA-SIM-P006-2",
+                "LOT-SIM-HA-SIM-P006-3",
+                "USE-SIM-HA-SIM-P006-2026-09-13",
+                "USE-SIM-HA-SIM-P006-2026-09-14",
+                "USE-SIM-HA-SIM-P006-2026-09-15",
+                "USE-SIM-HA-SIM-P006-2026-09-16",
+                "USE-SIM-HA-SIM-P006-2026-09-17",
+                "USE-SIM-HA-SIM-P006-2026-09-18",
+                "USE-SIM-HA-SIM-P006-2026-09-19",
+                "USE-SIM-HA-SIM-P006-2026-09-20",
+                "USE-SIM-HA-SIM-P006-2026-09-21",
+                "USE-SIM-HA-SIM-P006-2026-09-23",
+                "USE-SIM-HA-SIM-P006-2026-09-25",
+                "USE-SIM-HA-SIM-P006-2026-09-26",
+                "SIM-HA-SIM-P007",
+                "LOT-SIM-HA-SIM-P007-1",
+                "LOT-SIM-HA-SIM-P007-2",
+                "LOT-SIM-HA-SIM-P007-3",
+                "USE-SIM-HA-SIM-P007-2026-09-13",
+                "USE-SIM-HA-SIM-P007-2026-09-14",
+                "USE-SIM-HA-SIM-P007-2026-09-15",
+                "USE-SIM-HA-SIM-P007-2026-09-16",
+                "USE-SIM-HA-SIM-P007-2026-09-17",
+                "USE-SIM-HA-SIM-P007-2026-09-18",
+                "USE-SIM-HA-SIM-P007-2026-09-19",
+                "USE-SIM-HA-SIM-P007-2026-09-20",
+                "USE-SIM-HA-SIM-P007-2026-09-21",
+                "USE-SIM-HA-SIM-P007-2026-09-22",
+                "USE-SIM-HA-SIM-P007-2026-09-23",
+                "USE-SIM-HA-SIM-P007-2026-09-24",
+                "USE-SIM-HA-SIM-P007-2026-09-25",
+                "USE-SIM-HA-SIM-P007-2026-09-26",
+                "SIM-HA-SIM-P008",
+                "LOT-SIM-HA-SIM-P008-1",
+                "LOT-SIM-HA-SIM-P008-2",
+                "LOT-SIM-HA-SIM-P008-3",
+                "USE-SIM-HA-SIM-P008-2026-09-13",
+                "USE-SIM-HA-SIM-P008-2026-09-14",
+                "USE-SIM-HA-SIM-P008-2026-09-15",
+                "USE-SIM-HA-SIM-P008-2026-09-16",
+                "USE-SIM-HA-SIM-P008-2026-09-17",
+                "USE-SIM-HA-SIM-P008-2026-09-18",
+                "USE-SIM-HA-SIM-P008-2026-09-19",
+                "USE-SIM-HA-SIM-P008-2026-09-20",
+                "USE-SIM-HA-SIM-P008-2026-09-21",
+                "USE-SIM-HA-SIM-P008-2026-09-22",
+                "USE-SIM-HA-SIM-P008-2026-09-23",
+                "USE-SIM-HA-SIM-P008-2026-09-24",
+                "USE-SIM-HA-SIM-P008-2026-09-25",
+                "USE-SIM-HA-SIM-P008-2026-09-26",
+                "SIM-HA-SIM-P009",
+                "LOT-SIM-HA-SIM-P009-1",
+                "LOT-SIM-HA-SIM-P009-2",
+                "LOT-SIM-HA-SIM-P009-3",
+                "USE-SIM-HA-SIM-P009-2026-09-13",
+                "USE-SIM-HA-SIM-P009-2026-09-14",
+                "USE-SIM-HA-SIM-P009-2026-09-15",
+                "USE-SIM-HA-SIM-P009-2026-09-16",
+                "USE-SIM-HA-SIM-P009-2026-09-17",
+                "USE-SIM-HA-SIM-P009-2026-09-18",
+                "USE-SIM-HA-SIM-P009-2026-09-19",
+                "USE-SIM-HA-SIM-P009-2026-09-20",
+                "USE-SIM-HA-SIM-P009-2026-09-21",
+                "USE-SIM-HA-SIM-P009-2026-09-22",
+                "USE-SIM-HA-SIM-P009-2026-09-23",
+                "USE-SIM-HA-SIM-P009-2026-09-24",
+                "USE-SIM-HA-SIM-P009-2026-09-25",
+                "USE-SIM-HA-SIM-P009-2026-09-26",
+                "SIM-HA-SIM-P010",
+                "LOT-SIM-HA-SIM-P010-1",
+                "LOT-SIM-HA-SIM-P010-2",
+                "LOT-SIM-HA-SIM-P010-3",
+                "USE-SIM-HA-SIM-P010-2026-09-13",
+                "USE-SIM-HA-SIM-P010-2026-09-14",
+                "USE-SIM-HA-SIM-P010-2026-09-15",
+                "USE-SIM-HA-SIM-P010-2026-09-16",
+                "USE-SIM-HA-SIM-P010-2026-09-17",
+                "USE-SIM-HA-SIM-P010-2026-09-18",
+                "USE-SIM-HA-SIM-P010-2026-09-19",
+                "USE-SIM-HA-SIM-P010-2026-09-20",
+                "USE-SIM-HA-SIM-P010-2026-09-21",
+                "USE-SIM-HA-SIM-P010-2026-09-22",
+                "USE-SIM-HA-SIM-P010-2026-09-23",
+                "USE-SIM-HA-SIM-P010-2026-09-24",
+                "USE-SIM-HA-SIM-P010-2026-09-25",
+                "USE-SIM-HA-SIM-P010-2026-09-26",
+                "SIM-HA-SIM-P011",
+                "LOT-SIM-HA-SIM-P011-1",
+                "LOT-SIM-HA-SIM-P011-2",
+                "LOT-SIM-HA-SIM-P011-3",
+                "USE-SIM-HA-SIM-P011-2026-09-13",
+                "USE-SIM-HA-SIM-P011-2026-09-14",
+                "USE-SIM-HA-SIM-P011-2026-09-15",
+                "USE-SIM-HA-SIM-P011-2026-09-16",
+                "USE-SIM-HA-SIM-P011-2026-09-17",
+                "USE-SIM-HA-SIM-P011-2026-09-18",
+                "USE-SIM-HA-SIM-P011-2026-09-19",
+                "USE-SIM-HA-SIM-P011-2026-09-20",
+                "USE-SIM-HA-SIM-P011-2026-09-21",
+                "USE-SIM-HA-SIM-P011-2026-09-22",
+                "USE-SIM-HA-SIM-P011-2026-09-23",
+                "USE-SIM-HA-SIM-P011-2026-09-24",
+                "USE-SIM-HA-SIM-P011-2026-09-25",
+                "USE-SIM-HA-SIM-P011-2026-09-26",
+                "SIM-HA-SIM-P012",
+                "LOT-SIM-HA-SIM-P012-1",
+                "LOT-SIM-HA-SIM-P012-2",
+                "LOT-SIM-HA-SIM-P012-3",
+                "USE-SIM-HA-SIM-P012-2026-09-13",
+                "USE-SIM-HA-SIM-P012-2026-09-14",
+                "USE-SIM-HA-SIM-P012-2026-09-15",
+                "USE-SIM-HA-SIM-P012-2026-09-16",
+                "USE-SIM-HA-SIM-P012-2026-09-17",
+                "USE-SIM-HA-SIM-P012-2026-09-18",
+                "USE-SIM-HA-SIM-P012-2026-09-19",
+                "USE-SIM-HA-SIM-P012-2026-09-20",
+                "USE-SIM-HA-SIM-P012-2026-09-21",
+                "USE-SIM-HA-SIM-P012-2026-09-22",
+                "USE-SIM-HA-SIM-P012-2026-09-23",
+                "USE-SIM-HA-SIM-P012-2026-09-24",
+                "USE-SIM-HA-SIM-P012-2026-09-25",
+                "USE-SIM-HA-SIM-P012-2026-09-26",
+                "SIM-HA-SIM-P013",
+                "LOT-SIM-HA-SIM-P013-1",
+                "LOT-SIM-HA-SIM-P013-2",
+                "LOT-SIM-HA-SIM-P013-3",
+                "USE-SIM-HA-SIM-P013-2026-09-13",
+                "USE-SIM-HA-SIM-P013-2026-09-14",
+                "USE-SIM-HA-SIM-P013-2026-09-15",
+                "USE-SIM-HA-SIM-P013-2026-09-16",
+                "USE-SIM-HA-SIM-P013-2026-09-17",
+                "USE-SIM-HA-SIM-P013-2026-09-18",
+                "USE-SIM-HA-SIM-P013-2026-09-19",
+                "USE-SIM-HA-SIM-P013-2026-09-20",
+                "USE-SIM-HA-SIM-P013-2026-09-21",
+                "USE-SIM-HA-SIM-P013-2026-09-22",
+                "USE-SIM-HA-SIM-P013-2026-09-23",
+                "USE-SIM-HA-SIM-P013-2026-09-24",
+                "USE-SIM-HA-SIM-P013-2026-09-25",
+                "USE-SIM-HA-SIM-P013-2026-09-26",
+                "SIM-HA-SIM-P014",
+                "LOT-SIM-HA-SIM-P014-1",
+                "LOT-SIM-HA-SIM-P014-2",
+                "LOT-SIM-HA-SIM-P014-3",
+                "USE-SIM-HA-SIM-P014-2026-09-13",
+                "USE-SIM-HA-SIM-P014-2026-09-14",
+                "USE-SIM-HA-SIM-P014-2026-09-15",
+                "USE-SIM-HA-SIM-P014-2026-09-16",
+                "USE-SIM-HA-SIM-P014-2026-09-17",
+                "USE-SIM-HA-SIM-P014-2026-09-18",
+                "USE-SIM-HA-SIM-P014-2026-09-19",
+                "USE-SIM-HA-SIM-P014-2026-09-20",
+                "USE-SIM-HA-SIM-P014-2026-09-21",
+                "USE-SIM-HA-SIM-P014-2026-09-22",
+                "USE-SIM-HA-SIM-P014-2026-09-23",
+                "USE-SIM-HA-SIM-P014-2026-09-24",
+                "USE-SIM-HA-SIM-P014-2026-09-25",
+                "USE-SIM-HA-SIM-P014-2026-09-26",
+                "SIM-HA-SIM-P015",
+                "LOT-SIM-HA-SIM-P015-1",
+                "LOT-SIM-HA-SIM-P015-2",
+                "LOT-SIM-HA-SIM-P015-3",
+                "USE-SIM-HA-SIM-P015-2026-09-13",
+                "USE-SIM-HA-SIM-P015-2026-09-14",
+                "USE-SIM-HA-SIM-P015-2026-09-15",
+                "USE-SIM-HA-SIM-P015-2026-09-16",
+                "USE-SIM-HA-SIM-P015-2026-09-17",
+                "USE-SIM-HA-SIM-P015-2026-09-18",
+                "USE-SIM-HA-SIM-P015-2026-09-19",
+                "USE-SIM-HA-SIM-P015-2026-09-20",
+                "USE-SIM-HA-SIM-P015-2026-09-21",
+                "USE-SIM-HA-SIM-P015-2026-09-22",
+                "USE-SIM-HA-SIM-P015-2026-09-23",
+                "USE-SIM-HA-SIM-P015-2026-09-24",
+                "USE-SIM-HA-SIM-P015-2026-09-25",
+                "USE-SIM-HA-SIM-P015-2026-09-26",
+                "SIM-HA-SIM-P016",
+                "LOT-SIM-HA-SIM-P016-1",
+                "LOT-SIM-HA-SIM-P016-2",
+                "LOT-SIM-HA-SIM-P016-3",
+                "USE-SIM-HA-SIM-P016-2026-09-13",
+                "USE-SIM-HA-SIM-P016-2026-09-14",
+                "USE-SIM-HA-SIM-P016-2026-09-15",
+                "USE-SIM-HA-SIM-P016-2026-09-16",
+                "USE-SIM-HA-SIM-P016-2026-09-17",
+                "USE-SIM-HA-SIM-P016-2026-09-18",
+                "USE-SIM-HA-SIM-P016-2026-09-19",
+                "USE-SIM-HA-SIM-P016-2026-09-20",
+                "USE-SIM-HA-SIM-P016-2026-09-21",
+                "USE-SIM-HA-SIM-P016-2026-09-22",
+                "USE-SIM-HA-SIM-P016-2026-09-23",
+                "USE-SIM-HA-SIM-P016-2026-09-24",
+                "USE-SIM-HA-SIM-P016-2026-09-25",
+                "USE-SIM-HA-SIM-P016-2026-09-26",
+                "SIM-HA-SIM-P017",
+                "LOT-SIM-HA-SIM-P017-1",
+                "LOT-SIM-HA-SIM-P017-2",
+                "LOT-SIM-HA-SIM-P017-3",
+                "USE-SIM-HA-SIM-P017-2026-09-13",
+                "USE-SIM-HA-SIM-P017-2026-09-14",
+                "USE-SIM-HA-SIM-P017-2026-09-15",
+                "USE-SIM-HA-SIM-P017-2026-09-16",
+                "USE-SIM-HA-SIM-P017-2026-09-17",
+                "USE-SIM-HA-SIM-P017-2026-09-18",
+                "USE-SIM-HA-SIM-P017-2026-09-19",
+                "USE-SIM-HA-SIM-P017-2026-09-20",
+                "USE-SIM-HA-SIM-P017-2026-09-21",
+                "USE-SIM-HA-SIM-P017-2026-09-22",
+                "USE-SIM-HA-SIM-P017-2026-09-23",
+                "USE-SIM-HA-SIM-P017-2026-09-24",
+                "USE-SIM-HA-SIM-P017-2026-09-25",
+                "USE-SIM-HA-SIM-P017-2026-09-26",
+                "SIM-HA-SIM-P018",
+                "LOT-SIM-HA-SIM-P018-1",
+                "LOT-SIM-HA-SIM-P018-2",
+                "LOT-SIM-HA-SIM-P018-3",
+                "USE-SIM-HA-SIM-P018-2026-09-13",
+                "USE-SIM-HA-SIM-P018-2026-09-14",
+                "USE-SIM-HA-SIM-P018-2026-09-15",
+                "USE-SIM-HA-SIM-P018-2026-09-16",
+                "USE-SIM-HA-SIM-P018-2026-09-17",
+                "USE-SIM-HA-SIM-P018-2026-09-18",
+                "USE-SIM-HA-SIM-P018-2026-09-19",
+                "USE-SIM-HA-SIM-P018-2026-09-20",
+                "USE-SIM-HA-SIM-P018-2026-09-21",
+                "USE-SIM-HA-SIM-P018-2026-09-22",
+                "USE-SIM-HA-SIM-P018-2026-09-23",
+                "USE-SIM-HA-SIM-P018-2026-09-24",
+                "USE-SIM-HA-SIM-P018-2026-09-25",
+                "USE-SIM-HA-SIM-P018-2026-09-26",
+                "SIM-HA-SIM-P019",
+                "LOT-SIM-HA-SIM-P019-1",
+                "LOT-SIM-HA-SIM-P019-2",
+                "LOT-SIM-HA-SIM-P019-3",
+                "USE-SIM-HA-SIM-P019-2026-09-13",
+                "USE-SIM-HA-SIM-P019-2026-09-14",
+                "USE-SIM-HA-SIM-P019-2026-09-15",
+                "USE-SIM-HA-SIM-P019-2026-09-16",
+                "USE-SIM-HA-SIM-P019-2026-09-17",
+                "USE-SIM-HA-SIM-P019-2026-09-18",
+                "USE-SIM-HA-SIM-P019-2026-09-19",
+                "USE-SIM-HA-SIM-P019-2026-09-20",
+                "USE-SIM-HA-SIM-P019-2026-09-21",
+                "USE-SIM-HA-SIM-P019-2026-09-22",
+                "USE-SIM-HA-SIM-P019-2026-09-23",
+                "USE-SIM-HA-SIM-P019-2026-09-24",
+                "USE-SIM-HA-SIM-P019-2026-09-25",
+                "USE-SIM-HA-SIM-P019-2026-09-26",
+                "SIM-HA-SIM-P020",
+                "LOT-SIM-HA-SIM-P020-1",
+                "LOT-SIM-HA-SIM-P020-2",
+                "LOT-SIM-HA-SIM-P020-3",
+                "USE-SIM-HA-SIM-P020-2026-09-13",
+                "USE-SIM-HA-SIM-P020-2026-09-14",
+                "USE-SIM-HA-SIM-P020-2026-09-15",
+                "USE-SIM-HA-SIM-P020-2026-09-16",
+                "USE-SIM-HA-SIM-P020-2026-09-17",
+                "USE-SIM-HA-SIM-P020-2026-09-18",
+                "USE-SIM-HA-SIM-P020-2026-09-19",
+                "USE-SIM-HA-SIM-P020-2026-09-20",
+                "USE-SIM-HA-SIM-P020-2026-09-21",
+                "USE-SIM-HA-SIM-P020-2026-09-22",
+                "USE-SIM-HA-SIM-P020-2026-09-23",
+                "USE-SIM-HA-SIM-P020-2026-09-24",
+                "USE-SIM-HA-SIM-P020-2026-09-25",
+                "USE-SIM-HA-SIM-P020-2026-09-26",
+                "SIM-HA-SIM-P021",
+                "LOT-SIM-HA-SIM-P021-1",
+                "LOT-SIM-HA-SIM-P021-2",
+                "LOT-SIM-HA-SIM-P021-3",
+                "USE-SIM-HA-SIM-P021-2026-09-13",
+                "USE-SIM-HA-SIM-P021-2026-09-14",
+                "USE-SIM-HA-SIM-P021-2026-09-15",
+                "USE-SIM-HA-SIM-P021-2026-09-16",
+                "USE-SIM-HA-SIM-P021-2026-09-17",
+                "USE-SIM-HA-SIM-P021-2026-09-18",
+                "USE-SIM-HA-SIM-P021-2026-09-19",
+                "USE-SIM-HA-SIM-P021-2026-09-20",
+                "USE-SIM-HA-SIM-P021-2026-09-21",
+                "USE-SIM-HA-SIM-P021-2026-09-22",
+                "USE-SIM-HA-SIM-P021-2026-09-23",
+                "USE-SIM-HA-SIM-P021-2026-09-24",
+                "USE-SIM-HA-SIM-P021-2026-09-25",
+                "USE-SIM-HA-SIM-P021-2026-09-26",
+                "SIM-HA-SIM-P022",
+                "LOT-SIM-HA-SIM-P022-1",
+                "LOT-SIM-HA-SIM-P022-2",
+                "LOT-SIM-HA-SIM-P022-3",
+                "USE-SIM-HA-SIM-P022-2026-09-13",
+                "USE-SIM-HA-SIM-P022-2026-09-14",
+                "USE-SIM-HA-SIM-P022-2026-09-15",
+                "USE-SIM-HA-SIM-P022-2026-09-16",
+                "USE-SIM-HA-SIM-P022-2026-09-17",
+                "USE-SIM-HA-SIM-P022-2026-09-18",
+                "USE-SIM-HA-SIM-P022-2026-09-19",
+                "USE-SIM-HA-SIM-P022-2026-09-20",
+                "USE-SIM-HA-SIM-P022-2026-09-21",
+                "USE-SIM-HA-SIM-P022-2026-09-22",
+                "USE-SIM-HA-SIM-P022-2026-09-23",
+                "USE-SIM-HA-SIM-P022-2026-09-24",
+                "USE-SIM-HA-SIM-P022-2026-09-25",
+                "USE-SIM-HA-SIM-P022-2026-09-26",
+                "SIM-HA-SIM-P023",
+                "LOT-SIM-HA-SIM-P023-1",
+                "LOT-SIM-HA-SIM-P023-2",
+                "LOT-SIM-HA-SIM-P023-3",
+                "USE-SIM-HA-SIM-P023-2026-09-13",
+                "USE-SIM-HA-SIM-P023-2026-09-14",
+                "USE-SIM-HA-SIM-P023-2026-09-15",
+                "USE-SIM-HA-SIM-P023-2026-09-16",
+                "USE-SIM-HA-SIM-P023-2026-09-17",
+                "USE-SIM-HA-SIM-P023-2026-09-18",
+                "USE-SIM-HA-SIM-P023-2026-09-19",
+                "USE-SIM-HA-SIM-P023-2026-09-20",
+                "USE-SIM-HA-SIM-P023-2026-09-21",
+                "USE-SIM-HA-SIM-P023-2026-09-22",
+                "USE-SIM-HA-SIM-P023-2026-09-23",
+                "USE-SIM-HA-SIM-P023-2026-09-24",
+                "USE-SIM-HA-SIM-P023-2026-09-25",
+                "USE-SIM-HA-SIM-P023-2026-09-26",
+                "SIM-HA-SIM-P024",
+                "LOT-SIM-HA-SIM-P024-1",
+                "LOT-SIM-HA-SIM-P024-2",
+                "LOT-SIM-HA-SIM-P024-3",
+                "USE-SIM-HA-SIM-P024-2026-09-13",
+                "USE-SIM-HA-SIM-P024-2026-09-14",
+                "USE-SIM-HA-SIM-P024-2026-09-15",
+                "USE-SIM-HA-SIM-P024-2026-09-16",
+                "USE-SIM-HA-SIM-P024-2026-09-17",
+                "USE-SIM-HA-SIM-P024-2026-09-18",
+                "USE-SIM-HA-SIM-P024-2026-09-19",
+                "USE-SIM-HA-SIM-P024-2026-09-20",
+                "USE-SIM-HA-SIM-P024-2026-09-21",
+                "USE-SIM-HA-SIM-P024-2026-09-22",
+                "USE-SIM-HA-SIM-P024-2026-09-23",
+                "USE-SIM-HA-SIM-P024-2026-09-24",
+                "USE-SIM-HA-SIM-P024-2026-09-25",
+                "USE-SIM-HA-SIM-P024-2026-09-26"
+              ]
+            },
+            "excerpt": "{\"snapshot_set_id\": \"a984f211-f1f5-4028-9689-73ad1162d5ab\", \"as_of\": \"2026-09-27T09:00:00+08:00\", \"ruleset_version\": \"m2-screening-1\", \"scanned_positions\": 24, \"skipped_estimates\": 3, \"estimate_gap_counts\": {\"data_quality\": 2, \"zero_consumption\": 1}, \"thresholds\": {\"coverage_days\": 7, \"expiry_days\": 30}, \"findings\": [{\"id\": \"4ae21f93683517c3d49715d0811f3fae7a12ba96c95fb7373651a2a9414d2580\", \"item_id\": \"SIM-P004\", \"department_id\": \"SIM-HA-LAB\", \"name\": \"检验质控材料\", \"department_name\": \"检验科\", \"kind\": \"expiry\", \"priority\": \"high\", \"summary\": \"1 个在库批次到期或30天内到期，其中已过期 1 个；按批次核实\", \"source_rows\": [\"LOT-SIM-HA-SIM-P004-1\"]}, {\"id\": \"643ed4c4e5969d6ffe20109d192d9a0748436da48675fb5b607a9d35d20439e3\", \"item_id\": \"SIM-P006\", \"department_id\": \"SIM-HA-LAB\", \"name\": \"反应杯\", \"department_name\": \"检验科\", \"kind\": \"quality\", \"priority\": \"high\", \"summary\": \"14日消耗缺日；暂停覆盖估算\", \"source_rows\": [\"SIM-HA-SIM-P006\", \"LOT-SIM-HA-SIM-P006-1\", \"LOT-SIM-HA-SIM-P006-2\", \"LOT-SIM-HA-SIM-P006-3\", \"USE-SIM-HA-SIM-P006-2026-09-13\", \"USE-SIM-HA-SIM-P006-2026-09-14\", \"USE-SIM-HA-SIM-P006-2026-09-15\", \"USE-SIM-HA-SIM-P006-2026-09-16\", \"USE-SIM-HA-SIM-P006-2026-09-17\", \"USE-SIM-HA-SIM-P006-2026-09-18\", \"USE-SIM-HA-SIM-P006-2026-09-19\", \"USE-SIM-HA-SIM-P006-2026-09-20\", \"USE-SIM-HA-SIM-P006-2026-09-21\", \"USE-SIM-HA-SIM-P006-2026-09-23\", \"USE-SIM-HA-SIM-P006-2026-09-25\", \"USE-SIM-HA-SIM-P006-2026-09-26\"]}, {\"id\": \"79377318ab23ba9cce4a5c98a9b2b03e719a485dba06d1e027f51b04fe0d909a\", \"item_id\": \"SIM-P007\", \"department_id\": \"SIM-HA-LAB\", \"name\": \"采样管\", \"department_name\": \"检验科\", \"kind\": \"quality\", \"priority\": \"high\", \"summary\": \"库存记录超过24小时；暂停覆盖估算\", \"source_rows\": [\"SIM-HA-SIM-P007\", \"LOT-SIM-HA-SIM-P007-1\", \"LOT-SIM-HA-SIM-P007-2\", \"LOT-SIM-HA-SIM-P007-3\", \"USE-SIM-HA-SIM-P007-2026-09-13\", \"USE-SIM-HA-SIM-P007-2026-09-14\", \"USE-SIM-HA-SIM-P007-2026-09-15\", \"USE-SIM-HA-SIM-P007-2026-09-16\", \"USE-SIM-HA-SIM-P007-2026-09-17\", \"USE-SIM-HA-SIM-P007-2026-09-18\", \"USE-SIM-HA-SIM-P007-2026-09-19\", \"USE-SIM-HA-SIM-P007-2026-09-20\", \"USE-SIM-HA-SIM-P007-2026-09-21\", \"USE-SIM-HA-SIM-P007-2026-09-22\", \"USE-SIM-HA-SIM-P007-2026-09-23\", \"USE-SIM-HA-SIM-P007-2026-09-24\", \"USE-SIM-HA-SIM-P007-2026-09-25\", \"USE-SIM-HA-SIM-P007-2026-09-26\"]}, {\"id\": \"409001a187ea8c017bd3372e684fe69cda25243449d0f2d2825edc45116ea8ec\", \"item_id\": \"SIM-P001\", \"department_id\": \"SIM-HA-LAB\", \"name\": \"生化清洗液\", \"department_name\": \"检验科\", \"kind\": \"low_coverage\", \"priority\": \"medium\", \"summary\": \"覆盖基线 6.0000 天，低于本地7天关注阈值；需补查供应信息\", \"source_rows\": [\"SIM-HA-SIM-P001\", \"LOT-SIM-HA-SIM-P001-1\", \"LOT-SIM-HA-SIM-P001-2\", \"LOT-SIM-HA-SIM-P001-3\", \"USE-SIM-HA-SIM-P001-2026-09-13\", \"USE-SIM-HA-SIM-P001-2026-09-14\", \"USE-SIM-HA-SIM-P001-2026-09-15\", \"USE-SIM-HA-SIM-P001-2026-09-16\", \"USE-SIM-HA-SIM-P001-2026-09-17\", \"USE-SIM-HA-SIM-P001-2026-09-18\", \"USE-SIM-HA-SIM-P001-2026-09-19\", \"USE-SIM-HA-SIM-P001-2026-09-20\", \"USE-SIM-HA-SIM-P001-2026-09-21\", \"USE-SIM-HA-SIM-P001-2026-09-22\", \"USE-SIM-HA-SIM-P001-2026-09-23\", \"USE-SIM-HA-SIM-P001-2026-09-24\", \"USE-SIM-HA-SIM-P001-2026-09-25\", \"USE-SIM-HA-SIM-P001-2026-09-26\"]}, {\"id\": \"40523e6aafedef5bb22213fb41995f8d9f8386ebfdeeb2ca968941419529d72c\", \"item_id\": \"SIM-P002\", \"department_id\": \"SIM-HA-LAB\", \"name\": \"样本稀释液\", \"department_name\": \"检验科\", \"kind\": \"low_coverage\", \"priority\": \"medium\", \"summary\": \"覆盖基线 5.0000 天，低于本地7天关注阈值；需补查供应信息\", \"source_rows\": [\"SIM-HA-SIM-P002\", \"LOT-SIM-HA-SIM-P002-1\", \"LOT-SIM-HA-SIM-P002-2\", \"LOT-SIM-HA-SIM-P002-3\", \"USE-SIM-HA-SIM-P002-2026-09-13\", \"USE-SIM-HA-SIM-P002-2026-09-14\", \"USE-SIM-HA-SIM-P002-2026-09-15\", \"USE-SIM-HA-SIM-P002-2026-09-16\", \"USE-SIM-HA-SIM-P002-2026-09-17\", \"USE-SIM-HA-SIM-P002-2026-09-18\", \"USE-SIM-HA-SIM-P002-2026-09-19\", \"USE-SIM-HA-SIM-P002-2026-09-20\", \"USE-SIM-HA-SIM-P002-2026-09-21\", \"USE-SIM-HA-SIM-P002-2026-09-22\", \"USE-SIM-HA-SIM-P002-2026-09-23\", \"USE-SIM-HA-SIM-P002-2026-09-24\", \"USE-SIM-HA-SIM-P002-2026-09-25\", \"USE-SIM-HA-SIM-P002-2026-09-26\"]}, {\"id\": \"6ba2fdb3a01aa01ce7f80d5be1634df4eb485601ef481902748cd7ea15e67bfb\", \"item_id\": \"SIM-P003\", \"department_id\": \"SIM-HA-LAB\", \"name\": \"尿液分析试纸\", \"department_name\": \"检验科\", \"kind\": \"expiry\", \"priority\": \"medium\", \"summary\": \"1 个在库批次到期或30天内到期，其中已过期 0 个；按批次核实\", \"source_rows\": [\"LOT-SIM-HA-SIM-P003-1\"]}, {\"id\": \"ef8e378c9e92a32d8219e38d8611f07b4572c036e012d0695e2b2483b40080bd\", \"item_id\": \"SIM-P010\", \"department_id\": \"SIM-HA-LAB\", \"name\": \"样本杯\", \"department_name\": \"检验科\", \"kind\": \"low_coverage\", \"priority\": \"medium\", \"summary\": \"覆盖基线 0.3606 天，低于本地7天关注阈值；需补查供应信息\", \"source_rows\": [\"SIM-HA-SIM-P010\", \"LOT-SIM-HA-SIM-P010-1\", \"LOT-SIM-HA-SIM-P010-2\", \"LOT-SIM-HA-SIM-P010-3\", \"USE-SIM-HA-SIM-P010-2026-09-13\", \"USE-SIM-HA-SIM-P010-2026-09-14\", \"USE-SIM-HA-SIM-P010-2026-09-15\", \"USE-SIM-HA-SIM-P010-2026-09-16\", \"USE-SIM-HA-SIM-P010-2026-09-17\", \"USE-SIM-HA-SIM-P010-2026-09-18\", \"USE-SIM-HA-SIM-P010-2026-09-19\", \"USE-SIM-HA-SIM-P010-2026-09-20\", \"USE-SIM-HA-SIM-P010-2026-09-21\", \"USE-SIM-HA-SIM-P010-2026-09-22\", \"USE-SIM-HA-SIM-P010-2026-09-23\", \"USE-SIM-HA-SIM-P010-2026-09-24\", \"USE-SIM-HA-SIM-P010-2026-09-25\", \"USE-SIM-HA-SIM-P010-2026-09-26\"]}, {\"id\": \"8194f1621440b4e282d6476c3c64182b6d73e8ec5fa974055bc12213db93694c\", \"item_id\": \"SIM-P011\", \"department_id\": \"SIM-HA-LAB\", \"name\": \"一次性吸头\", \"department_name\": \"检验科\", \"kind\": \"low_coverage\", \"priority\": \"medium\", \"summary\": \"覆盖基线 6.6826 天，低于本地7天关注阈值；需补查供应信息\", \"source_rows\": [\"SIM-HA-SIM-P011\", \"LOT-SIM-HA-SIM-P011-1\", \"LOT-SIM-HA-SIM-P011-2\", \"LOT-SIM-HA-SIM-P011-3\", \"USE-SIM-HA-SIM-P011-2026-09-13\", \"USE-SIM-HA-SIM-P011-2026-09-14\", \"USE-SIM-HA-SIM-P011-2026-09-15\", \"USE-SIM-HA-SIM-P011-2026-09-16\", \"USE-SIM-HA-SIM-P011-2026-09-17\", \"USE-SIM-HA-SIM-P011-2026-09-18\", \"USE-SIM-HA-SIM-P011-2026-09-19\", \"USE-SIM-HA-SIM-P011-2026-09-20\", \"USE-SIM-HA-SIM-P011-2026-09-21\", \"USE-SIM-HA-SIM-P011-2026-09-22\", \"USE-SIM-HA-SIM-P011-2026-09-23\", \"USE-SIM-HA-SIM-P011-2026-09-24\", \"USE-SIM-HA-SIM-P011-2026-09-25\", \"USE-SIM-HA-SIM-P011-2026-09-26\"]}]}",
+            "hash": "a07e3bfe718a5a685ca3383eaf90976adb66c396ece956ba40b41ef6f8fd8c2a",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": {
+              "risks": {
+                "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+                "as_of": "2026-09-27T09:00:00+08:00",
+                "ruleset_version": "m2-screening-1",
+                "scanned_positions": 24,
+                "skipped_estimates": 3,
+                "estimate_gap_counts": {
+                  "data_quality": 2,
+                  "zero_consumption": 1
+                },
+                "thresholds": {
+                  "coverage_days": 7,
+                  "expiry_days": 30
+                },
+                "findings": [
+                  {
+                    "id": "4ae21f93683517c3d49715d0811f3fae7a12ba96c95fb7373651a2a9414d2580",
+                    "item_id": "SIM-P004",
+                    "department_id": "SIM-HA-LAB",
+                    "name": "检验质控材料",
+                    "department_name": "检验科",
+                    "kind": "expiry",
+                    "priority": "high",
+                    "summary": "1 个在库批次到期或30天内到期，其中已过期 1 个；按批次核实",
+                    "source_rows": [
+                      "LOT-SIM-HA-SIM-P004-1"
+                    ]
+                  },
+                  {
+                    "id": "643ed4c4e5969d6ffe20109d192d9a0748436da48675fb5b607a9d35d20439e3",
+                    "item_id": "SIM-P006",
+                    "department_id": "SIM-HA-LAB",
+                    "name": "反应杯",
+                    "department_name": "检验科",
+                    "kind": "quality",
+                    "priority": "high",
+                    "summary": "14日消耗缺日；暂停覆盖估算",
+                    "source_rows": [
+                      "SIM-HA-SIM-P006",
+                      "LOT-SIM-HA-SIM-P006-1",
+                      "LOT-SIM-HA-SIM-P006-2",
+                      "LOT-SIM-HA-SIM-P006-3",
+                      "USE-SIM-HA-SIM-P006-2026-09-13",
+                      "USE-SIM-HA-SIM-P006-2026-09-14",
+                      "USE-SIM-HA-SIM-P006-2026-09-15",
+                      "USE-SIM-HA-SIM-P006-2026-09-16",
+                      "USE-SIM-HA-SIM-P006-2026-09-17",
+                      "USE-SIM-HA-SIM-P006-2026-09-18",
+                      "USE-SIM-HA-SIM-P006-2026-09-19",
+                      "USE-SIM-HA-SIM-P006-2026-09-20",
+                      "USE-SIM-HA-SIM-P006-2026-09-21",
+                      "USE-SIM-HA-SIM-P006-2026-09-23",
+                      "USE-SIM-HA-SIM-P006-2026-09-25",
+                      "USE-SIM-HA-SIM-P006-2026-09-26"
+                    ]
+                  },
+                  {
+                    "id": "79377318ab23ba9cce4a5c98a9b2b03e719a485dba06d1e027f51b04fe0d909a",
+                    "item_id": "SIM-P007",
+                    "department_id": "SIM-HA-LAB",
+                    "name": "采样管",
+                    "department_name": "检验科",
+                    "kind": "quality",
+                    "priority": "high",
+                    "summary": "库存记录超过24小时；暂停覆盖估算",
+                    "source_rows": [
+                      "SIM-HA-SIM-P007",
+                      "LOT-SIM-HA-SIM-P007-1",
+                      "LOT-SIM-HA-SIM-P007-2",
+                      "LOT-SIM-HA-SIM-P007-3",
+                      "USE-SIM-HA-SIM-P007-2026-09-13",
+                      "USE-SIM-HA-SIM-P007-2026-09-14",
+                      "USE-SIM-HA-SIM-P007-2026-09-15",
+                      "USE-SIM-HA-SIM-P007-2026-09-16",
+                      "USE-SIM-HA-SIM-P007-2026-09-17",
+                      "USE-SIM-HA-SIM-P007-2026-09-18",
+                      "USE-SIM-HA-SIM-P007-2026-09-19",
+                      "USE-SIM-HA-SIM-P007-2026-09-20",
+                      "USE-SIM-HA-SIM-P007-2026-09-21",
+                      "USE-SIM-HA-SIM-P007-2026-09-22",
+                      "USE-SIM-HA-SIM-P007-2026-09-23",
+                      "USE-SIM-HA-SIM-P007-2026-09-24",
+                      "USE-SIM-HA-SIM-P007-2026-09-25",
+                      "USE-SIM-HA-SIM-P007-2026-09-26"
+                    ]
+                  },
+                  {
+                    "id": "409001a187ea8c017bd3372e684fe69cda25243449d0f2d2825edc45116ea8ec",
+                    "item_id": "SIM-P001",
+                    "department_id": "SIM-HA-LAB",
+                    "name": "生化清洗液",
+                    "department_name": "检验科",
+                    "kind": "low_coverage",
+                    "priority": "medium",
+                    "summary": "覆盖基线 6.0000 天，低于本地7天关注阈值；需补查供应信息",
+                    "source_rows": [
+                      "SIM-HA-SIM-P001",
+                      "LOT-SIM-HA-SIM-P001-1",
+                      "LOT-SIM-HA-SIM-P001-2",
+                      "LOT-SIM-HA-SIM-P001-3",
+                      "USE-SIM-HA-SIM-P001-2026-09-13",
+                      "USE-SIM-HA-SIM-P001-2026-09-14",
+                      "USE-SIM-HA-SIM-P001-2026-09-15",
+                      "USE-SIM-HA-SIM-P001-2026-09-16",
+                      "USE-SIM-HA-SIM-P001-2026-09-17",
+                      "USE-SIM-HA-SIM-P001-2026-09-18",
+                      "USE-SIM-HA-SIM-P001-2026-09-19",
+                      "USE-SIM-HA-SIM-P001-2026-09-20",
+                      "USE-SIM-HA-SIM-P001-2026-09-21",
+                      "USE-SIM-HA-SIM-P001-2026-09-22",
+                      "USE-SIM-HA-SIM-P001-2026-09-23",
+                      "USE-SIM-HA-SIM-P001-2026-09-24",
+                      "USE-SIM-HA-SIM-P001-2026-09-25",
+                      "USE-SIM-HA-SIM-P001-2026-09-26"
+                    ]
+                  },
+                  {
+                    "id": "40523e6aafedef5bb22213fb41995f8d9f8386ebfdeeb2ca968941419529d72c",
+                    "item_id": "SIM-P002",
+                    "department_id": "SIM-HA-LAB",
+                    "name": "样本稀释液",
+                    "department_name": "检验科",
+                    "kind": "low_coverage",
+                    "priority": "medium",
+                    "summary": "覆盖基线 5.0000 天，低于本地7天关注阈值；需补查供应信息",
+                    "source_rows": [
+                      "SIM-HA-SIM-P002",
+                      "LOT-SIM-HA-SIM-P002-1",
+                      "LOT-SIM-HA-SIM-P002-2",
+                      "LOT-SIM-HA-SIM-P002-3",
+                      "USE-SIM-HA-SIM-P002-2026-09-13",
+                      "USE-SIM-HA-SIM-P002-2026-09-14",
+                      "USE-SIM-HA-SIM-P002-2026-09-15",
+                      "USE-SIM-HA-SIM-P002-2026-09-16",
+                      "USE-SIM-HA-SIM-P002-2026-09-17",
+                      "USE-SIM-HA-SIM-P002-2026-09-18",
+                      "USE-SIM-HA-SIM-P002-2026-09-19",
+                      "USE-SIM-HA-SIM-P002-2026-09-20",
+                      "USE-SIM-HA-SIM-P002-2026-09-21",
+                      "USE-SIM-HA-SIM-P002-2026-09-22",
+                      "USE-SIM-HA-SIM-P002-2026-09-23",
+                      "USE-SIM-HA-SIM-P002-2026-09-24",
+                      "USE-SIM-HA-SIM-P002-2026-09-25",
+                      "USE-SIM-HA-SIM-P002-2026-09-26"
+                    ]
+                  },
+                  {
+                    "id": "6ba2fdb3a01aa01ce7f80d5be1634df4eb485601ef481902748cd7ea15e67bfb",
+                    "item_id": "SIM-P003",
+                    "department_id": "SIM-HA-LAB",
+                    "name": "尿液分析试纸",
+                    "department_name": "检验科",
+                    "kind": "expiry",
+                    "priority": "medium",
+                    "summary": "1 个在库批次到期或30天内到期，其中已过期 0 个；按批次核实",
+                    "source_rows": [
+                      "LOT-SIM-HA-SIM-P003-1"
+                    ]
+                  },
+                  {
+                    "id": "ef8e378c9e92a32d8219e38d8611f07b4572c036e012d0695e2b2483b40080bd",
+                    "item_id": "SIM-P010",
+                    "department_id": "SIM-HA-LAB",
+                    "name": "样本杯",
+                    "department_name": "检验科",
+                    "kind": "low_coverage",
+                    "priority": "medium",
+                    "summary": "覆盖基线 0.3606 天，低于本地7天关注阈值；需补查供应信息",
+                    "source_rows": [
+                      "SIM-HA-SIM-P010",
+                      "LOT-SIM-HA-SIM-P010-1",
+                      "LOT-SIM-HA-SIM-P010-2",
+                      "LOT-SIM-HA-SIM-P010-3",
+                      "USE-SIM-HA-SIM-P010-2026-09-13",
+                      "USE-SIM-HA-SIM-P010-2026-09-14",
+                      "USE-SIM-HA-SIM-P010-2026-09-15",
+                      "USE-SIM-HA-SIM-P010-2026-09-16",
+                      "USE-SIM-HA-SIM-P010-2026-09-17",
+                      "USE-SIM-HA-SIM-P010-2026-09-18",
+                      "USE-SIM-HA-SIM-P010-2026-09-19",
+                      "USE-SIM-HA-SIM-P010-2026-09-20",
+                      "USE-SIM-HA-SIM-P010-2026-09-21",
+                      "USE-SIM-HA-SIM-P010-2026-09-22",
+                      "USE-SIM-HA-SIM-P010-2026-09-23",
+                      "USE-SIM-HA-SIM-P010-2026-09-24",
+                      "USE-SIM-HA-SIM-P010-2026-09-25",
+                      "USE-SIM-HA-SIM-P010-2026-09-26"
+                    ]
+                  },
+                  {
+                    "id": "8194f1621440b4e282d6476c3c64182b6d73e8ec5fa974055bc12213db93694c",
+                    "item_id": "SIM-P011",
+                    "department_id": "SIM-HA-LAB",
+                    "name": "一次性吸头",
+                    "department_name": "检验科",
+                    "kind": "low_coverage",
+                    "priority": "medium",
+                    "summary": "覆盖基线 6.6826 天，低于本地7天关注阈值；需补查供应信息",
+                    "source_rows": [
+                      "SIM-HA-SIM-P011",
+                      "LOT-SIM-HA-SIM-P011-1",
+                      "LOT-SIM-HA-SIM-P011-2",
+                      "LOT-SIM-HA-SIM-P011-3",
+                      "USE-SIM-HA-SIM-P011-2026-09-13",
+                      "USE-SIM-HA-SIM-P011-2026-09-14",
+                      "USE-SIM-HA-SIM-P011-2026-09-15",
+                      "USE-SIM-HA-SIM-P011-2026-09-16",
+                      "USE-SIM-HA-SIM-P011-2026-09-17",
+                      "USE-SIM-HA-SIM-P011-2026-09-18",
+                      "USE-SIM-HA-SIM-P011-2026-09-19",
+                      "USE-SIM-HA-SIM-P011-2026-09-20",
+                      "USE-SIM-HA-SIM-P011-2026-09-21",
+                      "USE-SIM-HA-SIM-P011-2026-09-22",
+                      "USE-SIM-HA-SIM-P011-2026-09-23",
+                      "USE-SIM-HA-SIM-P011-2026-09-24",
+                      "USE-SIM-HA-SIM-P011-2026-09-25",
+                      "USE-SIM-HA-SIM-P011-2026-09-26"
+                    ]
+                  }
+                ]
+              },
+              "source_hash": "a0f847b4102b32c9b0417d4aee928d779d5d6883ef2eba9f869c96ab43e1d91b"
+            },
+            "currently_valid": true
+          }
+        ],
+        "inventory": [],
+        "warnings": [
+          "覆盖天数为库存基线，未计入逐日在途与效期变化。"
+        ],
+        "provider_metadata": {
+          "calls": [
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 3317,
+                "completion_tokens": 68,
+                "total_tokens": 3385,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "prompt_cache_hit_tokens": 0,
+                "prompt_cache_miss_tokens": 3317
+              },
+              "input_chars": 8885,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 4442,
+                "completion_tokens": 436,
+                "total_tokens": 4878,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3200
+                },
+                "prompt_cache_hit_tokens": 3200,
+                "prompt_cache_miss_tokens": 1242
+              },
+              "input_chars": 12114,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 4663,
+                "completion_tokens": 510,
+                "total_tokens": 5173,
+                "prompt_tokens_details": {
+                  "cached_tokens": 640
+                },
+                "prompt_cache_hit_tokens": 640,
+                "prompt_cache_miss_tokens": 4023
+              },
+              "input_chars": 12820,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            }
+          ],
+          "cost": null
+        },
+        "risk_summary": {
+          "scanned_positions": 24,
+          "skipped_estimates": 3,
+          "data_quality": 2,
+          "zero_consumption": 1,
+          "findings": 8
+        }
+      },
+      "draft": null
+    },
+    {
+      "case": "missing",
+      "run_id": "47469564-5fcb-4332-8aef-0c1e0d460ddb",
+      "question": "反应杯近14日消耗缺了哪两天？能否按零补齐或用12天平均估算覆盖？请查事实和制度，简洁回答。",
+      "status": "succeeded",
+      "error": null,
+      "elapsed_seconds": 5.12,
+      "tokens_recorded": 11034,
+      "usage_complete": true,
+      "calls": [
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2098,
+            "completion_tokens": 120,
+            "total_tokens": 2218,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 306
+          },
+          "input_chars": 5034,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4064,
+            "completion_tokens": 363,
+            "total_tokens": 4427,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 2272
+          },
+          "input_chars": 10459,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4107,
+            "completion_tokens": 282,
+            "total_tokens": 4389,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 3467
+          },
+          "input_chars": 10764,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "tool_steps": [
+        "get_consumption",
+        "search_knowledge"
+      ],
+      "final_validations": 1,
+      "analysis": {
+        "analysis_id": "3b2044ca-a448-4caf-a165-31ab4ded05da",
+        "run_id": "47469564-5fcb-4332-8aef-0c1e0d460ddb",
+        "project_id": "8bb3a4e1-a064-4941-b67b-2f5464b93999",
+        "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+        "as_of": "2026-09-27T09:00:00+08:00",
+        "ruleset_version": "m1-decimal-1",
+        "knowledge_release_id": [
+          "08a6a424-6e2b-4903-9391-3b0c9604018d",
+          "376e2273-5393-4802-aa5f-aaf2a1113005",
+          "639c8b98-c346-4b77-be14-841a5b00d7af",
+          "72ef790c-063f-44f6-8506-a56fa2a45b13"
+        ],
+        "model_release_id": "deepseek-flash",
+        "generation_mode": "model",
+        "retrieval_mode": "lexical",
+        "answer": "反应杯（MAT-0006，检验科）近14日窗口中缺失的是9月22日和9月24日，仅有12天记录；工具未给出日均消耗与覆盖天数。\n\n按现行流程要求：缺行不能当作零，也不能用12天平均替算14天口径，日均与覆盖天数须暂停；只有确认真实为零消耗时，才需要有明确零记录，且零消耗下覆盖天数也不能除以零估算。因此按零补齐或用12天平均估算覆盖均不被允许。\n\n建议：由驻点专员核实检验科这两天的实际领用；由数据维护人员按有来源的记录补齐、项目经理复核后发布新快照后再计算；同时核对这两天的上传批次、业务日期及冲正记录。",
+        "insufficient_evidence": false,
+        "citations": [
+          {
+            "evidence_id": "445a9050-98c0-4db7-9bcf-6923b8c29c20",
+            "source_kind": "tool",
+            "source_version": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+            "title": "14日消耗明细",
+            "location": {
+              "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+              "source_rows": [
+                "SIM-HA-SIM-P006",
+                "LOT-SIM-HA-SIM-P006-1",
+                "LOT-SIM-HA-SIM-P006-2",
+                "LOT-SIM-HA-SIM-P006-3",
+                "USE-SIM-HA-SIM-P006-2026-09-13",
+                "USE-SIM-HA-SIM-P006-2026-09-14",
+                "USE-SIM-HA-SIM-P006-2026-09-15",
+                "USE-SIM-HA-SIM-P006-2026-09-16",
+                "USE-SIM-HA-SIM-P006-2026-09-17",
+                "USE-SIM-HA-SIM-P006-2026-09-18",
+                "USE-SIM-HA-SIM-P006-2026-09-19",
+                "USE-SIM-HA-SIM-P006-2026-09-20",
+                "USE-SIM-HA-SIM-P006-2026-09-21",
+                "USE-SIM-HA-SIM-P006-2026-09-23",
+                "USE-SIM-HA-SIM-P006-2026-09-25",
+                "USE-SIM-HA-SIM-P006-2026-09-26"
+              ]
+            },
+            "excerpt": "[{\"item_id\": \"SIM-P006\", \"department_id\": \"SIM-HA-LAB\", \"unit\": \"只\", \"days\": [{\"date\": \"2026-09-13\", \"quantity\": \"111\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-13\"]}, {\"date\": \"2026-09-14\", \"quantity\": \"161\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-14\"]}, {\"date\": \"2026-09-15\", \"quantity\": \"173\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-15\"]}, {\"date\": \"2026-09-16\", \"quantity\": \"126\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-16\"]}, {\"date\": \"2026-09-17\", \"quantity\": \"151\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-17\"]}, {\"date\": \"2026-09-18\", \"quantity\": \"143\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-18\"]}, {\"date\": \"2026-09-19\", \"quantity\": \"127\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-19\"]}, {\"date\": \"2026-09-20\", \"quantity\": \"124\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-20\"]}, {\"date\": \"2026-09-21\", \"quantity\": \"127\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-21\"]}, {\"date\": \"2026-09-22\", \"quantity\": null, \"status\": \"missing\", \"source_rows\": []}, {\"date\": \"2026-09-23\", \"quantity\": \"131\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-23\"]}, {\"date\": \"2026-09-24\", \"quantity\": null, \"status\": \"missing\", \"source_rows\": []}, {\"date\": \"2026-09-25\", \"quantity\": \"161\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-25\"]}, {\"date\": \"2026-09-26\", \"quantity\": \"100\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-26\"]}], \"observed_days\": 12, \"daily_average\": null, \"quality_issues\": [\"MISSING_CONSUMPTION_DAYS\"]}]",
+            "hash": "1c8634c47bcaeefd9d02bef6b884a599e644c96d9d84aebd8ce31fc332936401",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": {
+              "consumption": [
+                {
+                  "item_id": "SIM-P006",
+                  "department_id": "SIM-HA-LAB",
+                  "unit": "只",
+                  "days": [
+                    {
+                      "date": "2026-09-13",
+                      "quantity": "111",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-13"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-14",
+                      "quantity": "161",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-14"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-15",
+                      "quantity": "173",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-15"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-16",
+                      "quantity": "126",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-16"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "quantity": "151",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-17"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-18",
+                      "quantity": "143",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-18"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-19",
+                      "quantity": "127",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-19"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-20",
+                      "quantity": "124",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-20"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-21",
+                      "quantity": "127",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-21"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-22",
+                      "quantity": null,
+                      "status": "missing",
+                      "source_rows": []
+                    },
+                    {
+                      "date": "2026-09-23",
+                      "quantity": "131",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-23"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-24",
+                      "quantity": null,
+                      "status": "missing",
+                      "source_rows": []
+                    },
+                    {
+                      "date": "2026-09-25",
+                      "quantity": "161",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-25"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-26",
+                      "quantity": "100",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-26"
+                      ]
+                    }
+                  ],
+                  "observed_days": 12,
+                  "daily_average": null,
+                  "quality_issues": [
+                    "MISSING_CONSUMPTION_DAYS"
+                  ]
+                }
+              ],
+              "source_hash": "a0f847b4102b32c9b0417d4aee928d779d5d6883ef2eba9f869c96ab43e1d91b"
+            },
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "aafb6a06-f1a6-4f5a-af91-e49ff3135f96",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "消耗缺日与零消耗核验流程",
+            "location": {
+              "document_id": "376e2273-5393-4802-aa5f-aaf2a1113005",
+              "document_external_id": "OPS-KB-MISSING-v1",
+              "chunk_id": "1cb7072c-9be0-4d6b-8d85-49e2fbd9bb65",
+              "chapter": "缺两天记录",
+              "start_offset": 25,
+              "end_offset": 119,
+              "source_path": "knowledge/enterprise-kb-20260927-1/MISSING.md"
+            },
+            "excerpt": "近14个完整自然日内少两天领用或消耗记录，只能说明有12天记录，不得把缺失两天当作零，也不得按12天平均代替规定的14天口径。暂停日均消耗和覆盖天数，先核对上传批次、业务日期及冲正记录。\n",
+            "hash": "6815782c1fba952a0fede0098a0e6f47ccc24c399c7b7293ef42de28f0cd029d",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "4a7cb7bc-cf82-43ab-be24-a90a92cb3a58",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "消耗缺日与零消耗核验流程",
+            "location": {
+              "document_id": "376e2273-5393-4802-aa5f-aaf2a1113005",
+              "document_external_id": "OPS-KB-MISSING-v1",
+              "chunk_id": "03f0d5a7-a802-4f77-9d23-53378c433b38",
+              "chapter": "谁来补录",
+              "start_offset": 128,
+              "end_offset": 204,
+              "source_path": "knowledge/enterprise-kb-20260927-1/MISSING.md"
+            },
+            "excerpt": "驻点专员核实科室实际领用，数据维护人员补齐有来源的记录，项目经理复核后发布新快照。无消耗必须有明确零记录；确认为零消耗时覆盖天数仍不可通过除以零估计。\n",
+            "hash": "6815782c1fba952a0fede0098a0e6f47ccc24c399c7b7293ef42de28f0cd029d",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "004ea34e-65fd-44c3-870b-5ab936819fbd",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "反应杯消耗缺日核查案例",
+            "location": {
+              "document_id": "08a6a424-6e2b-4903-9391-3b0c9604018d",
+              "document_external_id": "OPS-KB-CASE-MISSING-v1",
+              "chunk_id": "3b28c233-6856-4327-a2ef-806af5416c2a",
+              "chapter": "场景记录",
+              "start_offset": 23,
+              "end_offset": 125,
+              "source_path": "knowledge/enterprise-kb-20260927-1/CASE-MISSING.md"
+            },
+            "excerpt": "适用澄川医院，相关物资：反应杯 MAT-0006。核查基准2026-09-27的近14日窗口中仅12天记录。缺行不能当零，日均与覆盖天数暂停；驻点专员核实科室领用，数据维护人员补齐有据记录后发布新快照。\n",
+            "hash": "f1a8d823ac705e1dbdaf2987013df6727a53f8a7c004076fb945d2ba86376338",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          }
+        ],
+        "inventory": [],
+        "warnings": [
+          "覆盖天数为库存基线，未计入逐日在途与效期变化。"
+        ],
+        "provider_metadata": {
+          "calls": [
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2098,
+                "completion_tokens": 120,
+                "total_tokens": 2218,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1792
+                },
+                "prompt_cache_hit_tokens": 1792,
+                "prompt_cache_miss_tokens": 306
+              },
+              "input_chars": 5034,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 4064,
+                "completion_tokens": 363,
+                "total_tokens": 4427,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1792
+                },
+                "prompt_cache_hit_tokens": 1792,
+                "prompt_cache_miss_tokens": 2272
+              },
+              "input_chars": 10459,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 4107,
+                "completion_tokens": 282,
+                "total_tokens": 4389,
+                "prompt_tokens_details": {
+                  "cached_tokens": 640
+                },
+                "prompt_cache_hit_tokens": 640,
+                "prompt_cache_miss_tokens": 3467
+              },
+              "input_chars": 10764,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            }
+          ],
+          "cost": null
+        },
+        "risk_summary": null
+      },
+      "draft": null
+    },
+    {
+      "case": "zero",
+      "run_id": "1af3f6d2-760e-4e65-b282-daa0e3bab0dd",
+      "question": "低频检测耗材消耗记录是否完整？零消耗是否意味着数据缺失？为什么不能给出覆盖天数？",
+      "status": "succeeded",
+      "error": null,
+      "elapsed_seconds": 5.52,
+      "tokens_recorded": 8753,
+      "usage_complete": true,
+      "calls": [
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2091,
+            "completion_tokens": 138,
+            "total_tokens": 2229,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 299
+          },
+          "input_chars": 5031,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2888,
+            "completion_tokens": 325,
+            "total_tokens": 3213,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 1096
+          },
+          "input_chars": 7796,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2998,
+            "completion_tokens": 313,
+            "total_tokens": 3311,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 2358
+          },
+          "input_chars": 8347,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "tool_steps": [
+        "get_consumption",
+        "compute_risks"
+      ],
+      "final_validations": 1,
+      "analysis": {
+        "analysis_id": "4de8f5be-f2b9-4dc6-b57b-9c27257eee89",
+        "run_id": "1af3f6d2-760e-4e65-b282-daa0e3bab0dd",
+        "project_id": "8bb3a4e1-a064-4941-b67b-2f5464b93999",
+        "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+        "as_of": "2026-09-27T09:00:00+08:00",
+        "ruleset_version": "m2-screening-1",
+        "knowledge_release_id": [],
+        "model_release_id": "deepseek-flash",
+        "generation_mode": "model",
+        "retrieval_mode": "lexical",
+        "answer": "消耗记录是完整的：低频检测耗材（检验科）在快照截至2026-09-27前的14天（09-13至09-26）每日均有记录且状态为已确认，无缺日，质量异常为空。零消耗不等于数据缺失——它只证明这14天快照内消耗量为0、日均消耗为0；是否存在应录未录、实际使用未登记，需以领用/使用记录核对后才能确认。不能给出覆盖天数，是因为日均消耗为0，按库存除以日均消耗无法计算；同时本轮风险筛查中该项被列为“零消耗无法估算”（扫描1个库位、跳过估算1个，原因归为零消耗，数据质量为0，无异常条目），即缺少可用的消耗速率依据，而非数据质量有问题。建议：核对对应期间的领用与使用登记，确认零记录是否属实；如确属长期无消耗，可按低频物资单独设定补货与效期关注口径。",
+        "insufficient_evidence": false,
+        "citations": [
+          {
+            "evidence_id": "813863c3-4e4f-4308-ace3-6ace8e1b1bb7",
+            "source_kind": "tool",
+            "source_version": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+            "title": "14日消耗明细",
+            "location": {
+              "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+              "source_rows": [
+                "SIM-HA-SIM-P005",
+                "LOT-SIM-HA-SIM-P005-1",
+                "LOT-SIM-HA-SIM-P005-2",
+                "LOT-SIM-HA-SIM-P005-3",
+                "USE-SIM-HA-SIM-P005-2026-09-13",
+                "USE-SIM-HA-SIM-P005-2026-09-14",
+                "USE-SIM-HA-SIM-P005-2026-09-15",
+                "USE-SIM-HA-SIM-P005-2026-09-16",
+                "USE-SIM-HA-SIM-P005-2026-09-17",
+                "USE-SIM-HA-SIM-P005-2026-09-18",
+                "USE-SIM-HA-SIM-P005-2026-09-19",
+                "USE-SIM-HA-SIM-P005-2026-09-20",
+                "USE-SIM-HA-SIM-P005-2026-09-21",
+                "USE-SIM-HA-SIM-P005-2026-09-22",
+                "USE-SIM-HA-SIM-P005-2026-09-23",
+                "USE-SIM-HA-SIM-P005-2026-09-24",
+                "USE-SIM-HA-SIM-P005-2026-09-25",
+                "USE-SIM-HA-SIM-P005-2026-09-26"
+              ]
+            },
+            "excerpt": "[{\"item_id\": \"SIM-P005\", \"department_id\": \"SIM-HA-LAB\", \"unit\": \"盒\", \"days\": [{\"date\": \"2026-09-13\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-13\"]}, {\"date\": \"2026-09-14\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-14\"]}, {\"date\": \"2026-09-15\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-15\"]}, {\"date\": \"2026-09-16\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-16\"]}, {\"date\": \"2026-09-17\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-17\"]}, {\"date\": \"2026-09-18\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-18\"]}, {\"date\": \"2026-09-19\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-19\"]}, {\"date\": \"2026-09-20\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-20\"]}, {\"date\": \"2026-09-21\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-21\"]}, {\"date\": \"2026-09-22\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-22\"]}, {\"date\": \"2026-09-23\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-23\"]}, {\"date\": \"2026-09-24\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-24\"]}, {\"date\": \"2026-09-25\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-25\"]}, {\"date\": \"2026-09-26\", \"quantity\": \"0\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P005-2026-09-26\"]}], \"observed_days\": 14, \"daily_average\": \"0.0000\", \"quality_issues\": []}]",
+            "hash": "e6d404ca326cc60ce7d797ebccc74bd22740c37a763ac8b163e109498ed72198",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": {
+              "consumption": [
+                {
+                  "item_id": "SIM-P005",
+                  "department_id": "SIM-HA-LAB",
+                  "unit": "盒",
+                  "days": [
+                    {
+                      "date": "2026-09-13",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-13"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-14",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-14"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-15",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-15"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-16",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-16"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-17"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-18",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-18"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-19",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-19"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-20",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-20"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-21",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-21"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-22",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-22"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-23",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-23"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-24",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-24"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-25",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-25"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-26",
+                      "quantity": "0",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P005-2026-09-26"
+                      ]
+                    }
+                  ],
+                  "observed_days": 14,
+                  "daily_average": "0.0000",
+                  "quality_issues": []
+                }
+              ],
+              "source_hash": "a0f847b4102b32c9b0417d4aee928d779d5d6883ef2eba9f869c96ab43e1d91b"
+            },
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "1430af15-5fb8-4192-8336-01b6abd4531e",
+            "source_kind": "tool",
+            "source_version": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+            "title": "授权范围异常扫描",
+            "location": {
+              "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+              "source_rows": [
+                "SIM-HA-SIM-P005",
+                "LOT-SIM-HA-SIM-P005-1",
+                "LOT-SIM-HA-SIM-P005-2",
+                "LOT-SIM-HA-SIM-P005-3",
+                "USE-SIM-HA-SIM-P005-2026-09-13",
+                "USE-SIM-HA-SIM-P005-2026-09-14",
+                "USE-SIM-HA-SIM-P005-2026-09-15",
+                "USE-SIM-HA-SIM-P005-2026-09-16",
+                "USE-SIM-HA-SIM-P005-2026-09-17",
+                "USE-SIM-HA-SIM-P005-2026-09-18",
+                "USE-SIM-HA-SIM-P005-2026-09-19",
+                "USE-SIM-HA-SIM-P005-2026-09-20",
+                "USE-SIM-HA-SIM-P005-2026-09-21",
+                "USE-SIM-HA-SIM-P005-2026-09-22",
+                "USE-SIM-HA-SIM-P005-2026-09-23",
+                "USE-SIM-HA-SIM-P005-2026-09-24",
+                "USE-SIM-HA-SIM-P005-2026-09-25",
+                "USE-SIM-HA-SIM-P005-2026-09-26"
+              ]
+            },
+            "excerpt": "{\"snapshot_set_id\": \"a984f211-f1f5-4028-9689-73ad1162d5ab\", \"as_of\": \"2026-09-27T09:00:00+08:00\", \"ruleset_version\": \"m2-screening-1\", \"scanned_positions\": 1, \"skipped_estimates\": 1, \"estimate_gap_counts\": {\"data_quality\": 0, \"zero_consumption\": 1}, \"thresholds\": {\"coverage_days\": 7, \"expiry_days\": 30}, \"findings\": []}",
+            "hash": "c2817e1621b6c0bab2e3f6079a0e4064560986997a12aaa0b71f64e2fc778a2a",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": {
+              "risks": {
+                "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+                "as_of": "2026-09-27T09:00:00+08:00",
+                "ruleset_version": "m2-screening-1",
+                "scanned_positions": 1,
+                "skipped_estimates": 1,
+                "estimate_gap_counts": {
+                  "data_quality": 0,
+                  "zero_consumption": 1
+                },
+                "thresholds": {
+                  "coverage_days": 7,
+                  "expiry_days": 30
+                },
+                "findings": []
+              },
+              "source_hash": "a0f847b4102b32c9b0417d4aee928d779d5d6883ef2eba9f869c96ab43e1d91b"
+            },
+            "currently_valid": true
+          }
+        ],
+        "inventory": [],
+        "warnings": [
+          "覆盖天数为库存基线，未计入逐日在途与效期变化。"
+        ],
+        "provider_metadata": {
+          "calls": [
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2091,
+                "completion_tokens": 138,
+                "total_tokens": 2229,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1792
+                },
+                "prompt_cache_hit_tokens": 1792,
+                "prompt_cache_miss_tokens": 299
+              },
+              "input_chars": 5031,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2888,
+                "completion_tokens": 325,
+                "total_tokens": 3213,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1792
+                },
+                "prompt_cache_hit_tokens": 1792,
+                "prompt_cache_miss_tokens": 1096
+              },
+              "input_chars": 7796,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2998,
+                "completion_tokens": 313,
+                "total_tokens": 3311,
+                "prompt_tokens_details": {
+                  "cached_tokens": 640
+                },
+                "prompt_cache_hit_tokens": 640,
+                "prompt_cache_miss_tokens": 2358
+              },
+              "input_chars": 8347,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            }
+          ],
+          "cost": null
+        },
+        "risk_summary": {
+          "scanned_positions": 1,
+          "skipped_estimates": 1,
+          "data_quality": 0,
+          "zero_consumption": 1,
+          "findings": 0
+        }
+      },
+      "draft": null
+    },
+    {
+      "case": "no-evidence",
+      "run_id": "f314bad2-26cb-48c3-9eaa-ed216f729899",
+      "question": "请检索量子宇宙星际飞船的技术制度，没有适用资料就明确不能回答，不要编造。",
+      "status": "succeeded",
+      "error": null,
+      "elapsed_seconds": 3.81,
+      "tokens_recorded": 8043,
+      "usage_complete": true,
+      "calls": [
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2089,
+            "completion_tokens": 45,
+            "total_tokens": 2134,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 297
+          },
+          "input_chars": 5026,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2866,
+            "completion_tokens": 157,
+            "total_tokens": 3023,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 1074
+          },
+          "input_chars": 7055,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2703,
+            "completion_tokens": 183,
+            "total_tokens": 2886,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 2063
+          },
+          "input_chars": 7049,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "tool_steps": [
+        "search_knowledge"
+      ],
+      "final_validations": 1,
+      "analysis": {
+        "analysis_id": "fe5b6a63-74f4-4f55-b426-57c4d5678c10",
+        "run_id": "f314bad2-26cb-48c3-9eaa-ed216f729899",
+        "project_id": "8bb3a4e1-a064-4941-b67b-2f5464b93999",
+        "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+        "as_of": "2026-09-27T09:00:00+08:00",
+        "ruleset_version": "m1-decimal-1",
+        "knowledge_release_id": [
+          "38302ccf-cbfa-4cb3-8886-eaab792f7954",
+          "72ef790c-063f-44f6-8506-a56fa2a45b13"
+        ],
+        "model_release_id": "deepseek-flash",
+        "generation_mode": "model",
+        "retrieval_mode": "lexical",
+        "answer": "无法回答该问题：当前项目制度库中未检索到“量子宇宙星际飞船”相关技术制度，命中的文档均为项目物资核查类规范（核查证据与制度版本使用规范、科室退回物资登记与复核要求），与所问主题无关，因此不给出任何制度结论，也不做推测。\n\n待确认：如需该主题的依据，请补充适用的制度文档；本项目授权范围为检验科物资（生化清洗液），若改为项目物资核查问题可另行检索。",
+        "insufficient_evidence": true,
+        "citations": [
+          {
+            "evidence_id": "69e54b60-82ac-4782-b435-688642e172c7",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "核查证据与制度版本使用规范",
+            "location": {
+              "document_id": "38302ccf-cbfa-4cb3-8886-eaab792f7954",
+              "document_external_id": "OPS-KB-EVIDENCE-v1",
+              "chunk_id": "a0671045-5dc1-45cc-9816-dfa7cfe1e6c6",
+              "chapter": "可用依据",
+              "start_offset": 25,
+              "end_offset": 94,
+              "source_path": "knowledge/enterprise-kb-20260927-1/EVIDENCE.md"
+            },
+            "excerpt": "仅使用当前项目有权访问、已生效且未停用的制度版本。引用记录文档名称、版本、章节、原文片段和源文件hash；库存引用保留快照时间与来源行。\n",
+            "hash": "25370f4caa9ea0df01a2193a5a3c178003b2d724f5de76d0f403c873014d00b3",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "5134607b-ecf4-427e-b008-2e1079f6c0a4",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "核查证据与制度版本使用规范",
+            "location": {
+              "document_id": "38302ccf-cbfa-4cb3-8886-eaab792f7954",
+              "document_external_id": "OPS-KB-EVIDENCE-v1",
+              "chunk_id": "f39a8cb2-dd6d-45e0-8247-a536ba6c7b0d",
+              "chapter": "无依据与冲突",
+              "start_offset": 105,
+              "end_offset": 189,
+              "source_path": "knowledge/enterprise-kb-20260927-1/EVIDENCE.md"
+            },
+            "excerpt": "没有检索到足够依据时明确写依据不足并列出需补充资料。两个版本生效区间重叠且口径冲突时暂停制度结论，交由知识维护人员确认。历史已失效引用仅供追溯，不能作为当前操作依据。\n",
+            "hash": "25370f4caa9ea0df01a2193a5a3c178003b2d724f5de76d0f403c873014d00b3",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          }
+        ],
+        "inventory": [],
+        "warnings": [
+          "覆盖天数为库存基线，未计入逐日在途与效期变化。"
+        ],
+        "provider_metadata": {
+          "calls": [
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2089,
+                "completion_tokens": 45,
+                "total_tokens": 2134,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1792
+                },
+                "prompt_cache_hit_tokens": 1792,
+                "prompt_cache_miss_tokens": 297
+              },
+              "input_chars": 5026,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2866,
+                "completion_tokens": 157,
+                "total_tokens": 3023,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1792
+                },
+                "prompt_cache_hit_tokens": 1792,
+                "prompt_cache_miss_tokens": 1074
+              },
+              "input_chars": 7055,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2703,
+                "completion_tokens": 183,
+                "total_tokens": 2886,
+                "prompt_tokens_details": {
+                  "cached_tokens": 640
+                },
+                "prompt_cache_hit_tokens": 640,
+                "prompt_cache_miss_tokens": 2063
+              },
+              "input_chars": 7049,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            }
+          ],
+          "cost": null
+        },
+        "risk_summary": null
+      },
+      "draft": null
+    },
+    {
+      "case": "follow-up",
+      "run_id": "2e14382a-629c-4db6-95a6-438838812fb6",
+      "question": "它具体缺哪两天？只回答日期、缺失状态和为何不能补零。",
+      "status": "succeeded",
+      "error": null,
+      "elapsed_seconds": 4.22,
+      "tokens_recorded": 11125,
+      "usage_complete": true,
+      "calls": [
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2308,
+            "completion_tokens": 111,
+            "total_tokens": 2419,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 388
+          },
+          "input_chars": 5483,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4266,
+            "completion_tokens": 154,
+            "total_tokens": 4420,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 2218
+          },
+          "input_chars": 10813,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4100,
+            "completion_tokens": 186,
+            "total_tokens": 4286,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 3332
+          },
+          "input_chars": 10777,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "tool_steps": [
+        "get_consumption",
+        "search_knowledge"
+      ],
+      "final_validations": 1,
+      "analysis": {
+        "analysis_id": "9be7b8f0-68cf-4db2-87a4-97ab130a9573",
+        "run_id": "2e14382a-629c-4db6-95a6-438838812fb6",
+        "project_id": "8bb3a4e1-a064-4941-b67b-2f5464b93999",
+        "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+        "as_of": "2026-09-27T09:00:00+08:00",
+        "ruleset_version": "m1-decimal-1",
+        "knowledge_release_id": [
+          "32d3c038-3ce9-4157-8d61-c1a953800160",
+          "376e2273-5393-4802-aa5f-aaf2a1113005",
+          "72ef790c-063f-44f6-8506-a56fa2a45b13",
+          "b23c7e36-82d5-4c01-be04-1bcaedb8a067"
+        ],
+        "model_release_id": "deepseek-flash",
+        "generation_mode": "model",
+        "retrieval_mode": "lexical",
+        "answer": "缺失日期为9月22日和9月24日，状态均为缺失（非零，也不是零消耗记录）。不能补零：缺行只说明现有记录覆盖12天，并不证明这两天实际无消耗；规则要求无消耗必须有明确零记录，缺行不能当作零，因此不能按零补齐，也不能用12天平均替代14天口径估算覆盖。",
+        "insufficient_evidence": false,
+        "citations": [
+          {
+            "evidence_id": "d40608c4-2238-4bfb-a4a2-0e84470aff88",
+            "source_kind": "tool",
+            "source_version": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+            "title": "14日消耗明细",
+            "location": {
+              "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+              "source_rows": [
+                "SIM-HA-SIM-P006",
+                "LOT-SIM-HA-SIM-P006-1",
+                "LOT-SIM-HA-SIM-P006-2",
+                "LOT-SIM-HA-SIM-P006-3",
+                "USE-SIM-HA-SIM-P006-2026-09-13",
+                "USE-SIM-HA-SIM-P006-2026-09-14",
+                "USE-SIM-HA-SIM-P006-2026-09-15",
+                "USE-SIM-HA-SIM-P006-2026-09-16",
+                "USE-SIM-HA-SIM-P006-2026-09-17",
+                "USE-SIM-HA-SIM-P006-2026-09-18",
+                "USE-SIM-HA-SIM-P006-2026-09-19",
+                "USE-SIM-HA-SIM-P006-2026-09-20",
+                "USE-SIM-HA-SIM-P006-2026-09-21",
+                "USE-SIM-HA-SIM-P006-2026-09-23",
+                "USE-SIM-HA-SIM-P006-2026-09-25",
+                "USE-SIM-HA-SIM-P006-2026-09-26"
+              ]
+            },
+            "excerpt": "[{\"item_id\": \"SIM-P006\", \"department_id\": \"SIM-HA-LAB\", \"unit\": \"只\", \"days\": [{\"date\": \"2026-09-13\", \"quantity\": \"111\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-13\"]}, {\"date\": \"2026-09-14\", \"quantity\": \"161\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-14\"]}, {\"date\": \"2026-09-15\", \"quantity\": \"173\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-15\"]}, {\"date\": \"2026-09-16\", \"quantity\": \"126\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-16\"]}, {\"date\": \"2026-09-17\", \"quantity\": \"151\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-17\"]}, {\"date\": \"2026-09-18\", \"quantity\": \"143\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-18\"]}, {\"date\": \"2026-09-19\", \"quantity\": \"127\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-19\"]}, {\"date\": \"2026-09-20\", \"quantity\": \"124\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-20\"]}, {\"date\": \"2026-09-21\", \"quantity\": \"127\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-21\"]}, {\"date\": \"2026-09-22\", \"quantity\": null, \"status\": \"missing\", \"source_rows\": []}, {\"date\": \"2026-09-23\", \"quantity\": \"131\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-23\"]}, {\"date\": \"2026-09-24\", \"quantity\": null, \"status\": \"missing\", \"source_rows\": []}, {\"date\": \"2026-09-25\", \"quantity\": \"161\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-25\"]}, {\"date\": \"2026-09-26\", \"quantity\": \"100\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-26\"]}], \"observed_days\": 12, \"daily_average\": null, \"quality_issues\": [\"MISSING_CONSUMPTION_DAYS\"]}]",
+            "hash": "1c8634c47bcaeefd9d02bef6b884a599e644c96d9d84aebd8ce31fc332936401",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": {
+              "consumption": [
+                {
+                  "item_id": "SIM-P006",
+                  "department_id": "SIM-HA-LAB",
+                  "unit": "只",
+                  "days": [
+                    {
+                      "date": "2026-09-13",
+                      "quantity": "111",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-13"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-14",
+                      "quantity": "161",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-14"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-15",
+                      "quantity": "173",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-15"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-16",
+                      "quantity": "126",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-16"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "quantity": "151",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-17"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-18",
+                      "quantity": "143",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-18"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-19",
+                      "quantity": "127",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-19"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-20",
+                      "quantity": "124",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-20"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-21",
+                      "quantity": "127",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-21"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-22",
+                      "quantity": null,
+                      "status": "missing",
+                      "source_rows": []
+                    },
+                    {
+                      "date": "2026-09-23",
+                      "quantity": "131",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-23"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-24",
+                      "quantity": null,
+                      "status": "missing",
+                      "source_rows": []
+                    },
+                    {
+                      "date": "2026-09-25",
+                      "quantity": "161",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-25"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-26",
+                      "quantity": "100",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-26"
+                      ]
+                    }
+                  ],
+                  "observed_days": 12,
+                  "daily_average": null,
+                  "quality_issues": [
+                    "MISSING_CONSUMPTION_DAYS"
+                  ]
+                }
+              ],
+              "source_hash": "a0f847b4102b32c9b0417d4aee928d779d5d6883ef2eba9f869c96ab43e1d91b"
+            },
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "b28257d1-38b6-4b7b-9d40-7d975d3b5282",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "消耗缺日与零消耗核验流程",
+            "location": {
+              "document_id": "376e2273-5393-4802-aa5f-aaf2a1113005",
+              "document_external_id": "OPS-KB-MISSING-v1",
+              "chunk_id": "1cb7072c-9be0-4d6b-8d85-49e2fbd9bb65",
+              "chapter": "缺两天记录",
+              "start_offset": 25,
+              "end_offset": 119,
+              "source_path": "knowledge/enterprise-kb-20260927-1/MISSING.md"
+            },
+            "excerpt": "近14个完整自然日内少两天领用或消耗记录，只能说明有12天记录，不得把缺失两天当作零，也不得按12天平均代替规定的14天口径。暂停日均消耗和覆盖天数，先核对上传批次、业务日期及冲正记录。\n",
+            "hash": "6815782c1fba952a0fede0098a0e6f47ccc24c399c7b7293ef42de28f0cd029d",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "88abf8d9-3c5f-454c-a1e5-0f4dee5130de",
+            "source_kind": "document",
+            "source_version": "2.0",
+            "title": "库存与消耗数据质量管理规范",
+            "location": {
+              "document_id": "32d3c038-3ce9-4157-8d61-c1a953800160",
+              "document_external_id": "OPS-SOP-DATA-v2",
+              "chunk_id": "b1500195-e59f-41ed-9c13-36b68e6d688a",
+              "chapter": "消耗记录完整性",
+              "start_offset": 130,
+              "end_offset": 203,
+              "source_path": "knowledge/OPS-SOP-DATA-v2.md"
+            },
+            "excerpt": "日均消耗取业务日之前 14 个完整自然日。无消耗必须有显式零记录，缺行不能当作零；少于 14 天、日期重复或冲正口径不明时，暂停日均与覆盖估计。\n",
+            "hash": "e9de41212c29ef81ebc6f7a153995261569c87fadb30d08832ffa432595f2c45",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          }
+        ],
+        "inventory": [],
+        "warnings": [
+          "覆盖天数为库存基线，未计入逐日在途与效期变化。"
+        ],
+        "provider_metadata": {
+          "calls": [
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2308,
+                "completion_tokens": 111,
+                "total_tokens": 2419,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1920
+                },
+                "prompt_cache_hit_tokens": 1920,
+                "prompt_cache_miss_tokens": 388
+              },
+              "input_chars": 5483,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 4266,
+                "completion_tokens": 154,
+                "total_tokens": 4420,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2048
+                },
+                "prompt_cache_hit_tokens": 2048,
+                "prompt_cache_miss_tokens": 2218
+              },
+              "input_chars": 10813,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 4100,
+                "completion_tokens": 186,
+                "total_tokens": 4286,
+                "prompt_tokens_details": {
+                  "cached_tokens": 768
+                },
+                "prompt_cache_hit_tokens": 768,
+                "prompt_cache_miss_tokens": 3332
+              },
+              "input_chars": 10777,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            }
+          ],
+          "cost": null
+        },
+        "risk_summary": null
+      },
+      "draft": null
+    },
+    {
+      "case": "draft",
+      "run_id": "31e1144d-30f2-43a0-8607-89d7ccafc2ac",
+      "question": "请重新核实依据，生成一份本人核查待办草稿，用3至5个清楚的步骤说明要核实什么，不执行采购或改库存。",
+      "status": "succeeded",
+      "error": null,
+      "elapsed_seconds": 5.79,
+      "tokens_recorded": 12303,
+      "usage_complete": true,
+      "calls": [
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2391,
+            "completion_tokens": 113,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 343
+          },
+          "input_chars": 5669,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4404,
+            "completion_tokens": 434,
+            "total_tokens": 4838,
+            "prompt_tokens_details": {
+              "cached_tokens": 2304
+            },
+            "prompt_cache_hit_tokens": 2304,
+            "prompt_cache_miss_tokens": 2100
+          },
+          "input_chars": 11093,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "prompt_release": "m21-quality-2",
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4519,
+            "completion_tokens": 442,
+            "total_tokens": 4961,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3623
+          },
+          "input_chars": 11551,
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "tool_steps": [
+        "get_consumption",
+        "search_knowledge"
+      ],
+      "final_validations": 1,
+      "analysis": {
+        "analysis_id": "0508bb2c-caa2-4a74-b6c1-964f98aba1dc",
+        "run_id": "31e1144d-30f2-43a0-8607-89d7ccafc2ac",
+        "project_id": "8bb3a4e1-a064-4941-b67b-2f5464b93999",
+        "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+        "as_of": "2026-09-27T09:00:00+08:00",
+        "ruleset_version": "m1-decimal-1",
+        "knowledge_release_id": [
+          "08a6a424-6e2b-4903-9391-3b0c9604018d",
+          "32d3c038-3ce9-4157-8d61-c1a953800160",
+          "376e2273-5393-4802-aa5f-aaf2a1113005",
+          "3d736979-2de3-4989-917d-b1028d266fbd",
+          "639c8b98-c346-4b77-be14-841a5b00d7af"
+        ],
+        "model_release_id": "deepseek-flash",
+        "generation_mode": "model",
+        "retrieval_mode": "lexical",
+        "answer": "已核实：反应杯（MAT-0006，检验科）以2026-09-27为基准的近14日窗口中，9月22日、9月24日为缺失状态（非零记录），实际仅12天有记录，日均与覆盖天数均已暂停。制度明确：缺行不能当作零，不得以12天平均代替14天口径；即使确认为零消耗，覆盖天数也不得除以零估算。两天缺失原因尚未查清，补齐需有来源依据并由相应环节复核发布新快照后才可恢复计算。本人核查待办见草稿，不涉及采购、改库存或报废。",
+        "insufficient_evidence": false,
+        "citations": [
+          {
+            "evidence_id": "eb782eff-69b4-474c-bbb1-fb2e316d24e3",
+            "source_kind": "tool",
+            "source_version": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+            "title": "14日消耗明细",
+            "location": {
+              "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+              "source_rows": [
+                "SIM-HA-SIM-P006",
+                "LOT-SIM-HA-SIM-P006-1",
+                "LOT-SIM-HA-SIM-P006-2",
+                "LOT-SIM-HA-SIM-P006-3",
+                "USE-SIM-HA-SIM-P006-2026-09-13",
+                "USE-SIM-HA-SIM-P006-2026-09-14",
+                "USE-SIM-HA-SIM-P006-2026-09-15",
+                "USE-SIM-HA-SIM-P006-2026-09-16",
+                "USE-SIM-HA-SIM-P006-2026-09-17",
+                "USE-SIM-HA-SIM-P006-2026-09-18",
+                "USE-SIM-HA-SIM-P006-2026-09-19",
+                "USE-SIM-HA-SIM-P006-2026-09-20",
+                "USE-SIM-HA-SIM-P006-2026-09-21",
+                "USE-SIM-HA-SIM-P006-2026-09-23",
+                "USE-SIM-HA-SIM-P006-2026-09-25",
+                "USE-SIM-HA-SIM-P006-2026-09-26"
+              ]
+            },
+            "excerpt": "[{\"item_id\": \"SIM-P006\", \"department_id\": \"SIM-HA-LAB\", \"unit\": \"只\", \"days\": [{\"date\": \"2026-09-13\", \"quantity\": \"111\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-13\"]}, {\"date\": \"2026-09-14\", \"quantity\": \"161\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-14\"]}, {\"date\": \"2026-09-15\", \"quantity\": \"173\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-15\"]}, {\"date\": \"2026-09-16\", \"quantity\": \"126\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-16\"]}, {\"date\": \"2026-09-17\", \"quantity\": \"151\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-17\"]}, {\"date\": \"2026-09-18\", \"quantity\": \"143\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-18\"]}, {\"date\": \"2026-09-19\", \"quantity\": \"127\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-19\"]}, {\"date\": \"2026-09-20\", \"quantity\": \"124\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-20\"]}, {\"date\": \"2026-09-21\", \"quantity\": \"127\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-21\"]}, {\"date\": \"2026-09-22\", \"quantity\": null, \"status\": \"missing\", \"source_rows\": []}, {\"date\": \"2026-09-23\", \"quantity\": \"131\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-23\"]}, {\"date\": \"2026-09-24\", \"quantity\": null, \"status\": \"missing\", \"source_rows\": []}, {\"date\": \"2026-09-25\", \"quantity\": \"161\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-25\"]}, {\"date\": \"2026-09-26\", \"quantity\": \"100\", \"status\": \"confirmed\", \"source_rows\": [\"USE-SIM-HA-SIM-P006-2026-09-26\"]}], \"observed_days\": 12, \"daily_average\": null, \"quality_issues\": [\"MISSING_CONSUMPTION_DAYS\"]}]",
+            "hash": "1c8634c47bcaeefd9d02bef6b884a599e644c96d9d84aebd8ce31fc332936401",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": {
+              "consumption": [
+                {
+                  "item_id": "SIM-P006",
+                  "department_id": "SIM-HA-LAB",
+                  "unit": "只",
+                  "days": [
+                    {
+                      "date": "2026-09-13",
+                      "quantity": "111",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-13"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-14",
+                      "quantity": "161",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-14"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-15",
+                      "quantity": "173",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-15"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-16",
+                      "quantity": "126",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-16"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-17",
+                      "quantity": "151",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-17"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-18",
+                      "quantity": "143",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-18"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-19",
+                      "quantity": "127",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-19"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-20",
+                      "quantity": "124",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-20"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-21",
+                      "quantity": "127",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-21"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-22",
+                      "quantity": null,
+                      "status": "missing",
+                      "source_rows": []
+                    },
+                    {
+                      "date": "2026-09-23",
+                      "quantity": "131",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-23"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-24",
+                      "quantity": null,
+                      "status": "missing",
+                      "source_rows": []
+                    },
+                    {
+                      "date": "2026-09-25",
+                      "quantity": "161",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-25"
+                      ]
+                    },
+                    {
+                      "date": "2026-09-26",
+                      "quantity": "100",
+                      "status": "confirmed",
+                      "source_rows": [
+                        "USE-SIM-HA-SIM-P006-2026-09-26"
+                      ]
+                    }
+                  ],
+                  "observed_days": 12,
+                  "daily_average": null,
+                  "quality_issues": [
+                    "MISSING_CONSUMPTION_DAYS"
+                  ]
+                }
+              ],
+              "source_hash": "a0f847b4102b32c9b0417d4aee928d779d5d6883ef2eba9f869c96ab43e1d91b"
+            },
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "e840c820-663f-4b8d-860a-c21f6b1c4a81",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "消耗缺日与零消耗核验流程",
+            "location": {
+              "document_id": "376e2273-5393-4802-aa5f-aaf2a1113005",
+              "document_external_id": "OPS-KB-MISSING-v1",
+              "chunk_id": "1cb7072c-9be0-4d6b-8d85-49e2fbd9bb65",
+              "chapter": "缺两天记录",
+              "start_offset": 25,
+              "end_offset": 119,
+              "source_path": "knowledge/enterprise-kb-20260927-1/MISSING.md"
+            },
+            "excerpt": "近14个完整自然日内少两天领用或消耗记录，只能说明有12天记录，不得把缺失两天当作零，也不得按12天平均代替规定的14天口径。暂停日均消耗和覆盖天数，先核对上传批次、业务日期及冲正记录。\n",
+            "hash": "6815782c1fba952a0fede0098a0e6f47ccc24c399c7b7293ef42de28f0cd029d",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "1cc79779-80f9-4ee7-8c75-fc4438b51fb7",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "消耗缺日与零消耗核验流程",
+            "location": {
+              "document_id": "376e2273-5393-4802-aa5f-aaf2a1113005",
+              "document_external_id": "OPS-KB-MISSING-v1",
+              "chunk_id": "03f0d5a7-a802-4f77-9d23-53378c433b38",
+              "chapter": "谁来补录",
+              "start_offset": 128,
+              "end_offset": 204,
+              "source_path": "knowledge/enterprise-kb-20260927-1/MISSING.md"
+            },
+            "excerpt": "驻点专员核实科室实际领用，数据维护人员补齐有来源的记录，项目经理复核后发布新快照。无消耗必须有明确零记录；确认为零消耗时覆盖天数仍不可通过除以零估计。\n",
+            "hash": "6815782c1fba952a0fede0098a0e6f47ccc24c399c7b7293ef42de28f0cd029d",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "f8ba4bf4-5818-4f94-8d0e-20596d12488b",
+            "source_kind": "document",
+            "source_version": "2.0",
+            "title": "库存与消耗数据质量管理规范",
+            "location": {
+              "document_id": "32d3c038-3ce9-4157-8d61-c1a953800160",
+              "document_external_id": "OPS-SOP-DATA-v2",
+              "chunk_id": "b1500195-e59f-41ed-9c13-36b68e6d688a",
+              "chapter": "消耗记录完整性",
+              "start_offset": 130,
+              "end_offset": 203,
+              "source_path": "knowledge/OPS-SOP-DATA-v2.md"
+            },
+            "excerpt": "日均消耗取业务日之前 14 个完整自然日。无消耗必须有显式零记录，缺行不能当作零；少于 14 天、日期重复或冲正口径不明时，暂停日均与覆盖估计。\n",
+            "hash": "e9de41212c29ef81ebc6f7a153995261569c87fadb30d08832ffa432595f2c45",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          },
+          {
+            "evidence_id": "1f0a1960-428c-4939-a47b-56329816638b",
+            "source_kind": "document",
+            "source_version": "1.0",
+            "title": "反应杯消耗缺日核查案例",
+            "location": {
+              "document_id": "08a6a424-6e2b-4903-9391-3b0c9604018d",
+              "document_external_id": "OPS-KB-CASE-MISSING-v1",
+              "chunk_id": "3b28c233-6856-4327-a2ef-806af5416c2a",
+              "chapter": "场景记录",
+              "start_offset": 23,
+              "end_offset": 125,
+              "source_path": "knowledge/enterprise-kb-20260927-1/CASE-MISSING.md"
+            },
+            "excerpt": "适用澄川医院，相关物资：反应杯 MAT-0006。核查基准2026-09-27的近14日窗口中仅12天记录。缺行不能当零，日均与覆盖天数暂停；驻点专员核实科室领用，数据维护人员补齐有据记录后发布新快照。\n",
+            "hash": "f1a8d823ac705e1dbdaf2987013df6727a53f8a7c004076fb945d2ba86376338",
+            "as_of": "2026-09-27T09:00:00+08:00",
+            "synthetic": true,
+            "facts": null,
+            "currently_valid": true
+          }
+        ],
+        "inventory": [],
+        "warnings": [
+          "覆盖天数为库存基线，未计入逐日在途与效期变化。"
+        ],
+        "provider_metadata": {
+          "calls": [
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 2391,
+                "completion_tokens": 113,
+                "total_tokens": 2504,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2048
+                },
+                "prompt_cache_hit_tokens": 2048,
+                "prompt_cache_miss_tokens": 343
+              },
+              "input_chars": 5669,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 4404,
+                "completion_tokens": 434,
+                "total_tokens": 4838,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2304
+                },
+                "prompt_cache_hit_tokens": 2304,
+                "prompt_cache_miss_tokens": 2100
+              },
+              "input_chars": 11093,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            },
+            {
+              "prompt_release": "m21-quality-2",
+              "requested_model": "deepseek-flash",
+              "response_model": "deepseek-flash",
+              "usage": {
+                "prompt_tokens": 4519,
+                "completion_tokens": 442,
+                "total_tokens": 4961,
+                "prompt_tokens_details": {
+                  "cached_tokens": 896
+                },
+                "prompt_cache_hit_tokens": 896,
+                "prompt_cache_miss_tokens": 3623
+              },
+              "input_chars": 11551,
+              "cost": null,
+              "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+            }
+          ],
+          "cost": null
+        },
+        "risk_summary": null
+      },
+      "draft": {
+        "id": "bd944c09-de84-4d1f-83b6-b1d21383cb55",
+        "run_id": "31e1144d-30f2-43a0-8607-89d7ccafc2ac",
+        "analysis_id": "0508bb2c-caa2-4a74-b6c1-964f98aba1dc",
+        "snapshot_set_id": "a984f211-f1f5-4028-9689-73ad1162d5ab",
+        "title": "反应杯消耗缺日核查（检验科）",
+        "steps": [
+          "核实检验科反应杯（MAT-0006）9月22日、9月24日是否确无领用消耗，还是记录漏报，不得默认按零处理。",
+          "核对这两天的上传批次、业务日期与冲正记录，判断是否存在口径不明或重复，暂不据此推算日均与覆盖。",
+          "若确认为零消耗，确认是否有明确零记录；即便为零消耗，也不推算覆盖天数。",
+          "对查实有来源的缺失记录，按有据方式补齐，形成完整14天口径后再由相应环节复核发布新快照。",
+          "补齐完成并发布新快照前，暂停该物资日均消耗与覆盖天数的对外使用。"
+        ],
+        "revision": 1,
+        "status": "pending",
+        "task_id": null,
+        "stale_reason": null
+      }
+    }
+  ],
+  "note": "Generated scenario; real DeepSeek calls; engineering success is not semantic approval; no tasks confirmed."
+}

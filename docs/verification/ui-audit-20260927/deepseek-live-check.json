@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-27",
+  "models_http_status": 200,
+  "available_models": ["deepseek-flash", "deepseek-v4-pro"],
+  "run_id": "d6206df8-4b20-400d-986a-66c335f141bc",
+  "provider": "deepseek",
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "model_response_received": true,
+  "pipeline_status": "failed",
+  "error_code": "TOOL_SCOPE_REJECTED",
+  "model_item_ids": ["生化清洗液"],
+  "authorized_item_ids": ["SIM-P001"],
+  "analysis_saved": false,
+  "elapsed_seconds": 1.29,
+  "usage": {"prompt_tokens": 649, "completion_tokens": 100, "total_tokens": 749},
+  "billed_cost": null,
+  "fallback_used": false,
+  "secret_recorded": false
+}

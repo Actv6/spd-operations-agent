@@ -1,0 +1,29 @@
+10:31:23 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+✔ shared slots surround one native Ant Design table (557.603708ms)
+✔ default pagination renders ten rows and correct total (118.685875ms)
+✔ page override and disabled pagination are preserved (158.508375ms)
+✔ empty, error, retry and loading states remain available (246.446166ms)
+✔ compact header preserves zero count and precise timestamp (37.042125ms)
+✔ risk refresh stays pinned when current snapshot changes (1.338709ms)
+✔ mixed snapshot bundle is rejected (0.772166ms)
+✔ answer presentation recognizes labels without changing numbers or claims (1.696417ms)
+✔ authored markdown and fenced code are left untouched (0.898208ms)
+✔ long prose is separated at sentence boundaries without dropping text (1.0255ms)
+✔ batch evidence renders preserved expiry, quantity and Chinese status (117.701625ms)
+✔ consumption evidence shows missing days without zero filling (33.444791ms)
+✔ risk evidence preserves distinct quality and zero-consumption counts (61.211166ms)
+✔ unknown evidence retains original excerpt instead of a blank panel (3.189417ms)
+✔ display quantities preserve small and large decimal values (0.521958ms)
+✔ bracketed historical headings get hierarchy without rewriting claims (0.398584ms)
+✔ historical risk evidence without breakdown remains readable and does not invent zeros (28.155125ms)
+✔ CSV slice decoding preserves UTF-8 across chunk boundaries and reports progress (47.0625ms)
+✔ CSV rejects wrong types, empty files, over-limit bytes and invalid UTF-8 (1.707ms)
+✔ cancelled CSV reads stop before delivering content (23.960667ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20598.7475

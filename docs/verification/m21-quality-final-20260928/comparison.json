@@ -1,0 +1,104 @@
+[
+  {
+    "source": "docs/verification/m21-quality2-20260928/live-20260928-145637.json",
+    "case": "project",
+    "status": "succeeded",
+    "tokens": 13436,
+    "seconds": 7.18,
+    "chars": 434,
+    "tools": [
+      "compute_risks"
+    ],
+    "prompt_release": "m21-quality-2"
+  },
+  {
+    "source": "docs/verification/m21-quality2-20260928/live-20260928-145637.json",
+    "case": "missing",
+    "status": "succeeded",
+    "tokens": 11034,
+    "seconds": 5.12,
+    "chars": 253,
+    "tools": [
+      "get_consumption",
+      "search_knowledge"
+    ],
+    "prompt_release": "m21-quality-2"
+  },
+  {
+    "source": "docs/verification/m21-quality2-20260928/live-20260928-145637.json",
+    "case": "zero",
+    "status": "succeeded",
+    "tokens": 8753,
+    "seconds": 5.52,
+    "chars": 321,
+    "tools": [
+      "get_consumption",
+      "compute_risks"
+    ],
+    "prompt_release": "m21-quality-2"
+  },
+  {
+    "source": "docs/verification/m21-quality2-20260928/live-20260928-145637.json",
+    "case": "no-evidence",
+    "status": "succeeded",
+    "tokens": 8043,
+    "seconds": 3.81,
+    "chars": 173,
+    "tools": [
+      "search_knowledge"
+    ],
+    "prompt_release": "m21-quality-2"
+  },
+  {
+    "source": "docs/verification/m21-quality2-20260928/live-20260928-145637.json",
+    "case": "follow-up",
+    "status": "succeeded",
+    "tokens": 11125,
+    "seconds": 4.22,
+    "chars": 124,
+    "tools": [
+      "get_consumption",
+      "search_knowledge"
+    ],
+    "prompt_release": "m21-quality-2"
+  },
+  {
+    "source": "docs/verification/m21-quality2-20260928/live-20260928-145637.json",
+    "case": "draft",
+    "status": "succeeded",
+    "tokens": 12303,
+    "seconds": 5.79,
+    "chars": 203,
+    "tools": [
+      "get_consumption",
+      "search_knowledge"
+    ],
+    "prompt_release": "m21-quality-2"
+  },
+  {
+    "source": "docs/verification/m21-quality3-20260928/live-20260928-145844.json",
+    "case": "missing",
+    "status": "succeeded",
+    "tokens": 11234,
+    "seconds": 4.7,
+    "chars": 234,
+    "tools": [
+      "get_consumption",
+      "search_knowledge"
+    ],
+    "prompt_release": "m21-quality-3"
+  },
+  {
+    "source": "docs/verification/m21-quality3-20260928/live-20260928-145844.json",
+    "case": "draft",
+    "status": "succeeded",
+    "tokens": 12482,
+    "seconds": 6.9,
+    "chars": 191,
+    "tools": [
+      "get_consumption",
+      "search_knowledge"
+    ],
+    "prompt_release": "m21-quality-3"
+  }
+]

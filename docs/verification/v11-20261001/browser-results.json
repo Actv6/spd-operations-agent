@@ -1,0 +1,18 @@
+{
+  "kind": "isolated_browser_controlled_provider",
+  "real_model_calls": 0,
+  "checks": [
+    "server-derived priority counts 3/5 displayed",
+    "feedback required reason and save succeeded",
+    "editing invalidates publication preview",
+    "manual publication succeeded",
+    "published content retrieved by actual lexical search",
+    "manual retirement succeeded",
+    "390px viewport has no document overflow"
+  ],
+  "errors": [],
+  "dimensions": {
+    "client": 390,
+    "scroll": 390
+  }
+}

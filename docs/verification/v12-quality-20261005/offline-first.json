@@ -1,0 +1,291 @@
+{
+  "kind": "offline_author_development",
+  "quality_contract": "v12-claims-1",
+  "dataset_version": "v12-author-dev-1",
+  "dataset_sha256": "ea48297c626b94e77e0e93d6a95a2ea72341507de8a6b701a95d7cbb354994ad",
+  "scenario_sha256": "a0f847b4102b32c9b0417d4aee928d779d5d6883ef2eba9f869c96ab43e1d91b",
+  "original_sha256": "8d17b1ce878ec0388e94dbd0ad42015666b924a5f087eae2414eda3e9e617da6",
+  "original_unchanged": true,
+  "provider_calls": 0,
+  "business_database_used": false,
+  "blind_test": false,
+  "reason_breakdown": [
+    {
+      "reason": "MISSING_CONSUMPTION_DAYS",
+      "label": "14日消耗缺日",
+      "count": 1,
+      "positions": [
+        {
+          "item_id": "SIM-P006",
+          "department_id": "SIM-HA-LAB",
+          "name": "反应杯",
+          "department_name": "检验科"
+        }
+      ],
+      "evidence_ids": [
+        "offline-e1"
+      ]
+    },
+    {
+      "reason": "STALE_SNAPSHOT",
+      "label": "库存快照超过24小时",
+      "count": 1,
+      "positions": [
+        {
+          "item_id": "SIM-P007",
+          "department_id": "SIM-HA-LAB",
+          "name": "采样管",
+          "department_name": "检验科"
+        }
+      ],
+      "evidence_ids": [
+        "offline-e1"
+      ]
+    },
+    {
+      "reason": "ZERO_CONSUMPTION",
+      "label": "完整14日零消耗记录",
+      "count": 1,
+      "positions": [
+        {
+          "item_id": "SIM-P005",
+          "department_id": "SIM-HA-LAB",
+          "name": "低频检测耗材",
+          "department_name": "检验科"
+        }
+      ],
+      "evidence_ids": [
+        "offline-e1"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "R01",
+      "text": "2个因14日消耗记录缺日（数据质量原因）",
+      "error": "QUALITY_REASON_MISATTRIBUTION",
+      "actual_error": "QUALITY_REASON_MISATTRIBUTION",
+      "passed": true
+    },
+    {
+      "id": "R02",
+      "text": "对2个缺日物资核对每日记录",
+      "error": "QUALITY_REASON_MISATTRIBUTION",
+      "actual_error": "QUALITY_REASON_MISATTRIBUTION",
+      "passed": true
+    },
+    {
+      "id": "R03",
+      "text": "缺日共两个位置",
+      "error": "QUALITY_REASON_MISATTRIBUTION",
+      "actual_error": "QUALITY_REASON_MISATTRIBUTION",
+      "passed": true
+    },
+    {
+      "id": "R04",
+      "text": "**缺日**：２个组合",
+      "error": "QUALITY_REASON_MISATTRIBUTION",
+      "actual_error": "QUALITY_REASON_MISATTRIBUTION",
+      "passed": true
+    },
+    {
+      "id": "R05",
+      "text": "旧快照有二个位置",
+      "error": "QUALITY_REASON_MISATTRIBUTION",
+      "actual_error": "QUALITY_REASON_MISATTRIBUTION",
+      "passed": true
+    },
+    {
+      "id": "R06",
+      "text": "零消耗共两项",
+      "error": "QUALITY_REASON_MISATTRIBUTION",
+      "actual_error": "QUALITY_REASON_MISATTRIBUTION",
+      "passed": true
+    },
+    {
+      "id": "R07",
+      "text": "反应杯缺日；采样管旧快照。",
+      "error": null,
+      "actual_error": "QUALITY_REASON_OBJECT_MISMATCH",
+      "passed": false
+    },
+    {
+      "id": "R08",
+      "text": "缺日1个位置；旧快照1个位置；零消耗1个位置。",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "R09",
+      "text": "采样管不是缺日，反应杯缺日。",
+      "error": null,
+      "actual_error": "QUALITY_REASON_OBJECT_MISMATCH",
+      "passed": false
+    },
+    {
+      "id": "R10",
+      "text": "建议对采样管的缺日补齐记录。",
+      "error": "QUALITY_REASON_OBJECT_MISMATCH",
+      "actual_error": "QUALITY_REASON_OBJECT_MISMATCH",
+      "passed": true
+    },
+    {
+      "id": "R11",
+      "text": "数据待核查2个位置，其中缺日1个位置、旧快照1个位置。",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "R12",
+      "text": "低频耗材记录为零需要确认是否存在未同步消耗。",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "R-original-live",
+      "text": "本轮已对全部许可范围（检验科、手术室、急诊科，共24个物资-科室位置）完成风险筛查，含批次效期检查（命中批次数由工具给出，不代表逐批明细已全部读取）。结果高关注3项、中关注5项，合计8项。\n\n高关注：检验科检验质控材料（1个在库批次已过期）；检验科反应杯（14日消耗缺日，覆盖估算暂停）；检验科采样管（库存记录超过24小时，覆盖估算暂停）。\n\n中关注：检验科生化清洗液（覆盖约6.00天）、样本稀释液（约5.00天）、样本杯（约0.36天）、一次性吸头（约6.68天），均低于7天关注阈值；检验科尿液分析试纸（1个在库批次30天内到期、尚未过期）。\n\n3个位置无法估算覆盖：2个因14日消耗记录缺日（数据质量原因）、1个因整窗口日均消耗为0（零消耗，非数据质量异常）。\n\n建议：对2个缺日物资核对每日记录，仅在确有依据时补齐；对记录超过24小时物资更新库存快照后重算；对效期命中项按批次核实；对低覆盖项补查供应信息。上述均为建议，非制度性要求。",
+      "error": "QUALITY_REASON_MISATTRIBUTION",
+      "actual_error": "QUALITY_REASON_OBJECT_MISMATCH",
+      "passed": false
+    },
+    {
+      "id": "C01",
+      "fault": "none",
+      "error": null,
+      "actual_error": null,
+      "verification": [
+        "tool_exact"
+      ],
+      "passed": true
+    },
+    {
+      "id": "C02",
+      "fault": "wrong-text",
+      "error": "CLAIM_FACT_MISMATCH",
+      "actual_error": "CLAIM_FACT_MISMATCH",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C03",
+      "fault": "wrong-id",
+      "error": "CLAIM_FACT_MISMATCH",
+      "actual_error": "CLAIM_FACT_MISMATCH",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C04",
+      "fault": "wrong-source",
+      "error": "CLAIM_FACT_MISMATCH",
+      "actual_error": "CLAIM_FACT_MISMATCH",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C05",
+      "fault": "foreign-source",
+      "error": "CLAIM_CITATION_INVALID",
+      "actual_error": "CLAIM_CITATION_INVALID",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C06",
+      "fault": "no-claims",
+      "error": "CLAIMS_REQUIRED",
+      "actual_error": "CLAIMS_REQUIRED",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C07",
+      "fault": "extra-prose",
+      "error": "CLAIM_ANSWER_MISMATCH",
+      "actual_error": "CLAIM_ANSWER_MISMATCH",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C08",
+      "fault": "unused-source",
+      "error": "CLAIM_CITATION_COVERAGE",
+      "actual_error": "CLAIM_CITATION_COVERAGE",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C09",
+      "fault": "quote",
+      "error": null,
+      "actual_error": null,
+      "verification": [
+        "tool_exact",
+        "document_quote"
+      ],
+      "passed": true
+    },
+    {
+      "id": "C10",
+      "fault": "fake-quote",
+      "error": "CLAIM_QUOTE_MISMATCH",
+      "actual_error": "CLAIM_QUOTE_MISMATCH",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C11",
+      "fault": "tool-as-policy",
+      "error": "CLAIM_QUOTE_MISMATCH",
+      "actual_error": "CLAIM_QUOTE_MISMATCH",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C12",
+      "fault": "suggestion",
+      "error": null,
+      "actual_error": null,
+      "verification": [
+        "tool_exact",
+        "unverified"
+      ],
+      "passed": true
+    },
+    {
+      "id": "C13",
+      "fault": "ungrounded",
+      "error": "CLAIM_SUGGESTION_UNGROUNDED",
+      "actual_error": "CLAIM_SUGGESTION_UNGROUNDED",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C14",
+      "fault": "unknown",
+      "error": "CLAIM_UNKNOWN_STATUS",
+      "actual_error": "CLAIM_UNKNOWN_STATUS",
+      "verification": [],
+      "passed": true
+    },
+    {
+      "id": "C15",
+      "fault": "draft-bypass",
+      "error": "CLAIM_DRAFT_MISMATCH",
+      "actual_error": "CLAIM_DRAFT_MISMATCH",
+      "verification": [],
+      "passed": true
+    }
+  ],
+  "passed": 25,
+  "total": 28,
+  "limitations": [
+    "作者开发及已曝光回归，非独立盲测",
+    "建议来源关联不证明语义支持",
+    "规则未覆盖任意自然语言",
+    "无真实模型或业务验收"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "local_url": "http://127.0.0.1:4180",
+  "health": {
+    "status": "ok",
+    "database": "sqlite",
+    "generation_mode": "model",
+    "provider_configured": true,
+    "retrieval_mode": "lexical",
+    "synthetic": true
+  },
+  "api_version": "v1.1",
+  "feedback_paths": [
+    "/api/v1/analyses/{analysis_id}/feedback"
+  ],
+  "knowledge_management_paths": [
+    "/api/v1/projects/{project_id}/knowledge/manage",
+    "/api/v1/projects/{project_id}/knowledge/preview",
+    "/api/v1/projects/{project_id}/knowledge/publish",
+    "/api/v1/knowledge/documents/{document_id}/retire"
+  ],
+  "frontend_http": 200,
+  "model_calls_performed": 0
+}

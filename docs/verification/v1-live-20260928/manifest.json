@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-09-28T20:07:17.698923",
+  "source_sha256": {
+    "backend/app/agent.py": "942e1e31117995ecca072db9773589631fbd93508c3eaa385ae82759c8c9d884",
+    "backend/app/providers.py": "55d342e86fef1f36d30217bfbc3f854c5ef10c876f76ea11432652d7d6322c3f",
+    "backend/app/answer_quality.py": "43c7d524886d1e3884ce944b6f6624ba76e5fd956e3e097d38827ee1badc75bd",
+    "backend/app/operations.py": "fbcc907c3186bd4d726bba68d3ad202e6c5f1b4e4f4a9bb52b4c5a6c5b88788a",
+    "backend/scripts/evaluate_m21.py": "652219e6ed909fbb278ff7bd02df588c3505ec2584ea1eec7d3eebce616741f3"
+  },
+  "round_token_threshold": 90000,
+  "case_token_threshold": 20000,
+  "cases": [
+    "project",
+    "missing",
+    "zero",
+    "no-evidence",
+    "follow-up",
+    "draft"
+  ],
+  "reviewer": "Codex self-review; no independent business signoff"
+}

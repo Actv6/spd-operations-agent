@@ -1,0 +1,21 @@
+{
+  "kind": "isolated_browser_controlled_provider",
+  "real_model_calls": 0,
+  "checks": [
+    "fixture login succeeded",
+    "server-derived priority counts 3/5 displayed",
+    "feedback failure retained input and retry succeeded",
+    "feedback required reason and save succeeded",
+    "editing invalidates publication preview",
+    "manual publication succeeded",
+    "published content retrieved by actual lexical search",
+    "manual retirement succeeded",
+    "colloquial missing-day query retrieved actual applicable document",
+    "390px viewport has no document overflow"
+  ],
+  "errors": [],
+  "dimensions": {
+    "client": 390,
+    "scroll": 390
+  }
+}

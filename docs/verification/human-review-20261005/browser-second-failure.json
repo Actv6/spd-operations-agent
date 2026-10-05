@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "draft confirmation blocked while current and ancestor review pending",
+    "failed run exposes bound batch and consumption details without model calls",
+    "manual conclusion and basis required",
+    "manual record persists with self review label while AI stays failed",
+    "both ancestor and draft review must pass before confirmation enabled"
+  ],
+  "errors": [],
+  "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '确认并创建本人待办', exact: true })\u001b[22m\n"
+}

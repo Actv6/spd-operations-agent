@@ -1,0 +1,344 @@
+{
+  "raw_sha256": "fa2a8e40ee0b5bed08ed8bd98afc715024526528bd88cd7f9552c3c809b66609",
+  "checks": [
+    {
+      "check": "project: real model success",
+      "passed": true
+    },
+    {
+      "check": "project: complete usage",
+      "passed": true
+    },
+    {
+      "check": "project: citation a87c89ad-17dc-4968-93d4-e60f1c5428c8 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "project: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "project: tool hash risks",
+      "passed": true
+    },
+    {
+      "check": "project: tool snapshot risks",
+      "passed": true
+    },
+    {
+      "check": "missing: real model success",
+      "passed": true
+    },
+    {
+      "check": "missing: complete usage",
+      "passed": true
+    },
+    {
+      "check": "missing: citation a39f686b-b8ff-4a93-9d98-60a6814cc4e3 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "missing: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "missing: tool hash consumption",
+      "passed": true
+    },
+    {
+      "check": "missing: tool snapshot consumption",
+      "passed": true
+    },
+    {
+      "check": "missing: citation 0e2c01f1-f242-421c-9721-8b8efc74c776 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "missing: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "missing: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "missing: citation 66d9c8ae-6de0-4e96-b996-310bc199b5b4 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "missing: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "missing: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "missing: citation b8bb6ac0-0728-4ff2-92a0-d7d0b2b20228 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "missing: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "missing: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "missing: citation d24089a7-ba6e-41d2-8d37-f48fab392a3b belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "missing: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "missing: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "zero: real model success",
+      "passed": true
+    },
+    {
+      "check": "zero: complete usage",
+      "passed": true
+    },
+    {
+      "check": "zero: citation b4d9fadd-6bcb-452f-9990-dabccfa6dee4 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "zero: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "zero: tool hash consumption",
+      "passed": true
+    },
+    {
+      "check": "zero: tool snapshot consumption",
+      "passed": true
+    },
+    {
+      "check": "zero: citation 68b63b9b-e362-47fc-ba1b-fa24add7856c belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "zero: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "zero: tool hash risks",
+      "passed": true
+    },
+    {
+      "check": "zero: tool snapshot risks",
+      "passed": true
+    },
+    {
+      "check": "no-evidence: real model success",
+      "passed": true
+    },
+    {
+      "check": "no-evidence: complete usage",
+      "passed": true
+    },
+    {
+      "check": "no-evidence: citation a03b103f-b183-4854-a805-98e509a86512 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "no-evidence: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "no-evidence: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "no-evidence: citation 32556bef-fdc3-4b54-a652-c50332727ace belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "no-evidence: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "no-evidence: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "follow-up: real model success",
+      "passed": true
+    },
+    {
+      "check": "follow-up: complete usage",
+      "passed": true
+    },
+    {
+      "check": "follow-up: citation 0dde8ef2-cfc6-4d66-aca9-b7dca6996d26 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "follow-up: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "follow-up: tool hash consumption",
+      "passed": true
+    },
+    {
+      "check": "follow-up: tool snapshot consumption",
+      "passed": true
+    },
+    {
+      "check": "follow-up: citation c55af20b-c9e3-4867-9fb3-8b6836070004 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "follow-up: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "follow-up: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "follow-up: citation 7245cb5e-a30e-4f2e-9346-e14a21f2949f belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "follow-up: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "follow-up: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "follow-up: inherited snapshot/session/scope",
+      "passed": true
+    },
+    {
+      "check": "draft: real model success",
+      "passed": true
+    },
+    {
+      "check": "draft: complete usage",
+      "passed": true
+    },
+    {
+      "check": "draft: citation 503b84e0-1e85-4160-958b-e70a05c826aa belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "draft: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "draft: tool hash consumption",
+      "passed": true
+    },
+    {
+      "check": "draft: tool snapshot consumption",
+      "passed": true
+    },
+    {
+      "check": "draft: citation ab5cbb59-91d2-4290-b21d-e858b58e4e50 belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "draft: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "draft: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "draft: citation a63eec04-8b90-4e31-8e48-a19bd6785cfc belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "draft: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "draft: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "draft: citation 561c5e98-bdaa-419a-b5f2-41c9357d3aad belongs to run/project",
+      "passed": true
+    },
+    {
+      "check": "draft: saved citation unchanged",
+      "passed": true
+    },
+    {
+      "check": "draft: document hash/location",
+      "passed": true
+    },
+    {
+      "check": "draft: inherited snapshot/session/scope",
+      "passed": true
+    },
+    {
+      "check": "fixture: missing dates",
+      "passed": true
+    },
+    {
+      "check": "fixture: 14 confirmed zero days",
+      "passed": true
+    },
+    {
+      "check": "fixture: fluid 120/20=6",
+      "passed": true
+    },
+    {
+      "check": "fixture: stale inventory exceeds 24h",
+      "passed": true
+    },
+    {
+      "check": "fixture: two expiry hits, one expired",
+      "passed": true
+    },
+    {
+      "check": "risk evidence: high3 medium5",
+      "passed": true
+    },
+    {
+      "check": "pending draft has no created tasks",
+      "passed": true
+    },
+    {
+      "check": "production source unchanged during evaluation",
+      "passed": true
+    }
+  ],
+  "all_evidence_checks_pass": true,
+  "tokens_recorded": 72287,
+  "model_requests": 19,
+  "input_tokens": 67424,
+  "output_tokens": 4863,
+  "max_input_chars": 14388,
+  "models": [
+    "deepseek-flash"
+  ],
+  "prompt_releases": [
+    "m21-quality-3"
+  ],
+  "priority_counts_in_evidence": {
+    "high": 3,
+    "medium": 5
+  },
+  "priority_counts_claimed_in_answer": {
+    "high": 2,
+    "medium": 6
+  },
+  "critical_semantic_defect": "project answer priority counts contradict saved tool findings",
+  "personal_tasks": 0,
+  "note": "Evidence checks do not prove sentence-level entailment or independent business approval."
+}

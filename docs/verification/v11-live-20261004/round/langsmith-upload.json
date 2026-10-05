@@ -1,0 +1,33 @@
+{
+  "status": "verified",
+  "project": "spd-v11-live-d00fb556",
+  "receipts": {
+    "e64e9b97-a641-4b13-9407-59360bbc96c1": {
+      "verified": true,
+      "trace_id": "e64e9b97-a641-4b13-9407-59360bbc96c1",
+      "url": "https://smith.langchain.com/o/22612211-1518-4420-abbb-6ffb72a6728f/projects/p/25942f32-cf5e-430c-88c0-8109758fccf4/r/e64e9b97-a641-4b13-9407-59360bbc96c1?trace_id=e64e9b97-a641-4b13-9407-59360bbc96c1&start_time=2026-10-04T09:32:46.313913"
+    },
+    "7db33fe2-3581-442c-b7ce-b48eaddfad6a": {
+      "verified": true,
+      "trace_id": "e64e9b97-a641-4b13-9407-59360bbc96c1",
+      "url": "https://smith.langchain.com/o/22612211-1518-4420-abbb-6ffb72a6728f/projects/p/25942f32-cf5e-430c-88c0-8109758fccf4/r/7db33fe2-3581-442c-b7ce-b48eaddfad6a?trace_id=e64e9b97-a641-4b13-9407-59360bbc96c1&start_time=2026-10-04T09:32:46.345337"
+    },
+    "867fcd95-e2c8-4541-8c20-cbb6307d04e5": {
+      "verified": true,
+      "trace_id": "e64e9b97-a641-4b13-9407-59360bbc96c1",
+      "url": "https://smith.langchain.com/o/22612211-1518-4420-abbb-6ffb72a6728f/projects/p/25942f32-cf5e-430c-88c0-8109758fccf4/r/867fcd95-e2c8-4541-8c20-cbb6307d04e5?trace_id=e64e9b97-a641-4b13-9407-59360bbc96c1&start_time=2026-10-04T09:32:47.156095"
+    },
+    "8f7f798d-c7dd-448f-96b6-07e41628b8a5": {
+      "verified": true,
+      "trace_id": "e64e9b97-a641-4b13-9407-59360bbc96c1",
+      "url": "https://smith.langchain.com/o/22612211-1518-4420-abbb-6ffb72a6728f/projects/p/25942f32-cf5e-430c-88c0-8109758fccf4/r/8f7f798d-c7dd-448f-96b6-07e41628b8a5?trace_id=e64e9b97-a641-4b13-9407-59360bbc96c1&start_time=2026-10-04T09:32:49.428259"
+    },
+    "505c1ced-97a8-5c30-a121-fe7c9a97826e": {
+      "verified": true,
+      "trace_id": "e64e9b97-a641-4b13-9407-59360bbc96c1",
+      "url": "https://smith.langchain.com/o/22612211-1518-4420-abbb-6ffb72a6728f/projects/p/25942f32-cf5e-430c-88c0-8109758fccf4/r/505c1ced-97a8-5c30-a121-fe7c9a97826e?trace_id=e64e9b97-a641-4b13-9407-59360bbc96c1&start_time=2026-10-04T09:32:47.153956"
+    }
+  },
+  "failures": [],
+  "model_calls": 0
+}

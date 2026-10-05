@@ -1,0 +1,3 @@
+QA account: M1 浏览器测试
+Snapshot: 98b31c3f-ba9e-4500-a508-f2d257f0a27d
+Provenance: existing generated scenario, local QA only.

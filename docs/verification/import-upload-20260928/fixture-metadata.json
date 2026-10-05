@@ -1,0 +1,13 @@
+{
+  "provenance": "generated scenario; not real company records",
+  "changes": {
+    "inventory_on_hand": "+10",
+    "matching_batch_on_hand": "+10",
+    "first_consumption": "+1"
+  },
+  "rows": {
+    "inventory": 24,
+    "batches": 72,
+    "consumption": 334
+  }
+}

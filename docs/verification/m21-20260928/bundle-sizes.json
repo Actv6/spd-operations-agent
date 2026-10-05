@@ -1,0 +1,78 @@
+{
+  "entry": {
+    "js_bytes": 492329,
+    "gzip_bytes": 164077,
+    "assets": [
+      "assets/index-LwVe5vD0.js"
+    ]
+  },
+  "login": {
+    "js_bytes": 607711,
+    "gzip_bytes": 203184,
+    "assets": [
+      "assets/index-LwVe5vD0.js",
+      "assets/Auth-B9KTUz1h.js",
+      "assets/Brand-dqKZ5gxx.js",
+      "assets/IconDatabase-BX7sGMDv.js"
+    ]
+  },
+  "workspace": {
+    "js_bytes": 1031072,
+    "gzip_bytes": 336870,
+    "assets": [
+      "assets/index-LwVe5vD0.js",
+      "assets/Workspace-DxDP85BT.js",
+      "assets/Brand-dqKZ5gxx.js",
+      "assets/IconDatabase-BX7sGMDv.js",
+      "assets/IconSearch-CYsQym4a.js"
+    ]
+  },
+  "risks": {
+    "js_bytes": 1033516,
+    "gzip_bytes": 338378,
+    "assets": [
+      "assets/index-LwVe5vD0.js",
+      "assets/Workspace-DxDP85BT.js",
+      "assets/Brand-dqKZ5gxx.js",
+      "assets/IconDatabase-BX7sGMDv.js",
+      "assets/IconSearch-CYsQym4a.js",
+      "assets/RiskPanel-DIFx9XkV.js"
+    ]
+  },
+  "knowledge": {
+    "js_bytes": 1165513,
+    "gzip_bytes": 380055,
+    "assets": [
+      "assets/index-LwVe5vD0.js",
+      "assets/Workspace-DxDP85BT.js",
+      "assets/Brand-dqKZ5gxx.js",
+      "assets/IconDatabase-BX7sGMDv.js",
+      "assets/IconSearch-CYsQym4a.js",
+      "assets/KnowledgePanel-CK4DqvVO.js",
+      "assets/index-BGxMnMFc.js"
+    ]
+  },
+  "analysis": {
+    "js_bytes": 1369806,
+    "gzip_bytes": 445779,
+    "assets": [
+      "assets/index-LwVe5vD0.js",
+      "assets/Workspace-DxDP85BT.js",
+      "assets/Brand-dqKZ5gxx.js",
+      "assets/IconDatabase-BX7sGMDv.js",
+      "assets/IconSearch-CYsQym4a.js",
+      "assets/ResultPanel-DiVuMYgA.js",
+      "assets/index-37c413sj.js",
+      "assets/index-BGxMnMFc.js",
+      "assets/IconChevronRight-DLtLDYEM.js",
+      "assets/Timeline-WTVWBmZo.js",
+      "assets/RunActions-Cbdh0WlD.js",
+      "assets/useResource-HQ_EOgKy.js"
+    ]
+  },
+  "notes": [
+    "Static JS dependency closure; excludes CSS/images; not measured latency.",
+    "Analysis includes follow-up and draft UI dependencies.",
+    "Earlier Vite main JS: 1394.59 kB / gzip 444.57 kB."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "existing_guard_accepts_bad_priority_counts": true,
+  "structured_summary": {
+    "scanned_positions": 24,
+    "skipped_estimates": 3,
+    "data_quality": 2,
+    "zero_consumption": 1,
+    "findings": 8
+  },
+  "excerpt": "高关注 2 条 / 中关注 6 条",
+  "expected": "高关注 3 条 / 中关注 5 条",
+  "method": "Replay immutable real answer against current validate_business_answer; no provider invocation",
+  "production_files_modified": false
+}

@@ -1,0 +1,134 @@
+........................................................................ [ 27%]
+.........................F..F........F........................F......... [ 55%]
+........................................................................ [ 83%]
+........................F..................                              [100%]
+=================================== FAILURES ===================================
+______________ test_draft_confirm_edit_idempotency_and_lifecycle _______________
+
+client = <starlette.testclient.TestClient object at 0x112656480>
+app = <fastapi.applications.FastAPI object at 0x1127db980>
+
+    def test_draft_confirm_edit_idempotency_and_lifecycle(client, app):
+        _, project, draft = make_draft(client, app)
+        endpoint = '/api/v1/drafts/' + draft['id'] + '/confirm'
+        assert client.get(f'/api/v1/projects/{project}/tasks').json() == []
+        body = confirm_body(draft); r = client.post(endpoint, json=body)
+>       assert r.status_code == 200, r.text
+E       AssertionError: {"code":"HUMAN_REVIEW_REQUIRED","message":"核查 #c484a84c：请先处理纠错反馈并完成人工复核","details":{},"trace_id":"ba36f5a1-8b3d-455e-85f8-3ca3ae7ee072","retryable":false}
+E       assert 409 == 200
+E        +  where 409 = <Response [409 Conflict]>.status_code
+
+backend/tests/test_m2.py:100: AssertionError
+______________ test_owner_isolation_even_with_project_membership _______________
+
+client = <starlette.testclient.TestClient object at 0x1106b99a0>
+app = <fastapi.applications.FastAPI object at 0x111af2cc0>
+
+    def test_owner_isolation_even_with_project_membership(client, app):
+        _, project, draft = make_draft(client, app)
+        task = client.post('/api/v1/drafts/' + draft['id'] + '/confirm', json=confirm_body(draft)).json()
+        with TestClient(app) as other:
+            other.headers.update({'Origin': ORIGIN, 'X-CSRF-Token': other.get('/api/v1/csrf').json()['token']})
+            me = register(other, 'second@example.test')
+            assert other.get(f'/api/v1/projects/{project}/risks').status_code == 404
+            with app.state.factory() as db:
+                db.add(Membership(user_id=me['user']['id'], project_id=project)); db.commit()
+>           for url in ['/api/v1/drafts/'+draft['id'], '/api/v1/tasks/'+task['id'], '/api/v1/runs/'+draft['run_id']+'/conversation']:
+                                                                        ^^^^^^^^^^
+E           KeyError: 'id'
+
+backend/tests/test_m2.py:141: KeyError
+___________ test_duplicate_concurrent_confirmation_creates_one_task ____________
+
+client = <starlette.testclient.TestClient object at 0x112655c40>
+app = <fastapi.applications.FastAPI object at 0x11213c1a0>
+
+    def test_duplicate_concurrent_confirmation_creates_one_task(client, app):
+        from concurrent.futures import ThreadPoolExecutor
+        _, project, draft = make_draft(client, app)
+        body = confirm_body(draft)
+        def confirm_once(_):
+            with TestClient(app) as c:
+                c.cookies.update(client.cookies); c.headers.update(client.headers)
+                return c.post('/api/v1/drafts/'+draft['id']+'/confirm', json=body)
+        with ThreadPoolExecutor(2) as pool:
+            responses = list(pool.map(confirm_once, range(2)))
+>       assert [r.status_code for r in responses] == [200, 200], [r.text for r in responses]
+E       AssertionError: ['{"code":"HUMAN_REVIEW_REQUIRED","message":"核查 #b39907fa：请先处理纠错反馈并完成人工复核","details":{},"trace_id":"940b94cc-cf82-48c1...age":"核查 #b39907fa：请先处理纠错反馈并完成人工复核","details":{},"trace_id":"c3f9ce9e-30b2-4ecb-ae0f-dfeb4b21a0a2","retryable":false}']
+E       assert [409, 409] == [200, 200]
+E         
+E         At index 0 diff: 409 != 200
+E         Use -v to get more diff
+
+backend/tests/test_m2.py:191: AssertionError
+__________________ test_scan_followup_draft_confirm_task_flow __________________
+
+client = <starlette.testclient.TestClient object at 0x111e91c10>
+app = <fastapi.applications.FastAPI object at 0x112a0c830>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x111e91dc0>
+
+    def test_scan_followup_draft_confirm_task_flow(client, app, monkeypatch):
+        project, parent = setup(client, app, monkeypatch, ScanProvider())
+        body = request_body('请继续核查', item_ids=[], snapshot_set_id=parent['snapshot_set_id'], analysis_id=parent['analysis_id'])
+        body.update(mode='follow_up', parent_run_id=parent['run_id'], session_id=parent['session_id'])
+        child = create_run(client, project, 'm21-follow-up', body)
+        work_once(app.state.factory, app.state.settings, ScanProvider())
+        child = client.get('/api/v1/runs/' + child['run_id']).json()
+        assert child['status'] == 'succeeded'
+        body.update(mode='draft_action', parent_run_id=child['run_id'])
+        body['context']['analysis_id'] = child['analysis_id']
+        run = create_run(client, project, 'm21-draft', body)
+        work_once(app.state.factory, app.state.settings, ScanProvider())
+        run = client.get('/api/v1/runs/' + run['run_id']).json()
+        assert run['status'] == 'succeeded', run
+        draft = client.get('/api/v1/drafts/' + run['draft_id']).json()
+        assert client.get(f'/api/v1/projects/{project}/tasks').json() == []
+        confirm = dict(revision=draft['revision'], title='人工修订核查任务', steps=['仅核对当前缺口'], due_date='2026-10-01')
+        url = '/api/v1/drafts/' + draft['id'] + '/confirm'
+        task = client.post(url, json=confirm).json()
+>       assert client.post(url, json=confirm).json()['id'] == task['id']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'id'
+
+backend/tests/test_m21.py:244: KeyError
+_____________ test_v1_import_risk_agent_citations_task_and_restore _____________
+
+client = <starlette.testclient.TestClient object at 0x113c50a10>
+app = <fastapi.applications.FastAPI object at 0x113c50b00>
+
+    def test_v1_import_risk_agent_citations_task_and_restore(client, app):
+        _, project, template = setup(client)
+        old_id = template['base_snapshot_id']
+        preview = upload(client, project, template).json()
+        assert preview['status'] == 'ready'
+        assert client.get(f'/api/v1/projects/{project}/inventory').json()['snapshot_set_id'] == old_id
+        released = publish(client, project, preview).json()
+        new_id = released['snapshot_id']
+        risks = client.get(f'/api/v1/projects/{project}/risks').json()
+        assert risks['snapshot_set_id'] == new_id and risks['findings']
+        run = create_run(client, project)
+        work_once(app.state.factory, app.state.settings)
+        run = client.get('/api/v1/runs/'+run['run_id']).json()
+        assert run['status'] == 'succeeded' and run['generation_mode'] == 'mock'
+        analysis = client.get('/api/v1/analyses/'+run['analysis_id']).json()
+        assert analysis['snapshot_set_id'] == new_id and analysis['citations']
+        evidence = {c['evidence_id']: client.get('/api/v1/evidence/'+c['evidence_id']).json() for c in analysis['citations']}
+        assert all('hash' in e for e in evidence.values())
+        child = create_run(client, project, 'v1-draft-request', child_body(run, 'draft_action'))
+        work_once(app.state.factory, app.state.settings, DraftProvider())
+        child = client.get('/api/v1/runs/'+child['run_id']).json()
+        draft = client.get('/api/v1/drafts/'+child['draft_id']).json()
+        assert not client.get(f'/api/v1/projects/{project}/tasks').json()
+        task = client.post('/api/v1/drafts/'+draft['id']+'/confirm', json=confirm_body(draft)).json()
+>       path = '/api/v1/tasks/'+task['id']
+                                ^^^^^^^^^^
+E       KeyError: 'id'
+
+backend/tests/test_v1_acceptance.py:33: KeyError
+=========================== short test summary info ============================
+FAILED backend/tests/test_m2.py::test_draft_confirm_edit_idempotency_and_lifecycle
+FAILED backend/tests/test_m2.py::test_owner_isolation_even_with_project_membership
+FAILED backend/tests/test_m2.py::test_duplicate_concurrent_confirmation_creates_one_task
+FAILED backend/tests/test_m21.py::test_scan_followup_draft_confirm_task_flow
+FAILED backend/tests/test_v1_acceptance.py::test_v1_import_risk_agent_citations_task_and_restore
+5 failed, 254 passed in 35.98s

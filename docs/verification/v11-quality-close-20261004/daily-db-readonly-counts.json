@@ -1,0 +1,13 @@
+{
+  "kind": "readonly_counts_not_full_row_hash",
+  "counts": {
+    "snapshots": 9,
+    "documents": 110,
+    "analyses": 20,
+    "evidence": 145,
+    "agent_runs": 25,
+    "personal_tasks": 1
+  },
+  "match_oct01_counts": true,
+  "daily_db_written": false
+}

@@ -1,0 +1,16 @@
+[project]
+name = "spd-m1"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "sqlalchemy>=2.0,<2.1",
+  "alembic>=1.15,<2", "pydantic-settings>=2.8,<3", "argon2-cffi>=23.1,<26",
+  "httpx>=0.28,<1", "langgraph>=1,<2", "psycopg[binary]>=3.2,<4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

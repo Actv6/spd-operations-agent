@@ -1,0 +1,42 @@
+{
+  "01-risks-desktop.jpg": {
+    "format": "JPEG",
+    "sha256": "94b2ed43712cf6cc1a1827ad847d0d481f89aa60db8f2d174dcc9af292d2c176",
+    "bytes": 79373
+  },
+  "01-risks.jpg": {
+    "format": "JPEG",
+    "sha256": "5691c3db95226ee03c846f4427a6c7f0eaeed5f2f0b9b7e9561d00ac9d77a053",
+    "bytes": 37958
+  },
+  "02-tasks.jpg": {
+    "format": "JPEG",
+    "sha256": "a3da075980c904f3c6ceee2b97907a3f2fc2c14a1c2afdcc2133b4de26065b98",
+    "bytes": 44217
+  },
+  "03-task-detail.jpg": {
+    "format": "JPEG",
+    "sha256": "12b8b24fcfb939762f108d9dc3372fc3e43289072f05053f2cb8be2e1c37c007",
+    "bytes": 109914
+  },
+  "04-inventory.jpg": {
+    "format": "JPEG",
+    "sha256": "e5c6b24193fe97f3ae57df08e9e75558fbed04f7cc3c16f09207d46611f32d6e",
+    "bytes": 73502
+  },
+  "05-knowledge.jpg": {
+    "format": "JPEG",
+    "sha256": "e79dcd468cee79d58e43f67a1076b195a83f4671f13fd2524353cf1c278647be",
+    "bytes": 68751
+  },
+  "06-workbench.jpg": {
+    "format": "JPEG",
+    "sha256": "8f8ccd1361650a643ec86185d4baae39e2933f678681aaa4687df7373c9ef4b5",
+    "bytes": 63247
+  },
+  "07-analysis.jpg": {
+    "format": "JPEG",
+    "sha256": "19c42960bf5c6911081258ee0c21abb72514a14ae44f2c2d297bf43b5f3814d8",
+    "bytes": 134003
+  }
+}

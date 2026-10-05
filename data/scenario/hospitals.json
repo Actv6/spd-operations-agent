@@ -1,0 +1,12 @@
+[
+  {
+    "id": "SIM-HA",
+    "name": "澄川医院",
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB",
+    "name": "青禾医院",
+    "synthetic": true
+  }
+]

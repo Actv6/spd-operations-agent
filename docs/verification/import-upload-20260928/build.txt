@@ -1,0 +1,42 @@
+vite v6.4.2 building for production...
+transforming...
+✓ 7705 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/client/index.html                             0.49 kB │ gzip:   0.35 kB
+dist/client/.vite/manifest.json                    8.54 kB │ gzip:   1.19 kB
+dist/client/assets/CatalogPanel-CGUljp8c.css       0.75 kB │ gzip:   0.37 kB
+dist/client/assets/VersionsPanel-BdHEDqn8.css      1.69 kB │ gzip:   0.59 kB
+dist/client/assets/Workspace-DhMM4LW8.css          2.50 kB │ gzip:   0.73 kB
+dist/client/assets/m2-C3dA8cCS.css                 3.08 kB │ gzip:   1.03 kB
+dist/client/assets/ImportsPanel-BKwWQlY1.css       3.46 kB │ gzip:   1.03 kB
+dist/client/assets/index-CTmjn6VI.css             20.66 kB │ gzip:   4.51 kB
+dist/client/assets/styles-USYdmN_F.css            22.74 kB │ gzip:   5.69 kB
+dist/client/assets/IconChevronRight-hIhhLhny.js    0.34 kB │ gzip:   0.27 kB
+dist/client/assets/useResource-BvM35Sdr.js         0.47 kB │ gzip:   0.31 kB
+dist/client/assets/IconX-CHtru5cM.js               0.73 kB │ gzip:   0.34 kB
+dist/client/assets/ItemDetailsPanel-pCURxRLD.js    1.14 kB │ gzip:   0.72 kB
+dist/client/assets/IconSearch-Cm8iKvgz.js          1.26 kB │ gzip:   0.46 kB
+dist/client/assets/index-Bcf5Pvsr.js               1.35 kB │ gzip:   0.75 kB
+dist/client/assets/IconDatabase-CbtFxHYd.js        1.89 kB │ gzip:   0.70 kB
+dist/client/assets/RiskPanel-CQNorfrT.js           3.29 kB │ gzip:   1.65 kB
+dist/client/assets/TasksPanel-DuMMoruP.js          4.03 kB │ gzip:   2.07 kB
+dist/client/assets/Auth-Da3zw0xM.js                4.12 kB │ gzip:   1.95 kB
+dist/client/assets/DataFacts-CGavuhnR.js           5.09 kB │ gzip:   2.26 kB
+dist/client/assets/InventoryPanel-0wUvHKRx.js      5.57 kB │ gzip:   2.56 kB
+dist/client/assets/Timeline-DL2-lMr2.js            6.60 kB │ gzip:   2.51 kB
+dist/client/assets/index-CeMHCeZ4.js               8.04 kB │ gzip:   2.83 kB
+dist/client/assets/VersionsPanel-CQ_X5cJG.js       8.48 kB │ gzip:   3.77 kB
+dist/client/assets/Collapse-BUu7Ose9.js           10.17 kB │ gzip:   3.80 kB
+dist/client/assets/CatalogPanel-DraQ9iAt.js       15.63 kB │ gzip:   6.23 kB
+dist/client/assets/KnowledgePanel-CK2SBi08.js     15.66 kB │ gzip:   6.39 kB
+dist/client/assets/index-DjFIDOWP.js              30.08 kB │ gzip:   8.66 kB
+dist/client/assets/App-CWc4UGJJ.js                34.62 kB │ gzip:  10.51 kB
+dist/client/assets/ResultPanel-Cvmk-l9T.js        48.77 kB │ gzip:  15.90 kB
+dist/client/assets/ImportsPanel-FXWoADle.js       63.90 kB │ gzip:  23.27 kB
+dist/client/assets/Brand-o2kXtgU4.js             109.38 kB │ gzip:  36.45 kB
+dist/client/assets/RunActions-vmfVjgI9.js        117.16 kB │ gzip:  39.32 kB
+dist/client/assets/index-BKRqEuJ7.js             119.01 kB │ gzip:  36.86 kB
+dist/client/assets/Workspace-DZ-_Arwi.js         429.49 kB │ gzip: 136.11 kB
+dist/client/assets/index-BuwT__W8.js             494.21 kB │ gzip: 164.88 kB
+✓ built in 4.09s

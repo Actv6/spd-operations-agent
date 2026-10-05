@@ -1,0 +1,449 @@
+{
+  "runs": [
+    {
+      "run_id": "addf6d09-22f0-426d-9185-189b706757d3",
+      "status": "succeeded",
+      "mode": "analyze",
+      "parent_run_id": null,
+      "snapshot_id": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+      "provider": "deepseek",
+      "duration_seconds": 6.36,
+      "error": null,
+      "citations": 9,
+      "model_calls": [
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1613,
+            "completion_tokens": 242,
+            "total_tokens": 1855,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1613
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5031,
+            "completion_tokens": 1287,
+            "total_tokens": 6318,
+            "prompt_tokens_details": {
+              "cached_tokens": 128
+            },
+            "prompt_cache_hit_tokens": 128,
+            "prompt_cache_miss_tokens": 4903
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "total_tokens_recorded": 8173,
+      "tool_steps": [
+        "get_inventory",
+        "get_consumption",
+        "get_batches",
+        "search_knowledge"
+      ],
+      "final_validation_count": 1
+    },
+    {
+      "run_id": "955f981a-42bb-4f21-9acb-1d2a13d3b87a",
+      "status": "succeeded",
+      "mode": "follow_up",
+      "parent_run_id": "addf6d09-22f0-426d-9185-189b706757d3",
+      "snapshot_id": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+      "provider": "deepseek",
+      "duration_seconds": 5.41,
+      "error": null,
+      "citations": 4,
+      "model_calls": [
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2664,
+            "completion_tokens": 100,
+            "total_tokens": 2764,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1128
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5591,
+            "completion_tokens": 441,
+            "total_tokens": 6032,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 2903
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5402,
+            "completion_tokens": 571,
+            "total_tokens": 5973,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 5018
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "total_tokens_recorded": 14769,
+      "tool_steps": [
+        "get_consumption",
+        "search_knowledge"
+      ],
+      "final_validation_count": 1
+    },
+    {
+      "run_id": "cd63cb8f-bef7-4849-8ae7-8a213d81e9b7",
+      "status": "failed",
+      "mode": "draft_action",
+      "parent_run_id": "955f981a-42bb-4f21-9acb-1d2a13d3b87a",
+      "snapshot_id": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+      "provider": "deepseek",
+      "duration_seconds": 1.46,
+      "error": {
+        "code": "TOOL_BUDGET_EXCEEDED",
+        "message": "工具调用次数超过预算",
+        "details": {},
+        "trace_id": "3dbef75d-a1e1-4e83-8dfd-1042b05ea0fe",
+        "retryable": false
+      },
+      "citations": 0,
+      "model_calls": [],
+      "total_tokens_recorded": null,
+      "tool_steps": [],
+      "final_validation_count": 0
+    },
+    {
+      "run_id": "7a6995e4-c128-44fa-b918-335a34128ff8",
+      "status": "succeeded",
+      "mode": "draft_action",
+      "parent_run_id": "955f981a-42bb-4f21-9acb-1d2a13d3b87a",
+      "snapshot_id": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+      "provider": "deepseek",
+      "duration_seconds": 12.71,
+      "error": null,
+      "citations": 14,
+      "model_calls": [
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3251,
+            "completion_tokens": 256,
+            "total_tokens": 3507,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 3251
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5968,
+            "completion_tokens": 100,
+            "total_tokens": 6068,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 2768
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 10012,
+            "completion_tokens": 1027,
+            "total_tokens": 11039,
+            "prompt_tokens_details": {
+              "cached_tokens": 5888
+            },
+            "prompt_cache_hit_tokens": 5888,
+            "prompt_cache_miss_tokens": 4124
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 10378,
+            "completion_tokens": 1353,
+            "total_tokens": 11731,
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 10122
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "total_tokens_recorded": 32345,
+      "tool_steps": [
+        "get_inventory",
+        "get_consumption",
+        "get_batches",
+        "compute_risks",
+        "search_knowledge",
+        "search_knowledge"
+      ],
+      "final_validation_count": 1
+    },
+    {
+      "run_id": "a2876e4c-c26f-449b-97e2-c37693cbebd0",
+      "status": "failed",
+      "mode": "analyze",
+      "parent_run_id": null,
+      "snapshot_id": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+      "provider": "deepseek",
+      "duration_seconds": 12.6,
+      "error": {
+        "code": "MODEL_OUTPUT_INVALID",
+        "message": "最终回答不是合法 JSON 契约",
+        "details": {},
+        "trace_id": "2ffea893-6f7d-4fd7-8d14-feffdfbd0339",
+        "retryable": false
+      },
+      "citations": 0,
+      "model_calls": [
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2874,
+            "completion_tokens": 67,
+            "total_tokens": 2941,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 1594
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5987,
+            "completion_tokens": 164,
+            "total_tokens": 6151,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816
+            },
+            "prompt_cache_hit_tokens": 2816,
+            "prompt_cache_miss_tokens": 3171
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 9063,
+            "completion_tokens": 75,
+            "total_tokens": 9138,
+            "prompt_tokens_details": {
+              "cached_tokens": 5888
+            },
+            "prompt_cache_hit_tokens": 5888,
+            "prompt_cache_miss_tokens": 3175
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 11091,
+            "completion_tokens": 1158,
+            "total_tokens": 12249,
+            "prompt_tokens_details": {
+              "cached_tokens": 8960
+            },
+            "prompt_cache_hit_tokens": 8960,
+            "prompt_cache_miss_tokens": 2131
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 11588,
+            "completion_tokens": 1221,
+            "total_tokens": 12809,
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 11332
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "total_tokens_recorded": 43288,
+      "tool_steps": [
+        "compute_risks",
+        "get_batches",
+        "get_consumption",
+        "search_knowledge"
+      ],
+      "final_validation_count": 1
+    },
+    {
+      "run_id": "4c30beca-cd86-4762-ab47-310ce172c4c7",
+      "status": "succeeded",
+      "mode": "analyze",
+      "parent_run_id": null,
+      "snapshot_id": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+      "provider": "deepseek",
+      "duration_seconds": 9.72,
+      "error": null,
+      "citations": 4,
+      "model_calls": [
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2874,
+            "completion_tokens": 81,
+            "total_tokens": 2955,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 186
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 41083,
+            "completion_tokens": 875,
+            "total_tokens": 41958,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816
+            },
+            "prompt_cache_hit_tokens": 2816,
+            "prompt_cache_miss_tokens": 38267
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        },
+        {
+          "requested_model": "deepseek-flash",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 41320,
+            "completion_tokens": 984,
+            "total_tokens": 42304,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 39784
+          },
+          "cost": null,
+          "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+        }
+      ],
+      "total_tokens_recorded": 87217,
+      "tool_steps": [
+        "compute_risks",
+        "get_inventory",
+        "get_batches",
+        "get_consumption"
+      ],
+      "final_validation_count": 1
+    }
+  ],
+  "personal_tasks": [
+    {
+      "id": "18153b88-0a3a-45c4-849b-5d82c1227001",
+      "draft_id": "67c9bd59-167f-419d-b3fd-4297f31ce0bf",
+      "title": "反应杯（MAT-0006）消耗缺日核查与覆盖估算恢复",
+      "status": "todo",
+      "revision": 4,
+      "due_date": "2026-09-30",
+      "history": [
+        {
+          "status": "todo",
+          "result": "已确认草稿并建立本人待办",
+          "at": "2026-09-27T17:45:25.142823+00:00",
+          "actor_id": "aa16bb2e-5f8f-475b-aae6-9bb5d7a352d0"
+        },
+        {
+          "status": "in_progress",
+          "result": "",
+          "at": "2026-09-27T17:46:23.306245+00:00",
+          "actor_id": "aa16bb2e-5f8f-475b-aae6-9bb5d7a352d0"
+        },
+        {
+          "status": "completed",
+          "result": "本地功能验收：已核对页面显示的两处缺失日期，未补录消耗、未发布新快照。异常仍需后续核实。",
+          "at": "2026-09-27T17:46:33.740074+00:00",
+          "actor_id": "aa16bb2e-5f8f-475b-aae6-9bb5d7a352d0"
+        },
+        {
+          "status": "todo",
+          "result": "本地验收重开：原快照缺日仍存在，保留待核实状态。",
+          "at": "2026-09-27T17:46:46.606466+00:00",
+          "actor_id": "aa16bb2e-5f8f-475b-aae6-9bb5d7a352d0"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Generated scenario data, not company records.",
+    "The initial TOOL_BUDGET_EXCEEDED run predates usage checkpoint fix; missing usage is unknown, not zero.",
+    "Success denotes engineering completion, not full semantic accuracy."
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "checks": [
+    {
+      "state": "empty",
+      "width": 1440,
+      "height": 960,
+      "geometry": {
+        "cards": [
+          {
+            "card": {
+              "left": 544,
+              "right": 826.65625,
+              "top": 243.1875,
+              "bottom": 510.1875,
+              "height": 267
+            },
+            "zone": {
+              "left": 561,
+              "right": 809.65625,
+              "top": 366.1875,
+              "bottom": 493.1875,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 838.65625,
+              "right": 1121.328125,
+              "top": 243.1875,
+              "bottom": 510.1875,
+              "height": 267
+            },
+            "zone": {
+              "left": 855.65625,
+              "right": 1104.328125,
+              "top": 366.1875,
+              "bottom": 493.1875,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 1133.328125,
+              "right": 1415.984375,
+              "top": 243.1875,
+              "bottom": 510.1875,
+              "height": 267
+            },
+            "zone": {
+              "left": 1150.328125,
+              "right": 1398.984375,
+              "top": 366.1875,
+              "bottom": 493.1875,
+              "height": 127
+            }
+          }
+        ],
+        "guide": {
+          "left": 544,
+          "right": 1416,
+          "top": 530.1875,
+          "bottom": 572.1875,
+          "height": 42
+        },
+        "overflow": false
+      }
+    },
+    {
+      "state": "empty",
+      "width": 939,
+      "height": 960,
+      "geometry": {
+        "cards": [
+          {
+            "card": {
+              "left": 43,
+              "right": 325.65625,
+              "top": 243.1875,
+              "bottom": 510.1875,
+              "height": 267
+            },
+            "zone": {
+              "left": 60,
+              "right": 308.65625,
+              "top": 366.1875,
+              "bottom": 493.1875,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 337.65625,
+              "right": 620.328125,
+              "top": 243.1875,
+              "bottom": 510.1875,
+              "height": 267
+            },
+            "zone": {
+              "left": 354.65625,
+              "right": 603.328125,
+              "top": 366.1875,
+              "bottom": 493.1875,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 632.328125,
+              "right": 914.984375,
+              "top": 243.1875,
+              "bottom": 510.1875,
+              "height": 267
+            },
+            "zone": {
+              "left": 649.328125,
+              "right": 897.984375,
+              "top": 366.1875,
+              "bottom": 493.1875,
+              "height": 127
+            }
+          }
+        ],
+        "guide": {
+          "left": 43,
+          "right": 915,
+          "top": 530.1875,
+          "bottom": 572.1875,
+          "height": 42
+        },
+        "overflow": false
+      }
+    },
+    {
+      "state": "empty",
+      "width": 800,
+      "height": 960,
+      "geometry": {
+        "cards": [
+          {
+            "card": {
+              "left": 24,
+              "right": 266.65625,
+              "top": 265.28125,
+              "bottom": 532.28125,
+              "height": 267
+            },
+            "zone": {
+              "left": 41,
+              "right": 249.65625,
+              "top": 388.28125,
+              "bottom": 515.28125,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 278.65625,
+              "right": 521.328125,
+              "top": 265.28125,
+              "bottom": 532.28125,
+              "height": 267
+            },
+            "zone": {
+              "left": 295.65625,
+              "right": 504.328125,
+              "top": 388.28125,
+              "bottom": 515.28125,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 533.328125,
+              "right": 776,
+              "top": 265.28125,
+              "bottom": 532.28125,
+              "height": 267
+            },
+            "zone": {
+              "left": 550.328125,
+              "right": 759,
+              "top": 388.28125,
+              "bottom": 515.28125,
+              "height": 127
+            }
+          }
+        ],
+        "guide": {
+          "left": 24,
+          "right": 776,
+          "top": 552.28125,
+          "bottom": 594.28125,
+          "height": 42
+        },
+        "overflow": false
+      }
+    },
+    {
+      "state": "empty",
+      "width": 390,
+      "height": 844,
+      "geometry": {
+        "cards": [
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 331.5625,
+              "bottom": 552.5625,
+              "height": 221
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 408.5625,
+              "bottom": 535.5625,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 564.5625,
+              "bottom": 785.5625,
+              "height": 221
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 641.5625,
+              "bottom": 768.5625,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 797.5625,
+              "bottom": 1018.5625,
+              "height": 221
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 874.5625,
+              "bottom": 1001.5625,
+              "height": 127
+            }
+          }
+        ],
+        "guide": {
+          "left": 24,
+          "right": 366,
+          "top": 1038.5625,
+          "bottom": 1080.5625,
+          "height": 42
+        },
+        "overflow": false
+      }
+    },
+    {
+      "state": "mixed",
+      "width": 1440,
+      "height": 960,
+      "geometry": {
+        "cards": [
+          {
+            "card": {
+              "left": 544,
+              "right": 826.65625,
+              "top": 243.1875,
+              "bottom": 532.1875,
+              "height": 289
+            },
+            "zone": {
+              "left": 561,
+              "right": 809.65625,
+              "top": 366.1875,
+              "bottom": 515.1875,
+              "height": 149
+            }
+          },
+          {
+            "card": {
+              "left": 838.65625,
+              "right": 1121.328125,
+              "top": 243.1875,
+              "bottom": 532.1875,
+              "height": 289
+            },
+            "zone": {
+              "left": 855.65625,
+              "right": 1104.328125,
+              "top": 366.1875,
+              "bottom": 493.1875,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 1133.328125,
+              "right": 1415.984375,
+              "top": 243.1875,
+              "bottom": 532.1875,
+              "height": 289
+            },
+            "zone": {
+              "left": 1150.328125,
+              "right": 1398.984375,
+              "top": 366.1875,
+              "bottom": 493.1875,
+              "height": 127
+            }
+          }
+        ],
+        "guide": {
+          "left": 544,
+          "right": 1416,
+          "top": 552.1875,
+          "bottom": 594.1875,
+          "height": 42
+        },
+        "overflow": false
+      }
+    },
+    {
+      "state": "mixed",
+      "width": 390,
+      "height": 844,
+      "geometry": {
+        "cards": [
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 331.5625,
+              "bottom": 574.5625,
+              "height": 243
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 408.5625,
+              "bottom": 557.5625,
+              "height": 149
+            }
+          },
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 586.5625,
+              "bottom": 807.5625,
+              "height": 221
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 663.5625,
+              "bottom": 790.5625,
+              "height": 127
+            }
+          },
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 819.5625,
+              "bottom": 1040.5625,
+              "height": 221
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 896.5625,
+              "bottom": 1023.5625,
+              "height": 127
+            }
+          }
+        ],
+        "guide": {
+          "left": 24,
+          "right": 366,
+          "top": 1060.5625,
+          "bottom": 1102.5625,
+          "height": 42
+        },
+        "overflow": false
+      }
+    },
+    {
+      "state": "selected",
+      "width": 1440,
+      "height": 960,
+      "geometry": {
+        "cards": [
+          {
+            "card": {
+              "left": 544,
+              "right": 826.65625,
+              "top": 243.1875,
+              "bottom": 532.1875,
+              "height": 289
+            },
+            "zone": {
+              "left": 561,
+              "right": 809.65625,
+              "top": 366.1875,
+              "bottom": 515.1875,
+              "height": 149
+            }
+          },
+          {
+            "card": {
+              "left": 838.65625,
+              "right": 1121.328125,
+              "top": 243.1875,
+              "bottom": 532.1875,
+              "height": 289
+            },
+            "zone": {
+              "left": 855.65625,
+              "right": 1104.328125,
+              "top": 366.1875,
+              "bottom": 515.1875,
+              "height": 149
+            }
+          },
+          {
+            "card": {
+              "left": 1133.328125,
+              "right": 1415.984375,
+              "top": 243.1875,
+              "bottom": 532.1875,
+              "height": 289
+            },
+            "zone": {
+              "left": 1150.328125,
+              "right": 1398.984375,
+              "top": 366.1875,
+              "bottom": 515.1875,
+              "height": 149
+            }
+          }
+        ],
+        "guide": {
+          "left": 544,
+          "right": 1416,
+          "top": 552.1875,
+          "bottom": 594.1875,
+          "height": 42
+        },
+        "overflow": false
+      }
+    },
+    {
+      "state": "selected",
+      "width": 390,
+      "height": 844,
+      "geometry": {
+        "cards": [
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 331.5625,
+              "bottom": 574.5625,
+              "height": 243
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 408.5625,
+              "bottom": 557.5625,
+              "height": 149
+            }
+          },
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 586.5625,
+              "bottom": 829.5625,
+              "height": 243
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 663.5625,
+              "bottom": 812.5625,
+              "height": 149
+            }
+          },
+          {
+            "card": {
+              "left": 24,
+              "right": 366,
+              "top": 841.5625,
+              "bottom": 1084.5625,
+              "height": 243
+            },
+            "zone": {
+              "left": 41,
+              "right": 349,
+              "top": 918.5625,
+              "bottom": 1067.5625,
+              "height": 149
+            }
+          }
+        ],
+        "guide": {
+          "left": 24,
+          "right": 366,
+          "top": 1104.5625,
+          "bottom": 1146.5625,
+          "height": 42
+        },
+        "overflow": false
+      }
+    }
+  ],
+  "page_errors": []
+}

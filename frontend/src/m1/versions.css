@@ -1,0 +1,124 @@
+.version-context {
+  padding: 0 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.version-context p,
+.version-note,
+.version-secondary {
+  color: var(--text-secondary, #63718a);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.version-context p {
+  margin: 0;
+}
+.version-tabs {
+  padding: 0 24px;
+}
+.version-selectors {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+.version-selectors label {
+  display: grid;
+  gap: 6px;
+  flex: 1;
+  min-width: 230px;
+  max-width: 350px;
+  font-size: 13px;
+  color: #63718a;
+}
+.version-selectors .ant-select {
+  width: 100%;
+}
+.version-selectors > span {
+  padding-bottom: 7px;
+}
+.version-secondary {
+  margin-top: 4px;
+}
+.version-comparison-heading {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 8px 0;
+}
+.version-comparison-heading div {
+  display: grid;
+  gap: 6px;
+}
+.version-comparison-heading span {
+  font-size: 13px;
+  color: #63718a;
+}
+.version-comparison-heading strong {
+  font-size: 16px;
+}
+.version-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 16px 0;
+  border-block: 1px solid #e7ebf0;
+}
+.version-counts strong {
+  margin-left: 8px;
+  font-size: 20px;
+}
+.version-diff .data-table-toolbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+.version-diff ul {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 13px;
+}
+.version-restore {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+  border-top: 1px solid #e7ebf0;
+  padding-top: 8px;
+}
+.version-restore h3,
+.version-restore p {
+  margin-bottom: 0;
+}
+.version-restore p {
+  color: #63718a;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.version-restore .ant-checkbox-wrapper {
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .version-context {
+    padding-inline: 16px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .version-tabs {
+    padding-inline: 16px;
+  }
+  .version-selectors > span {
+    display: none;
+  }
+  .version-selectors label {
+    min-width: 100%;
+  }
+  .version-comparison-heading {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .version-counts {
+    gap: 16px;
+  }
+}

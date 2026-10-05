@@ -1,0 +1,51 @@
+{
+  "kind": "single_final_correction_not_full_run",
+  "source": "../docs/verification/m21-quality3-20260928/live-20260928-145844.json",
+  "source_run_id": "56b8efbb-a727-4423-b41b-9f42a40f471e",
+  "initial_error": "ANSWER_LANGUAGE_INVALID",
+  "corrected": {
+    "answer": "本轮核实：反应杯（检验科）以2026-09-27为基准的近14日窗口中仅12天有记录，缺行为2026-09-22和2026-09-24，日均消耗与覆盖天数暂停。制度明确缺行不能当零，也不得按12天平均代替14天口径，须先核对上传批次、业务日期及冲正记录。待确认项是这两天是否真实无消耗，以及零记录的形式与出具人。核查草稿见待办，仅涉及核对与有据补齐，不执行采购、改库或报废。",
+    "evidence_ids": [
+      "26983987-b139-4476-a682-78b92f4d6194",
+      "4818a9af-827d-4644-9d81-ae8aee13b15d",
+      "913491cb-f8e6-480e-bdfc-8ca09dc01764",
+      "62aa7d22-4ad8-4f93-90ce-d1d49b77bb3a",
+      "25b0eb9a-73ac-43df-a0d5-813a52a36a67"
+    ],
+    "insufficient_evidence": false,
+    "task_draft": {
+      "title": "反应杯（检验科）消耗缺日核查待办",
+      "steps": [
+        "核实2026-09-22与2026-09-24检验科反应杯是否确有领用或消耗，判断是否真实无消耗。",
+        "核对这两天的上传批次、业务日期与冲正记录，排查漏传、日期错位或冲正口径不明。",
+        "对确认无消耗的日期取得明确零记录，记录形式与出具人待确认。",
+        "将核实结果交数据维护人员按有来源方式补齐，由项目经理复核后发布新快照，不自行改库。",
+        "新快照发布后由工具重新计算日均消耗与覆盖天数，此前维持暂停，不用12天平均值替代14天口径。"
+      ]
+    },
+    "risk_summary": null
+  },
+  "metadata": {
+    "prompt_release": "m21-quality-3",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 5086,
+      "completion_tokens": 424,
+      "total_tokens": 5510,
+      "prompt_tokens_details": {
+        "cached_tokens": 3584
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 1502
+    },
+    "input_chars": 12673,
+    "cost": null,
+    "provider_version": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "elapsed_seconds": 2.49,
+  "tokens_before": 88410,
+  "tokens_after": 93920,
+  "source_db_modified": false,
+  "tasks_created": 0
+}

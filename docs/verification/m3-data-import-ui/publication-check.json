@@ -1,0 +1,12 @@
+{
+  "account": "M1 浏览器测试",
+  "provenance": "generated scenario; local browser QA only",
+  "import_id": "b99511e4-9f38-44e4-a692-25be912fb9dd",
+  "base_snapshot": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+  "published_snapshot": "71f9797c-cbe7-48b8-a121-543a848fd848",
+  "old_snapshot_preserved": true,
+  "existing_runs_keep_old_snapshots": 15,
+  "positions": 24,
+  "warnings": 2,
+  "risk_findings": 8
+}

@@ -1,0 +1,961 @@
+{
+  "kind": "offline_author_quality_close",
+  "dataset_version": "v11-close-dev-2",
+  "dataset_hash": "0b79efc98a803f9ba682feba1f165b75f79a089220652428a0ac6f055d4ac21f",
+  "provider_calls": 0,
+  "business_database_used": false,
+  "blind_test": false,
+  "split": "all",
+  "limitations": [
+    "作者开发集与作者保留集，非独立盲测",
+    "无真实模型或通用语义证明",
+    "无关召回单列，不算精准检索通过"
+  ],
+  "guards": [
+    {
+      "id": "wrong_plain",
+      "answer": "高关注2条，中关注6条",
+      "error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "actual_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "passed": true
+    },
+    {
+      "id": "wrong_modifier",
+      "answer": "高关注共有两项",
+      "error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "actual_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "passed": true
+    },
+    {
+      "id": "wrong_fullwidth",
+      "answer": "**中关注**：共６条",
+      "error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "actual_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "passed": true
+    },
+    {
+      "id": "wrong_reverse",
+      "answer": "二项属于高关注",
+      "error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "actual_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "passed": true
+    },
+    {
+      "id": "correct_chinese",
+      "answer": "高关注三条，中关注五条",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "correct_markdown",
+      "answer": "**高关注**：共有３项",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "no_count",
+      "answer": "请按清单优先核实效期。",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "absence_overclaim",
+      "answer": "本项目知识库中不存在适用制度。",
+      "error": "KNOWLEDGE_ABSENCE_OVERCLAIM",
+      "actual_error": "KNOWLEDGE_ABSENCE_OVERCLAIM",
+      "passed": true
+    },
+    {
+      "id": "bounded_absence",
+      "answer": "本次未检索到适用制度。",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "unknown_code",
+      "answer": "请核查MAT-UNKNOWN。",
+      "error": "ANSWER_CODE_INVALID",
+      "actual_error": "ANSWER_CODE_INVALID",
+      "passed": true
+    },
+    {
+      "id": "field_leak",
+      "answer": "请查看coverage_days。",
+      "error": "ANSWER_LANGUAGE_INVALID",
+      "actual_error": "ANSWER_LANGUAGE_INVALID",
+      "passed": true
+    },
+    {
+      "id": "no_advice_bad",
+      "question": "只回答缺失日期，不给处理建议",
+      "answer": "缺失9月22日、24日。建议补齐记录并发布新快照。",
+      "error": "ANSWER_SCOPE_VIOLATION",
+      "actual_error": "ANSWER_SCOPE_VIOLATION",
+      "passed": true
+    },
+    {
+      "id": "no_advice_good",
+      "question": "只回答缺失日期，不给处理建议",
+      "answer": "缺失9月22日、24日，状态为缺失；不能补零。",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "only_dates_bad",
+      "question": "只说缺失的日期",
+      "answer": "9月22日、24日。请核对原始记录。",
+      "error": "ANSWER_SCOPE_VIOLATION",
+      "actual_error": "ANSWER_SCOPE_VIOLATION",
+      "passed": true
+    },
+    {
+      "id": "negative_advice",
+      "question": "不要处理建议",
+      "answer": "不能补零，不建议直接发布快照。",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "id": "regular_advice",
+      "question": "缺日怎么办",
+      "answer": "建议核对台账。",
+      "error": null,
+      "actual_error": null,
+      "passed": true
+    }
+  ],
+  "retrieval": [
+    {
+      "id": "Q01",
+      "query": "消耗缺日核查",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q02",
+      "query": "有几天的用量没填咋办",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q03",
+      "query": "用量漏填怎么办",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q04",
+      "query": "消耗记录缺了怎么办",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q05",
+      "query": "消耗缺失不能补零",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q06",
+      "query": "缺日核对原始台账",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q07",
+      "query": "用量记录缺失",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q08",
+      "query": "几天用量未填",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q09",
+      "query": "消耗少填几天",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q10",
+      "query": "14日零消耗",
+      "expected": [
+        "zero"
+      ],
+      "split": "dev",
+      "actual": [
+        "zero"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q11",
+      "query": "消耗记录全为零",
+      "expected": [
+        "zero"
+      ],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": false
+    },
+    {
+      "id": "Q12",
+      "query": "零消耗覆盖天数",
+      "expected": [
+        "zero"
+      ],
+      "split": "dev",
+      "actual": [
+        "zero"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q13",
+      "query": "零消耗能算覆盖吗",
+      "expected": [
+        "zero"
+      ],
+      "split": "dev",
+      "actual": [
+        "zero"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q14",
+      "query": "批次快到期了",
+      "expected": [
+        "expiry"
+      ],
+      "split": "dev",
+      "actual": [
+        "expiry"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q15",
+      "query": "临期可用数量",
+      "expected": [
+        "expiry"
+      ],
+      "split": "dev",
+      "actual": [
+        "expiry"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q16",
+      "query": "批次效期临近",
+      "expected": [
+        "expiry"
+      ],
+      "split": "dev",
+      "actual": [
+        "expiry"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q17",
+      "query": "批次已过期怎么处理",
+      "expected": [
+        "expiry"
+      ],
+      "split": "dev",
+      "actual": [
+        "expiry"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q18",
+      "query": "旧快照时点",
+      "expected": [
+        "stale"
+      ],
+      "split": "dev",
+      "actual": [
+        "stale"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q19",
+      "query": "库存快照超过24小时",
+      "expected": [
+        "stale"
+      ],
+      "split": "dev",
+      "actual": [
+        "stale"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q20",
+      "query": "旧快照当前库存",
+      "expected": [
+        "stale"
+      ],
+      "split": "dev",
+      "actual": [
+        "stale"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q21",
+      "query": "包装箱瓶换算",
+      "expected": [
+        "units"
+      ],
+      "split": "dev",
+      "actual": [
+        "units"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q22",
+      "query": "单位换算依据",
+      "expected": [
+        "units"
+      ],
+      "split": "dev",
+      "actual": [
+        "units"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q23",
+      "query": "包装单位隐式换算",
+      "expected": [
+        "units"
+      ],
+      "split": "dev",
+      "actual": [
+        "units"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q24",
+      "query": "量子飞船核查",
+      "expected": [],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q25",
+      "query": "不存在的星际制度",
+      "expected": [],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q26",
+      "query": "核查流程量子引擎",
+      "expected": [],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q27",
+      "query": "停用暗号",
+      "expected": [],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q28",
+      "query": "未来暗号",
+      "expected": [],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q29",
+      "query": "隔离暗号",
+      "expected": [],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q30",
+      "query": "结束暗号",
+      "expected": [],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q31",
+      "query": "边界暗号",
+      "expected": [
+        "boundary"
+      ],
+      "split": "dev",
+      "actual": [
+        "boundary"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q32",
+      "query": "量子曲率引擎",
+      "expected": [],
+      "split": "dev",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q33",
+      "query": "消耗没填的日期",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q34",
+      "query": "用量少填了要补零吗",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q35",
+      "query": "用量漏填应核实台账",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q36",
+      "query": "零消耗能证明实际没用吗",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "zero"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q37",
+      "query": "14日都是零记录",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "zero"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q38",
+      "query": "批次快过期了",
+      "expected": [
+        "expiry"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "expiry"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q39",
+      "query": "临期物资数量",
+      "expected": [
+        "expiry"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "expiry"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q40",
+      "query": "库存旧快照还能用吗",
+      "expected": [
+        "stale"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "stale"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q41",
+      "query": "箱瓶包装单位",
+      "expected": [
+        "units"
+      ],
+      "split": "author_exposed",
+      "actual": [
+        "units"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q42",
+      "query": "空间曲率核查制度",
+      "expected": [],
+      "split": "author_exposed",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q43",
+      "query": "消耗漏填需核实原始台账",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_holdout",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q44",
+      "query": "用量未填不能直接补零",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_holdout",
+      "actual": [
+        "gap"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q45",
+      "query": "全窗口零消耗怎么理解",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_holdout",
+      "actual": [
+        "zero"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q46",
+      "query": "14天全为零记录",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_holdout",
+      "actual": [
+        "zero"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q47",
+      "query": "近十四日都是零记录",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_holdout",
+      "actual": [
+        "zero"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q48",
+      "query": "临期批次到期日期",
+      "expected": [
+        "expiry"
+      ],
+      "split": "author_holdout",
+      "actual": [
+        "expiry"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q49",
+      "query": "旧快照是否代表当前库存",
+      "expected": [
+        "stale"
+      ],
+      "split": "author_holdout",
+      "actual": [
+        "stale"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q50",
+      "query": "包装换算需要什么依据",
+      "expected": [
+        "units"
+      ],
+      "split": "author_holdout",
+      "actual": [
+        "units"
+      ],
+      "top1": true,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q51",
+      "query": "空间跃迁费用核查",
+      "expected": [],
+      "split": "author_holdout",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    },
+    {
+      "id": "Q52",
+      "query": "外星引擎资料制度",
+      "expected": [],
+      "split": "author_holdout",
+      "actual": [],
+      "top1": false,
+      "irrelevant_hits": [],
+      "offsets_ok": true,
+      "scope_ok": true,
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "author_exposed": {
+      "total": 10,
+      "passed": 10,
+      "target_queries": 9,
+      "recall_at_3": 1.0,
+      "top1_rate": 1.0,
+      "no_match_queries": 1,
+      "false_positive_queries": 0,
+      "irrelevant_hits": 0,
+      "scope_failures": 0,
+      "offset_failures": 0
+    },
+    "author_holdout": {
+      "total": 10,
+      "passed": 10,
+      "target_queries": 8,
+      "recall_at_3": 1.0,
+      "top1_rate": 1.0,
+      "no_match_queries": 2,
+      "false_positive_queries": 0,
+      "irrelevant_hits": 0,
+      "scope_failures": 0,
+      "offset_failures": 0
+    },
+    "dev": {
+      "total": 32,
+      "passed": 31,
+      "target_queries": 24,
+      "recall_at_3": 0.9583333333333334,
+      "top1_rate": 0.9583333333333334,
+      "no_match_queries": 8,
+      "false_positive_queries": 0,
+      "irrelevant_hits": 0,
+      "scope_failures": 0,
+      "offset_failures": 0
+    }
+  },
+  "guard_passed": 16,
+  "guard_total": 16
+}

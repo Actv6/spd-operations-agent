@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ONS-HANDOVER-v1",
+    "title": "驻场晨间交接与采集记录",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "path": "ONS-HANDOVER-v1.md",
+    "sha256": "86741850bf8f63d920637cb336a894c48359f1d4853251695c7ef18f158c780d",
+    "synthetic": true,
+    "source_type": "generated_hospital_onsite_scenario"
+  },
+  {
+    "id": "ONS-SHORTAGE-v1",
+    "title": "驻场缺料反馈与配送核查记录",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "path": "ONS-SHORTAGE-v1.md",
+    "sha256": "8c371e03f962b0d1b3c575035bd493338bc4ba146730c110906e158aa8f8a918",
+    "synthetic": true,
+    "source_type": "generated_hospital_onsite_scenario"
+  },
+  {
+    "id": "ONS-EXPIRY-v1",
+    "title": "驻场临期批次与冻结核查记录",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "path": "ONS-EXPIRY-v1.md",
+    "sha256": "5befec8cf76ab775b2537f2a1045a717a2b1e21dad34e5a975580a644fd876c7",
+    "synthetic": true,
+    "source_type": "generated_hospital_onsite_scenario"
+  },
+  {
+    "id": "ONS-RECON-v1",
+    "title": "驻场库存与日消耗对账记录",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "path": "ONS-RECON-v1.md",
+    "sha256": "0501cfa39762cb769bb382eff234609ecf5f8fe0ea3d5275864c2c650c835488",
+    "synthetic": true,
+    "source_type": "generated_hospital_onsite_scenario"
+  }
+]

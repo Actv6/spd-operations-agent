@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "fixture login succeeded",
+    "server-derived priority counts 3/5 displayed",
+    "feedback failure retained input and retry succeeded",
+    "feedback required reason and save succeeded",
+    "editing invalidates publication preview",
+    "manual publication succeeded",
+    "published content retrieved by actual lexical search",
+    "manual retirement succeeded"
+  ],
+  "errors": [],
+  "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /^检\\s*索$/ })\u001b[22m\n"
+}

@@ -1,0 +1,26 @@
+{
+  "dataset_version": "0.1.0",
+  "seed": 20260927,
+  "synthetic": true,
+  "as_of": "2026-09-27T09:00:00+08:00",
+  "history_start": "2026-06-29",
+  "history_end": "2026-09-26",
+  "counts": {
+    "hospitals": 2,
+    "departments": 6,
+    "suppliers": 6,
+    "products": 24,
+    "inventory_positions": 48,
+    "batches": 144,
+    "consumption_records": 4318,
+    "purchase_orders": 12,
+    "knowledge_documents": 6,
+    "gold_cases": 14
+  },
+  "limitations": [
+    "无真实业务分布证据",
+    "无完整出入库流水，不能用于账本核销",
+    "无真实说明书和企业SOP",
+    "黄金用例尚未在Agent执行"
+  ]
+}

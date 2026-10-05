@@ -1,0 +1,668 @@
+[
+  {
+    "id": "OPS-KB-SHORTAGE-v1",
+    "title": "缺货与紧急需求响应作业指引",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/SHORTAGE.md",
+    "sha256": "f96cb676b1996945fa77a4057b960dc6c6dec0c8f3e8e868466145f0d4e6022a"
+  },
+  {
+    "id": "OPS-KB-ETA-v1",
+    "title": "在途订单与到货承诺核实指引",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/ETA.md",
+    "sha256": "3ae1b72778c36eba3392a68a7f25b6f1c10b03bdf6af9250f10f1e8ef62d2504"
+  },
+  {
+    "id": "OPS-KB-UNITS-v1",
+    "title": "采购包装与基础单位换算规范",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/UNITS.md",
+    "sha256": "86a2b40810234a7fc9a624952f5b8129e10b71d1c02738179f625d136e187e36"
+  },
+  {
+    "id": "OPS-KB-STOCKTAKE-v1",
+    "title": "科室盘点差异处理规范",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/STOCKTAKE.md",
+    "sha256": "1056aa4e0bf8684c1b1b47e984c0dfa091903a50ea4b84b15b05522f29068874"
+  },
+  {
+    "id": "OPS-KB-HOLD-v1",
+    "title": "质量冻结与预留占用核查细则",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/HOLD.md",
+    "sha256": "8feb3d83722b873944d309d3b9626fed2a3a1cf7cb315bfe9925d9ccbc6112b6"
+  },
+  {
+    "id": "OPS-KB-EXPIRY-v1",
+    "title": "临期物资复核与先到期先发出指引",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/EXPIRY.md",
+    "sha256": "7d58cb99ed0454e7dcb2da601153c7aff30d802dab98ac3077a0ad025399e1d2"
+  },
+  {
+    "id": "OPS-KB-MISSING-v1",
+    "title": "消耗缺日与零消耗核验流程",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MISSING.md",
+    "sha256": "6815782c1fba952a0fede0098a0e6f47ccc24c399c7b7293ef42de28f0cd029d"
+  },
+  {
+    "id": "OPS-KB-STALE-v1",
+    "title": "库存快照过期与刷新核验流程",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/STALE.md",
+    "sha256": "5e7ab250c54dfed195221651c6a81d8b0502af5fc48cdb56a00d3220a0bcf798"
+  },
+  {
+    "id": "OPS-KB-RECEIVE-v1",
+    "title": "物资收货验收记录要求",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/RECEIVE.md",
+    "sha256": "896e5235b452e675013dfcd6a54fccd94ae11f355e93bfef2699ee849cda68a5"
+  },
+  {
+    "id": "OPS-KB-RETURN-v1",
+    "title": "科室退回物资登记与复核要求",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/RETURN.md",
+    "sha256": "0493acb4b2ad71dbffb05e02c5756af73ed1c6f776a7832e3014ca2f1b88bd13"
+  },
+  {
+    "id": "OPS-KB-HANDOVER-v1",
+    "title": "驻点早班交接清单",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/HANDOVER.md",
+    "sha256": "1f183b649d45557286d4b5965b467b581460972efd3a0bab38ab321018ee5b5e"
+  },
+  {
+    "id": "OPS-KB-EVIDENCE-v1",
+    "title": "核查证据与制度版本使用规范",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/EVIDENCE.md",
+    "sha256": "25370f4caa9ea0df01a2193a5a3c178003b2d724f5de76d0f403c873014d00b3"
+  },
+  {
+    "id": "OPS-KB-MAT-0001-v1",
+    "title": "物资主数据卡：生化清洗液",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0001.md",
+    "sha256": "d231893c15857a70bdad148a1f7374917ba68377798271e6aaff1d10ded2d0bc"
+  },
+  {
+    "id": "OPS-KB-MAT-0002-v1",
+    "title": "物资主数据卡：样本稀释液",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0002.md",
+    "sha256": "5bcdb8e79499f9c0466b6822724fae9b3f54203ba90d6439b0b6adb84f32d375"
+  },
+  {
+    "id": "OPS-KB-MAT-0003-v1",
+    "title": "物资主数据卡：尿液分析试纸",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0003.md",
+    "sha256": "ce6d547102c319863b53665c41acab5521f6810f451788c5000b41fae965f11a"
+  },
+  {
+    "id": "OPS-KB-MAT-0004-v1",
+    "title": "物资主数据卡：检验质控材料",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0004.md",
+    "sha256": "324ca560e832b559008b3353e202c1947a6d06fcdd17242f8cc97ebe148cbfc7"
+  },
+  {
+    "id": "OPS-KB-MAT-0005-v1",
+    "title": "物资主数据卡：低频检测耗材",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0005.md",
+    "sha256": "12642432090c3f76f8b6c83302a714122b14649278d98a30e358ced0e17b26d9"
+  },
+  {
+    "id": "OPS-KB-MAT-0006-v1",
+    "title": "物资主数据卡：反应杯",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0006.md",
+    "sha256": "6d592b4ee166701ce2a2507f7eef6cda154ceaebbfdb0895a79e38b8d34991ad"
+  },
+  {
+    "id": "OPS-KB-MAT-0007-v1",
+    "title": "物资主数据卡：采样管",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0007.md",
+    "sha256": "6cd9d6f6fd431a799e73bd9788a1e687b06eb46dc13392677ebe3338d86de8a9"
+  },
+  {
+    "id": "OPS-KB-MAT-0008-v1",
+    "title": "物资主数据卡：样本保存管",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0008.md",
+    "sha256": "29b31ed896f82c2ffefe651ae0e86cdc43da6add3f3420b249dd7105a8d2de27"
+  },
+  {
+    "id": "OPS-KB-MAT-0009-v1",
+    "title": "物资主数据卡：滤芯吸头",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0009.md",
+    "sha256": "bf43fb1b739c7c3db829dbe926d9fe4a5ce4d8d92fb75c05d53f5706e2e58d40"
+  },
+  {
+    "id": "OPS-KB-MAT-0010-v1",
+    "title": "物资主数据卡：样本杯",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0010.md",
+    "sha256": "d4f118ab98a760261fd75e698de190f598e4cdc2fc0ad7eb69c9920338b8afa3"
+  },
+  {
+    "id": "OPS-KB-MAT-0011-v1",
+    "title": "物资主数据卡：一次性吸头",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0011.md",
+    "sha256": "f43134b54bd194de6762cbbf496eebc1365b1a4151c733df43e6f30e76ce8455"
+  },
+  {
+    "id": "OPS-KB-MAT-0012-v1",
+    "title": "物资主数据卡：比色杯",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0012.md",
+    "sha256": "467d4ac790826d118c83ae9a3466756a60e6dfce397e5a5c931090ffe8bbe424"
+  },
+  {
+    "id": "OPS-KB-MAT-0013-v1",
+    "title": "物资主数据卡：无菌手套",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0013.md",
+    "sha256": "9794e45aa067720b029acbeffcd9301d8a1e882294c8b0ee9363acc7e9d4daf3"
+  },
+  {
+    "id": "OPS-KB-MAT-0014-v1",
+    "title": "物资主数据卡：无菌纱布",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0014.md",
+    "sha256": "4d5c39f5815fa6e6bf95086a966fa6c40a7cc7b1af98cc6eb0cbe44eea9a00b5"
+  },
+  {
+    "id": "OPS-KB-MAT-0015-v1",
+    "title": "物资主数据卡：手术铺单",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0015.md",
+    "sha256": "0587f9d565927737ae688b085582b8b5f5ab051ba74982393f509e3b6ca7c84a"
+  },
+  {
+    "id": "OPS-KB-MAT-0016-v1",
+    "title": "物资主数据卡：缝合线",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0016.md",
+    "sha256": "d66d2690095f6ec5f6048b43ae6d9720c77ad257fccfa9d2197234b5176daa1d"
+  },
+  {
+    "id": "OPS-KB-MAT-0017-v1",
+    "title": "物资主数据卡：手术刀片",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0017.md",
+    "sha256": "2dbe9505274692810e8582297b49d53d8bff0279722eff577c1c7fb434bed7ed"
+  },
+  {
+    "id": "OPS-KB-MAT-0018-v1",
+    "title": "物资主数据卡：医用敷料",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0018.md",
+    "sha256": "9643cb4831da34ab3c061eb84b5858afdb6ad4397f7506cf11e6111d941df28f"
+  },
+  {
+    "id": "OPS-KB-MAT-0019-v1",
+    "title": "物资主数据卡：注射器",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0019.md",
+    "sha256": "3e05959258fe723698da9ddd41e372009509e64b73c5badfd18b5e23cb84851d"
+  },
+  {
+    "id": "OPS-KB-MAT-0020-v1",
+    "title": "物资主数据卡：输液器",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0020.md",
+    "sha256": "9d301aaab6be54798c01584997a5294869c093d68b38bc51267a2f307c1548fa"
+  },
+  {
+    "id": "OPS-KB-MAT-0021-v1",
+    "title": "物资主数据卡：留置针",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0021.md",
+    "sha256": "b66b5ebdfbeaedc7017cfe2db795f66026b4531829bd2e6efec7eaceac3d3a36"
+  },
+  {
+    "id": "OPS-KB-MAT-0022-v1",
+    "title": "物资主数据卡：检查手套",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0022.md",
+    "sha256": "753b4288a91b598f5da868c0a308569f27d4ddac57abdfa8f3bc5b4802d7fd69"
+  },
+  {
+    "id": "OPS-KB-MAT-0023-v1",
+    "title": "物资主数据卡：医用胶带",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0023.md",
+    "sha256": "355be2cae4cabae5c0c85a91ede42bfcfb32c166c2bbd415dbfa1f22629845b5"
+  },
+  {
+    "id": "OPS-KB-MAT-0024-v1",
+    "title": "物资主数据卡：采血针",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/MAT-0024.md",
+    "sha256": "afd600b48470d1dc95aa0eb52283d318bb2f6ba762fe7d17bc9ffe11dc67a11f"
+  },
+  {
+    "id": "OPS-KB-CASE-CLEAN-v1",
+    "title": "清洗液低覆盖核查案例",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/CASE-CLEAN.md",
+    "sha256": "72777dd51e36a05d8680d093b6010d0f47ddf12a04e5db241a60eef76ea74893"
+  },
+  {
+    "id": "OPS-KB-CASE-MISSING-v1",
+    "title": "反应杯消耗缺日核查案例",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/CASE-MISSING.md",
+    "sha256": "f1a8d823ac705e1dbdaf2987013df6727a53f8a7c004076fb945d2ba86376338"
+  },
+  {
+    "id": "OPS-KB-CASE-STALE-v1",
+    "title": "采样管旧快照核查案例",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/CASE-STALE.md",
+    "sha256": "5dc417fb5a3f8cf55abd72f379e839cbc468cfe4242e3ece7033b97eab4c792f"
+  },
+  {
+    "id": "OPS-KB-CASE-ZERO-v1",
+    "title": "低频检测耗材零消耗核查案例",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/CASE-ZERO.md",
+    "sha256": "6158c40462ed8071630fb6088ce408e6c764e8ed7be2ce207d30b64b69a3221f"
+  },
+  {
+    "id": "OPS-KB-CASE-CUP-v1",
+    "title": "样本杯急需核查案例",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/CASE-CUP.md",
+    "sha256": "396c481fd2ecfef89b5e4cdbd678189651a85d816fd980476dd3ace939b722d6"
+  },
+  {
+    "id": "OPS-KB-CASE-EXP-v1",
+    "title": "尿液分析试纸效期核查案例",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "synthetic": true,
+    "path": "knowledge/enterprise-kb-20260927-1/CASE-EXP.md",
+    "sha256": "ec488094626b7182698598240b10228ab5b48bee12b90e62d467803145de1948"
+  }
+]

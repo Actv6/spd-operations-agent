@@ -1,0 +1,10 @@
+{
+  "historical_run_id": "4c30beca-cd86-4762-ab47-310ce172c4c7",
+  "historical_run_status": "succeeded",
+  "model_calls": 3,
+  "total_tokens_recorded": 87217,
+  "cost": null,
+  "answer_has_wrong_three_quality_items": true,
+  "pending_runs": 0,
+  "migration": "m2001"
+}

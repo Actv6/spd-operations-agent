@@ -1,0 +1,49 @@
+[
+  {
+    "case": "negative_stock",
+    "row": {
+      "product_id": "SIM-P001",
+      "on_hand_base": -1
+    },
+    "expected": "reject"
+  },
+  {
+    "case": "unknown_product",
+    "row": {
+      "product_id": "SIM-P999"
+    },
+    "expected": "reject"
+  },
+  {
+    "case": "unknown_unit",
+    "row": {
+      "product_id": "SIM-P001",
+      "quantity": 10,
+      "unit": "吨"
+    },
+    "expected": "reject"
+  },
+  {
+    "case": "duplicate_snapshot",
+    "row_ids": [
+      "SIM-HA-SIM-P001",
+      "SIM-HA-SIM-P001"
+    ],
+    "expected": "reject_or_explicit_version_resolution"
+  },
+  {
+    "case": "frozen_exceeds_on_hand",
+    "row": {
+      "on_hand_base": 5,
+      "frozen_base": 6
+    },
+    "expected": "reject"
+  },
+  {
+    "case": "future_snapshot",
+    "row": {
+      "snapshot_at": "2026-09-28T09:00:00+08:00"
+    },
+    "expected": "reject_for_current_import"
+  }
+]

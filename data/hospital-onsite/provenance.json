@@ -1,0 +1,7 @@
+{
+  "release": "onsite-20260929-v1",
+  "synthetic": true,
+  "real_company_data": false,
+  "source": "Generated onsite collection scenario; no real hospital file supplied",
+  "business_as_of": "2026-09-27T09:00:00+08:00"
+}

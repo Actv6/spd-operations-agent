@@ -1,0 +1,533 @@
+{
+  "version": "v11-close-dev-2",
+  "on": "2026-10-04",
+  "documents": [
+    {
+      "id": "gap",
+      "title": "消耗缺日核查",
+      "content": "消耗缺失记录不能补零，需要核对原始台账。",
+      "status": "approved_demo",
+      "start": "2000-01-01",
+      "end": null,
+      "project": "p"
+    },
+    {
+      "id": "zero",
+      "title": "零消耗记录说明",
+      "content": "完整14日消耗记录全部为零时，不能除以零计算覆盖天数，不证明实际业务没有消耗。",
+      "status": "approved_demo",
+      "start": "2000-01-01",
+      "end": null,
+      "project": "p"
+    },
+    {
+      "id": "expiry",
+      "title": "临期批次核查",
+      "content": "批次效期临近时核对到期日期和可用数量。临期与已过期分开处理。",
+      "status": "approved_demo",
+      "start": "2000-01-01",
+      "end": null,
+      "project": "p"
+    },
+    {
+      "id": "stale",
+      "title": "旧快照核查",
+      "content": "库存快照超过24小时需核实数据时点，旧快照不代表当前库存。",
+      "status": "approved_demo",
+      "start": "2000-01-01",
+      "end": null,
+      "project": "p"
+    },
+    {
+      "id": "units",
+      "title": "包装单位说明",
+      "content": "箱与瓶的包装换算必须有明确依据，不得隐式换算单位。",
+      "status": "approved_demo",
+      "start": "2000-01-01",
+      "end": null,
+      "project": "p"
+    },
+    {
+      "id": "other-topic",
+      "title": "核查流程说明",
+      "content": "核查记录的流程说明应核对责任，不涉及具体消耗日期。",
+      "status": "approved_demo",
+      "start": "2000-01-01",
+      "end": null,
+      "project": "p"
+    },
+    {
+      "id": "retired",
+      "title": "停用规则",
+      "content": "停用暗号缺失记录补零。",
+      "status": "retired",
+      "start": "2000-01-01",
+      "end": null,
+      "project": "p"
+    },
+    {
+      "id": "future",
+      "title": "未来规则",
+      "content": "未来暗号的核查规则。",
+      "status": "approved_demo",
+      "start": "2099-01-01",
+      "end": null,
+      "project": "p"
+    },
+    {
+      "id": "private",
+      "title": "外部项目",
+      "content": "隔离暗号核查资料。",
+      "status": "approved_demo",
+      "start": "2000-01-01",
+      "end": null,
+      "project": "other"
+    },
+    {
+      "id": "ended",
+      "title": "结束规则",
+      "content": "结束暗号核查资料。",
+      "status": "approved_demo",
+      "start": "2000-01-01",
+      "end": "2026-10-03",
+      "project": "p"
+    },
+    {
+      "id": "boundary",
+      "title": "边界规则",
+      "content": "边界暗号核查资料。",
+      "status": "approved_demo",
+      "start": "2026-10-04",
+      "end": "2026-10-04",
+      "project": "p"
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q01",
+      "query": "消耗缺日核查",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q02",
+      "query": "有几天的用量没填咋办",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q03",
+      "query": "用量漏填怎么办",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q04",
+      "query": "消耗记录缺了怎么办",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q05",
+      "query": "消耗缺失不能补零",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q06",
+      "query": "缺日核对原始台账",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q07",
+      "query": "用量记录缺失",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q08",
+      "query": "几天用量未填",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q09",
+      "query": "消耗少填几天",
+      "expected": [
+        "gap"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q10",
+      "query": "14日零消耗",
+      "expected": [
+        "zero"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q11",
+      "query": "消耗记录全为零",
+      "expected": [
+        "zero"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q12",
+      "query": "零消耗覆盖天数",
+      "expected": [
+        "zero"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q13",
+      "query": "零消耗能算覆盖吗",
+      "expected": [
+        "zero"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q14",
+      "query": "批次快到期了",
+      "expected": [
+        "expiry"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q15",
+      "query": "临期可用数量",
+      "expected": [
+        "expiry"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q16",
+      "query": "批次效期临近",
+      "expected": [
+        "expiry"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q17",
+      "query": "批次已过期怎么处理",
+      "expected": [
+        "expiry"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q18",
+      "query": "旧快照时点",
+      "expected": [
+        "stale"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q19",
+      "query": "库存快照超过24小时",
+      "expected": [
+        "stale"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q20",
+      "query": "旧快照当前库存",
+      "expected": [
+        "stale"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q21",
+      "query": "包装箱瓶换算",
+      "expected": [
+        "units"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q22",
+      "query": "单位换算依据",
+      "expected": [
+        "units"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q23",
+      "query": "包装单位隐式换算",
+      "expected": [
+        "units"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q24",
+      "query": "量子飞船核查",
+      "expected": [],
+      "split": "dev"
+    },
+    {
+      "id": "Q25",
+      "query": "不存在的星际制度",
+      "expected": [],
+      "split": "dev"
+    },
+    {
+      "id": "Q26",
+      "query": "核查流程量子引擎",
+      "expected": [],
+      "split": "dev"
+    },
+    {
+      "id": "Q27",
+      "query": "停用暗号",
+      "expected": [],
+      "split": "dev"
+    },
+    {
+      "id": "Q28",
+      "query": "未来暗号",
+      "expected": [],
+      "split": "dev"
+    },
+    {
+      "id": "Q29",
+      "query": "隔离暗号",
+      "expected": [],
+      "split": "dev"
+    },
+    {
+      "id": "Q30",
+      "query": "结束暗号",
+      "expected": [],
+      "split": "dev"
+    },
+    {
+      "id": "Q31",
+      "query": "边界暗号",
+      "expected": [
+        "boundary"
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "Q32",
+      "query": "量子曲率引擎",
+      "expected": [],
+      "split": "dev"
+    },
+    {
+      "id": "Q33",
+      "query": "消耗没填的日期",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q34",
+      "query": "用量少填了要补零吗",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q35",
+      "query": "用量漏填应核实台账",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q36",
+      "query": "零消耗能证明实际没用吗",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q37",
+      "query": "14日都是零记录",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q38",
+      "query": "批次快过期了",
+      "expected": [
+        "expiry"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q39",
+      "query": "临期物资数量",
+      "expected": [
+        "expiry"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q40",
+      "query": "库存旧快照还能用吗",
+      "expected": [
+        "stale"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q41",
+      "query": "箱瓶包装单位",
+      "expected": [
+        "units"
+      ],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q42",
+      "query": "空间曲率核查制度",
+      "expected": [],
+      "split": "author_exposed"
+    },
+    {
+      "id": "Q43",
+      "query": "消耗漏填需核实原始台账",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q44",
+      "query": "用量未填不能直接补零",
+      "expected": [
+        "gap"
+      ],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q45",
+      "query": "全窗口零消耗怎么理解",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q46",
+      "query": "14天全为零记录",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q47",
+      "query": "近十四日都是零记录",
+      "expected": [
+        "zero"
+      ],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q48",
+      "query": "临期批次到期日期",
+      "expected": [
+        "expiry"
+      ],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q49",
+      "query": "旧快照是否代表当前库存",
+      "expected": [
+        "stale"
+      ],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q50",
+      "query": "包装换算需要什么依据",
+      "expected": [
+        "units"
+      ],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q51",
+      "query": "空间跃迁费用核查",
+      "expected": [],
+      "split": "author_holdout"
+    },
+    {
+      "id": "Q52",
+      "query": "外星引擎资料制度",
+      "expected": [],
+      "split": "author_holdout"
+    }
+  ],
+  "guards": [
+    {
+      "id": "no_advice_bad",
+      "question": "只回答缺失日期，不给处理建议",
+      "answer": "缺失9月22日、24日。建议补齐记录并发布新快照。",
+      "error": "ANSWER_SCOPE_VIOLATION"
+    },
+    {
+      "id": "no_advice_good",
+      "question": "只回答缺失日期，不给处理建议",
+      "answer": "缺失9月22日、24日，状态为缺失；不能补零。",
+      "error": null
+    },
+    {
+      "id": "only_dates_bad",
+      "question": "只说缺失的日期",
+      "answer": "9月22日、24日。请核对原始记录。",
+      "error": "ANSWER_SCOPE_VIOLATION"
+    },
+    {
+      "id": "negative_advice",
+      "question": "不要处理建议",
+      "answer": "不能补零，不建议直接发布快照。",
+      "error": null
+    },
+    {
+      "id": "regular_advice",
+      "question": "缺日怎么办",
+      "answer": "建议核对台账。",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,914 @@
+[
+  {
+    "id": "SIM-HA-SIM-P001",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P001",
+    "on_hand_base": 120,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 120,
+    "base_unit": "瓶",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P001-1",
+      "LOT-SIM-HA-SIM-P001-2",
+      "LOT-SIM-HA-SIM-P001-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P001",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P001",
+    "on_hand_base": 370,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 370,
+    "base_unit": "瓶",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P001-1",
+      "LOT-SIM-HB-SIM-P001-2",
+      "LOT-SIM-HB-SIM-P001-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P002",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P002",
+    "on_hand_base": 50,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 50,
+    "base_unit": "瓶",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P002-1",
+      "LOT-SIM-HA-SIM-P002-2",
+      "LOT-SIM-HA-SIM-P002-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P002",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P002",
+    "on_hand_base": 201,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 201,
+    "base_unit": "瓶",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P002-1",
+      "LOT-SIM-HB-SIM-P002-2",
+      "LOT-SIM-HB-SIM-P002-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P003",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P003",
+    "on_hand_base": 400,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 400,
+    "base_unit": "筒",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P003-1",
+      "LOT-SIM-HA-SIM-P003-2",
+      "LOT-SIM-HA-SIM-P003-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P003",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P003",
+    "on_hand_base": 141,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 141,
+    "base_unit": "筒",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P003-1",
+      "LOT-SIM-HB-SIM-P003-2",
+      "LOT-SIM-HB-SIM-P003-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P004",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P004",
+    "on_hand_base": 300,
+    "frozen_base": 80,
+    "reserved_base": 0,
+    "available_base": 220,
+    "base_unit": "盒",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P004-1",
+      "LOT-SIM-HA-SIM-P004-2",
+      "LOT-SIM-HA-SIM-P004-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P004",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P004",
+    "on_hand_base": 176,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 176,
+    "base_unit": "盒",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P004-1",
+      "LOT-SIM-HB-SIM-P004-2",
+      "LOT-SIM-HB-SIM-P004-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P005",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P005",
+    "on_hand_base": 80,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 80,
+    "base_unit": "盒",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P005-1",
+      "LOT-SIM-HA-SIM-P005-2",
+      "LOT-SIM-HA-SIM-P005-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 4,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P005",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P005",
+    "on_hand_base": 203,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 203,
+    "base_unit": "盒",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P005-1",
+      "LOT-SIM-HB-SIM-P005-2",
+      "LOT-SIM-HB-SIM-P005-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 4,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P006",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P006",
+    "on_hand_base": 3080,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 3080,
+    "base_unit": "只",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P006-1",
+      "LOT-SIM-HA-SIM-P006-2",
+      "LOT-SIM-HA-SIM-P006-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 5,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P006",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P006",
+    "on_hand_base": 1832,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1832,
+    "base_unit": "只",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P006-1",
+      "LOT-SIM-HB-SIM-P006-2",
+      "LOT-SIM-HB-SIM-P006-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 5,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P007",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P007",
+    "on_hand_base": 1564,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1564,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P007-1",
+      "LOT-SIM-HA-SIM-P007-2",
+      "LOT-SIM-HA-SIM-P007-3"
+    ],
+    "snapshot_at": "2026-09-24T09:00:00+08:00",
+    "supplier_lead_days": 6,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P007",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P007",
+    "on_hand_base": 1208,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1208,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P007-1",
+      "LOT-SIM-HB-SIM-P007-2",
+      "LOT-SIM-HB-SIM-P007-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 6,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P008",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P008",
+    "on_hand_base": 2148,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2148,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P008-1",
+      "LOT-SIM-HA-SIM-P008-2",
+      "LOT-SIM-HA-SIM-P008-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": null,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P008",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P008",
+    "on_hand_base": 1668,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1668,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P008-1",
+      "LOT-SIM-HB-SIM-P008-2",
+      "LOT-SIM-HB-SIM-P008-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P009",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P009",
+    "on_hand_base": 300,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 300,
+    "base_unit": "盒",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P009-1",
+      "LOT-SIM-HA-SIM-P009-2",
+      "LOT-SIM-HA-SIM-P009-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P009",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P009",
+    "on_hand_base": 151,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 151,
+    "base_unit": "盒",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P009-1",
+      "LOT-SIM-HB-SIM-P009-2",
+      "LOT-SIM-HB-SIM-P009-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P010",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P010",
+    "on_hand_base": 40,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 40,
+    "base_unit": "只",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P010-1",
+      "LOT-SIM-HA-SIM-P010-2",
+      "LOT-SIM-HA-SIM-P010-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 4,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P010",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P010",
+    "on_hand_base": 600,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 600,
+    "base_unit": "只",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P010-1",
+      "LOT-SIM-HB-SIM-P010-2",
+      "LOT-SIM-HB-SIM-P010-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 4,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P011",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P011",
+    "on_hand_base": 800,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 800,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P011-1",
+      "LOT-SIM-HA-SIM-P011-2",
+      "LOT-SIM-HA-SIM-P011-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 5,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P011",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P011",
+    "on_hand_base": 1539,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1539,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P011-1",
+      "LOT-SIM-HB-SIM-P011-2",
+      "LOT-SIM-HB-SIM-P011-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 5,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P012",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-LAB",
+    "product_id": "SIM-P012",
+    "on_hand_base": 2624,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2624,
+    "base_unit": "只",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P012-1",
+      "LOT-SIM-HA-SIM-P012-2",
+      "LOT-SIM-HA-SIM-P012-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 6,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P012",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-LAB",
+    "product_id": "SIM-P012",
+    "on_hand_base": 1678,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1678,
+    "base_unit": "只",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P012-1",
+      "LOT-SIM-HB-SIM-P012-2",
+      "LOT-SIM-HB-SIM-P012-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 6,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P013",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-OR",
+    "product_id": "SIM-P013",
+    "on_hand_base": 363,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 363,
+    "base_unit": "副",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P013-1",
+      "LOT-SIM-HA-SIM-P013-2",
+      "LOT-SIM-HA-SIM-P013-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P013",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-OR",
+    "product_id": "SIM-P013",
+    "on_hand_base": 227,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 227,
+    "base_unit": "副",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P013-1",
+      "LOT-SIM-HB-SIM-P013-2",
+      "LOT-SIM-HB-SIM-P013-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P014",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-OR",
+    "product_id": "SIM-P014",
+    "on_hand_base": 225,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 225,
+    "base_unit": "包",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P014-1",
+      "LOT-SIM-HA-SIM-P014-2",
+      "LOT-SIM-HA-SIM-P014-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P014",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-OR",
+    "product_id": "SIM-P014",
+    "on_hand_base": 170,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 170,
+    "base_unit": "包",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P014-1",
+      "LOT-SIM-HB-SIM-P014-2",
+      "LOT-SIM-HB-SIM-P014-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P015",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-OR",
+    "product_id": "SIM-P015",
+    "on_hand_base": 219,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 219,
+    "base_unit": "包",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P015-1",
+      "LOT-SIM-HA-SIM-P015-2",
+      "LOT-SIM-HA-SIM-P015-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 4,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P015",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-OR",
+    "product_id": "SIM-P015",
+    "on_hand_base": 126,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 126,
+    "base_unit": "包",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P015-1",
+      "LOT-SIM-HB-SIM-P015-2",
+      "LOT-SIM-HB-SIM-P015-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 4,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P016",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-OR",
+    "product_id": "SIM-P016",
+    "on_hand_base": 186,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 186,
+    "base_unit": "包",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P016-1",
+      "LOT-SIM-HA-SIM-P016-2",
+      "LOT-SIM-HA-SIM-P016-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 5,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P016",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-OR",
+    "product_id": "SIM-P016",
+    "on_hand_base": 153,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 153,
+    "base_unit": "包",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P016-1",
+      "LOT-SIM-HB-SIM-P016-2",
+      "LOT-SIM-HB-SIM-P016-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 5,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P017",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-OR",
+    "product_id": "SIM-P017",
+    "on_hand_base": 2650,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2650,
+    "base_unit": "片",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P017-1",
+      "LOT-SIM-HA-SIM-P017-2",
+      "LOT-SIM-HA-SIM-P017-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 6,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P017",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-OR",
+    "product_id": "SIM-P017",
+    "on_hand_base": 2000,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2000,
+    "base_unit": "片",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P017-1",
+      "LOT-SIM-HB-SIM-P017-2",
+      "LOT-SIM-HB-SIM-P017-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 6,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P018",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-OR",
+    "product_id": "SIM-P018",
+    "on_hand_base": 3318,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 3318,
+    "base_unit": "片",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P018-1",
+      "LOT-SIM-HA-SIM-P018-2",
+      "LOT-SIM-HA-SIM-P018-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P018",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-OR",
+    "product_id": "SIM-P018",
+    "on_hand_base": 2026,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2026,
+    "base_unit": "片",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P018-1",
+      "LOT-SIM-HB-SIM-P018-2",
+      "LOT-SIM-HB-SIM-P018-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P019",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-ER",
+    "product_id": "SIM-P019",
+    "on_hand_base": 2822,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2822,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P019-1",
+      "LOT-SIM-HA-SIM-P019-2",
+      "LOT-SIM-HA-SIM-P019-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P019",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-ER",
+    "product_id": "SIM-P019",
+    "on_hand_base": 2088,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2088,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P019-1",
+      "LOT-SIM-HB-SIM-P019-2",
+      "LOT-SIM-HB-SIM-P019-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P020",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-ER",
+    "product_id": "SIM-P020",
+    "on_hand_base": 357,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 357,
+    "base_unit": "套",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P020-1",
+      "LOT-SIM-HA-SIM-P020-2",
+      "LOT-SIM-HA-SIM-P020-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 4,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P020",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-ER",
+    "product_id": "SIM-P020",
+    "on_hand_base": 226,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 226,
+    "base_unit": "套",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P020-1",
+      "LOT-SIM-HB-SIM-P020-2",
+      "LOT-SIM-HB-SIM-P020-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 4,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P021",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-ER",
+    "product_id": "SIM-P021",
+    "on_hand_base": 1674,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1674,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P021-1",
+      "LOT-SIM-HA-SIM-P021-2",
+      "LOT-SIM-HA-SIM-P021-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 5,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P021",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-ER",
+    "product_id": "SIM-P021",
+    "on_hand_base": 1705,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1705,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P021-1",
+      "LOT-SIM-HB-SIM-P021-2",
+      "LOT-SIM-HB-SIM-P021-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 5,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P022",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-ER",
+    "product_id": "SIM-P022",
+    "on_hand_base": 1812,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1812,
+    "base_unit": "只",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P022-1",
+      "LOT-SIM-HA-SIM-P022-2",
+      "LOT-SIM-HA-SIM-P022-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 6,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P022",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-ER",
+    "product_id": "SIM-P022",
+    "on_hand_base": 1137,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 1137,
+    "base_unit": "只",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P022-1",
+      "LOT-SIM-HB-SIM-P022-2",
+      "LOT-SIM-HB-SIM-P022-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 6,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P023",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-ER",
+    "product_id": "SIM-P023",
+    "on_hand_base": 206,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 206,
+    "base_unit": "卷",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P023-1",
+      "LOT-SIM-HA-SIM-P023-2",
+      "LOT-SIM-HA-SIM-P023-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P023",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-ER",
+    "product_id": "SIM-P023",
+    "on_hand_base": 154,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 154,
+    "base_unit": "卷",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P023-1",
+      "LOT-SIM-HB-SIM-P023-2",
+      "LOT-SIM-HB-SIM-P023-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 7,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HA-SIM-P024",
+    "hospital_id": "SIM-HA",
+    "department_id": "SIM-HA-ER",
+    "product_id": "SIM-P024",
+    "on_hand_base": 2213,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2213,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HA-SIM-P024-1",
+      "LOT-SIM-HA-SIM-P024-2",
+      "LOT-SIM-HA-SIM-P024-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  },
+  {
+    "id": "SIM-HB-SIM-P024",
+    "hospital_id": "SIM-HB",
+    "department_id": "SIM-HB-ER",
+    "product_id": "SIM-P024",
+    "on_hand_base": 2035,
+    "frozen_base": 0,
+    "reserved_base": 0,
+    "available_base": 2035,
+    "base_unit": "支",
+    "batch_ids": [
+      "LOT-SIM-HB-SIM-P024-1",
+      "LOT-SIM-HB-SIM-P024-2",
+      "LOT-SIM-HB-SIM-P024-3"
+    ],
+    "snapshot_at": "2026-09-27T09:00:00+08:00",
+    "supplier_lead_days": 8,
+    "synthetic": true
+  }
+]

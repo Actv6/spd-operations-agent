@@ -1,0 +1,16 @@
+{
+  "kind": "isolated_browser_controlled_provider",
+  "real_model_calls": 0,
+  "checks": [
+    "server risk counts 3/5 displayed",
+    "feedback reason validation and failure retry",
+    "actual colloquial retrieval displays applicable source",
+    "retrieved original source opens",
+    "390px search has no document overflow"
+  ],
+  "errors": [],
+  "dimensions": {
+    "client": 390,
+    "scroll": 390
+  }
+}

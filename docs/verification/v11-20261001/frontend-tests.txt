@@ -1,0 +1,33 @@
+✔ serves existing static assets without a fallback (27.545125ms)
+✔ falls back to index.html for an unknown app route (1.329167ms)
+✔ does not turn missing API or write requests into the app shell (0.502208ms)
+✔ emits the files required by Sites packaging (3.958917ms)
+2:44:37 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+✔ shared slots surround one native Ant Design table (73.486458ms)
+✔ default pagination renders ten rows and correct total (7.922041ms)
+✔ page override and disabled pagination are preserved (18.631417ms)
+✔ empty, error, retry and loading states remain available (25.565792ms)
+✔ compact header preserves zero count and precise timestamp (5.698625ms)
+✔ risk refresh stays pinned when current snapshot changes (0.208084ms)
+✔ mixed snapshot bundle is rejected (0.394709ms)
+✔ answer presentation recognizes labels without changing numbers or claims (0.690958ms)
+✔ authored markdown and fenced code are left untouched (0.112958ms)
+✔ long prose is separated at sentence boundaries without dropping text (0.180042ms)
+✔ batch evidence renders preserved expiry, quantity and Chinese status (17.373958ms)
+✔ consumption evidence shows missing days without zero filling (5.991084ms)
+✔ risk evidence preserves distinct quality and zero-consumption counts (6.618834ms)
+✔ unknown evidence retains original excerpt instead of a blank panel (0.472167ms)
+✔ display quantities preserve small and large decimal values (0.066083ms)
+✔ bracketed historical headings get hierarchy without rewriting claims (0.064083ms)
+✔ historical risk evidence without breakdown remains readable and does not invent zeros (3.856667ms)
+✔ CSV slice decoding preserves UTF-8 across chunk boundaries and reports progress (9.025666ms)
+✔ CSV rejects wrong types, empty files, over-limit bytes and invalid UTF-8 (0.377292ms)
+✔ cancelled CSV reads stop before delivering content (2.295125ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4742.305375

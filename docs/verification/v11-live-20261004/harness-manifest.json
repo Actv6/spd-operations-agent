@@ -1,0 +1,13 @@
+{
+  "files": {
+    "backend/scripts/evaluate_v11_live.py": "ce6f4d1068551c6a0831ac9aed06c6390923637e4178371f3005f258c6df99d5",
+    "backend/scripts/langsmith_records.py": "2913044b3b1b5a7855a382b23bcba92d43b9c64782035a48860b1d54203f6de5",
+    "backend/tests/test_live_v11_round.py": "a194ab3fd713f5cd2aacdeb6467d4b6d8add653162d75d2ad72cfd9e4cb1fdd2"
+  },
+  "provider_calls_before_acceptance": 0,
+  "max_runs": 10,
+  "run_stop_threshold": 20000,
+  "round_stop_threshold": 120000,
+  "final_tests": 6,
+  "post_run_changes": "Only harness stop_reason enforcement and semantic review trace labeling; frozen product unchanged"
+}

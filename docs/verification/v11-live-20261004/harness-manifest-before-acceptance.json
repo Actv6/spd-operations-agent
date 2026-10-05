@@ -1,0 +1,11 @@
+{
+  "files": {
+    "backend/scripts/evaluate_v11_live.py": "9567d0c2b5dee97631a8a9277f5a3a3af8ce1ab63f968956f1d4ba4ecc5ea3e3",
+    "backend/scripts/langsmith_records.py": "35ce1b5d756ccfae7a29b7390eb8247cfe139f336d29a5ed8f27029e98c9454f",
+    "backend/tests/test_live_v11_round.py": "8a137a48b0599974e44a0d98d79b71586fd290aeeb17c6978831f477748f0d73"
+  },
+  "provider_calls_before_acceptance": 0,
+  "max_runs": 10,
+  "run_stop_threshold": 20000,
+  "round_stop_threshold": 120000
+}

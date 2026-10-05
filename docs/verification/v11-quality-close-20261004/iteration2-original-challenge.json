@@ -1,0 +1,172 @@
+{
+  "kind": "offline_guard_and_lexical_challenge",
+  "dataset_version": "v11-dev-1",
+  "dataset_hash": "1ed3457ec648f1836f6566b2fa33afaa94a867676805efc37223b18c74482482",
+  "provider_calls": 0,
+  "business_database_used": false,
+  "blind_test": false,
+  "limitations": [
+    "作者自建开发挑战集，不是独立业务盲测",
+    "不测真实模型输出、句子蕴含、生产时延或价格",
+    "词法口语漏召回保留为失败"
+  ],
+  "guards": [
+    {
+      "case": "wrong_plain",
+      "text": "高关注2条，中关注6条",
+      "expected_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "actual_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "passed": true
+    },
+    {
+      "case": "wrong_modifier",
+      "text": "高关注共有两项",
+      "expected_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "actual_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "passed": true
+    },
+    {
+      "case": "wrong_fullwidth",
+      "text": "**中关注**：共６条",
+      "expected_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "actual_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "passed": true
+    },
+    {
+      "case": "wrong_reverse",
+      "text": "二项属于高关注",
+      "expected_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "actual_error": "RISK_PRIORITY_COUNT_MISMATCH",
+      "passed": true
+    },
+    {
+      "case": "correct_chinese",
+      "text": "高关注三条，中关注五条",
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "correct_markdown",
+      "text": "**高关注**：共有３项",
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "no_count",
+      "text": "请按清单优先核实效期。",
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "absence_overclaim",
+      "text": "本项目知识库中不存在适用制度。",
+      "expected_error": "KNOWLEDGE_ABSENCE_OVERCLAIM",
+      "actual_error": "KNOWLEDGE_ABSENCE_OVERCLAIM",
+      "passed": true
+    },
+    {
+      "case": "bounded_absence",
+      "text": "本次未检索到适用制度。",
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "unknown_code",
+      "text": "请核查MAT-UNKNOWN。",
+      "expected_error": "ANSWER_CODE_INVALID",
+      "actual_error": "ANSWER_CODE_INVALID",
+      "passed": true
+    },
+    {
+      "case": "field_leak",
+      "text": "请查看coverage_days。",
+      "expected_error": "ANSWER_LANGUAGE_INVALID",
+      "actual_error": "ANSWER_LANGUAGE_INVALID",
+      "passed": true
+    }
+  ],
+  "retrieval": [
+    {
+      "case": "exact",
+      "query": "消耗缺日核查",
+      "expected_documents": [
+        "gap"
+      ],
+      "actual_documents": [
+        "gap"
+      ],
+      "offsets_valid": true,
+      "passed": true
+    },
+    {
+      "case": "paraphrase",
+      "query": "消耗记录缺了怎么办",
+      "expected_documents": [
+        "gap"
+      ],
+      "actual_documents": [
+        "gap"
+      ],
+      "offsets_valid": true,
+      "passed": true
+    },
+    {
+      "case": "expiry",
+      "query": "批次快到期了",
+      "expected_documents": [
+        "expiry"
+      ],
+      "actual_documents": [
+        "expiry"
+      ],
+      "offsets_valid": true,
+      "passed": true
+    },
+    {
+      "case": "no_match",
+      "query": "量子飞船曲率引擎",
+      "expected_documents": [],
+      "actual_documents": [],
+      "offsets_valid": true,
+      "passed": true
+    },
+    {
+      "case": "future_filter",
+      "query": "未来暗号",
+      "expected_documents": [],
+      "actual_documents": [],
+      "offsets_valid": true,
+      "passed": true
+    },
+    {
+      "case": "project_filter",
+      "query": "隔离暗号",
+      "expected_documents": [],
+      "actual_documents": [],
+      "offsets_valid": true,
+      "passed": true
+    },
+    {
+      "case": "colloquial_gap",
+      "query": "有几天的用量没填咋办",
+      "expected_documents": [
+        "gap"
+      ],
+      "actual_documents": [
+        "gap"
+      ],
+      "offsets_valid": true,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "guard_passed": 11,
+    "guard_total": 11,
+    "retrieval_passed": 7,
+    "retrieval_total": 7
+  }
+}

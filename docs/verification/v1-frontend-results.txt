@@ -1,0 +1,29 @@
+✔ serves existing static assets without a fallback (10.487333ms)
+✔ falls back to index.html for an unknown app route (0.522ms)
+✔ does not turn missing API or write requests into the app shell (0.240833ms)
+✔ emits the files required by Sites packaging (1.83825ms)
+✔ shared slots surround one native Ant Design table (30.410542ms)
+✔ default pagination renders ten rows and correct total (4.040209ms)
+✔ page override and disabled pagination are preserved (8.550584ms)
+✔ empty, error, retry and loading states remain available (10.265042ms)
+✔ compact header preserves zero count and precise timestamp (2.521959ms)
+✔ risk refresh stays pinned when current snapshot changes (0.092584ms)
+✔ mixed snapshot bundle is rejected (0.189083ms)
+✔ answer presentation recognizes labels without changing numbers or claims (0.345375ms)
+✔ authored markdown and fenced code are left untouched (0.056875ms)
+✔ long prose is separated at sentence boundaries without dropping text (0.081458ms)
+✔ batch evidence renders preserved expiry, quantity and Chinese status (7.292417ms)
+✔ consumption evidence shows missing days without zero filling (2.389ms)
+✔ risk evidence preserves distinct quality and zero-consumption counts (3.637334ms)
+✔ unknown evidence retains original excerpt instead of a blank panel (0.248875ms)
+✔ display quantities preserve small and large decimal values (0.038ms)
+✔ bracketed historical headings get hierarchy without rewriting claims (0.036875ms)
+✔ historical risk evidence without breakdown remains readable and does not invent zeros (1.974ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 732.468167

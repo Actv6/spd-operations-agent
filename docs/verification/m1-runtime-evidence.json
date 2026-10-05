@@ -1,0 +1,229 @@
+{
+  "recorded_at": "2026-09-27T14:45:58.411216+00:00",
+  "python": "3.12.14",
+  "database": "sqlite",
+  "dependencies": {
+    "fastapi": "0.141.1",
+    "sqlalchemy": "2.0.54",
+    "alembic": "1.20.0",
+    "pydantic": "2.13.5",
+    "langgraph": "1.2.12",
+    "langgraph-checkpoint": "4.2.0",
+    "httpx": "0.28.1",
+    "argon2-cffi": "25.1.0",
+    "uvicorn": "0.54.0",
+    "psycopg": "3.3.6"
+  },
+  "real_deepseek_verified": false,
+  "vector_search_verified": false,
+  "postgres_live_verified": false,
+  "cloud_deployed": false,
+  "test_account_runs": [
+    {
+      "run_id": "b3230bff-ece1-405d-8e2f-0d0b2eac24e2",
+      "provider_mode": "mock",
+      "status": "succeeded",
+      "attempts": 1,
+      "question": "生化清洗液缺货时，应核查哪些依据？",
+      "error_code": null,
+      "analysis_id": "d452d60c-0838-4ffc-a72b-ff9df9fe854d",
+      "retrieval_mode": "lexical",
+      "citation_count": 5,
+      "events": [
+        {
+          "cursor": 1,
+          "type": "run_started",
+          "step": "start"
+        },
+        {
+          "cursor": 2,
+          "type": "step_completed",
+          "step": "model"
+        },
+        {
+          "cursor": 3,
+          "type": "step_completed",
+          "step": "get_inventory"
+        },
+        {
+          "cursor": 4,
+          "type": "step_completed",
+          "step": "search_knowledge"
+        },
+        {
+          "cursor": 5,
+          "type": "step_completed",
+          "step": "model"
+        },
+        {
+          "cursor": 6,
+          "type": "analysis_ready",
+          "step": "finalize"
+        },
+        {
+          "cursor": 7,
+          "type": "run_finished",
+          "step": "finished"
+        }
+      ]
+    },
+    {
+      "run_id": "6067c4b9-e34b-47c7-b992-c8fdf0748df1",
+      "provider_mode": "mock",
+      "status": "succeeded",
+      "attempts": 1,
+      "question": "生化清洗液缺货时，应核查哪些依据？",
+      "error_code": null,
+      "analysis_id": "7ba154d9-e4d5-484f-838a-36a32d1e9429",
+      "retrieval_mode": "lexical",
+      "citation_count": 5,
+      "events": [
+        {
+          "cursor": 1,
+          "type": "run_started",
+          "step": "start"
+        },
+        {
+          "cursor": 2,
+          "type": "step_completed",
+          "step": "model"
+        },
+        {
+          "cursor": 3,
+          "type": "step_completed",
+          "step": "get_inventory"
+        },
+        {
+          "cursor": 4,
+          "type": "step_completed",
+          "step": "search_knowledge"
+        },
+        {
+          "cursor": 5,
+          "type": "step_completed",
+          "step": "model"
+        },
+        {
+          "cursor": 6,
+          "type": "analysis_ready",
+          "step": "finalize"
+        },
+        {
+          "cursor": 7,
+          "type": "run_finished",
+          "step": "finished"
+        }
+      ]
+    },
+    {
+      "run_id": "d364f3bf-e627-456e-9c8b-179c8e8ad6f8",
+      "provider_mode": "deepseek",
+      "status": "failed",
+      "attempts": 1,
+      "question": "生化清洗液缺货时，应核查哪些依据？",
+      "error_code": "PROVIDER_NOT_CONFIGURED",
+      "analysis_id": null,
+      "retrieval_mode": null,
+      "citation_count": 0,
+      "events": [
+        {
+          "cursor": 1,
+          "type": "run_started",
+          "step": "start"
+        },
+        {
+          "cursor": 2,
+          "type": "run_finished",
+          "step": "failed"
+        }
+      ]
+    },
+    {
+      "run_id": "a9b2a535-b5b0-408b-bc40-80e8a9e70c8c",
+      "provider_mode": "mock",
+      "status": "succeeded",
+      "attempts": 1,
+      "question": "库存消耗记录缺失时如何处理？",
+      "error_code": null,
+      "analysis_id": "b3a30c87-f83c-4797-9534-b7fb8121384a",
+      "retrieval_mode": "lexical",
+      "citation_count": 5,
+      "events": [
+        {
+          "cursor": 1,
+          "type": "run_started",
+          "step": "start"
+        },
+        {
+          "cursor": 2,
+          "type": "step_completed",
+          "step": "model"
+        },
+        {
+          "cursor": 3,
+          "type": "step_completed",
+          "step": "get_inventory"
+        },
+        {
+          "cursor": 4,
+          "type": "step_completed",
+          "step": "search_knowledge"
+        },
+        {
+          "cursor": 5,
+          "type": "step_completed",
+          "step": "model"
+        },
+        {
+          "cursor": 6,
+          "type": "analysis_ready",
+          "step": "finalize"
+        },
+        {
+          "cursor": 7,
+          "type": "run_finished",
+          "step": "finished"
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "backend/app/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "backend/app/agent.py": "6b186d173ae96489058315f2841d3375321dadfbe9d8acfeb28c519c5b242424",
+    "backend/app/auth.py": "32baab7deec12e7156338030e6608c81efc5991a390345d0eca061fceeb388ab",
+    "backend/app/cli.py": "7f0658815e9f3b0578dd2c9ed550446b5b833e330f47275d39de0b01dad6d23b",
+    "backend/app/config.py": "a659b80ac2570a4e688929283b3f98b892dcbbfe47a9a3f5294ebffaf7d15dc3",
+    "backend/app/data.py": "8e408b6dbf7120b4dadb8b82eac2a1a5c9b65ba709451a620f1ae67020bcb37c",
+    "backend/app/db.py": "c97eee072f7a59eb9bf49eda48cddec45afa1721216b73df96402b915fce9e4b",
+    "backend/app/errors.py": "785973e8ac15ca9247c029b353b1e0e7af56505f1a42e8368f7968f17a11808d",
+    "backend/app/knowledge.py": "38ff5436cb65a9b99bb4ce0f64b057989b959eb5c6677126babe12769b53365e",
+    "backend/app/main.py": "ea1cf223a5e1d7e2d28399d06224741c26805740079099206b783f2249828ee2",
+    "backend/app/models.py": "570fbdf0d14fffa1e650f3c1316bc482096d03943e0f10814af7a434de505653",
+    "backend/app/providers.py": "a9c18097050d342ed35bdb869b3c5a5a4f215ec77e20e63891076250b0931573",
+    "backend/app/schemas.py": "7e4bc36cbb03e2a112c10bc0fbfc7a125f787af41a3c68e919703709dd8c3c37",
+    "backend/app/worker.py": "75873e4c04a82bc235fcb2eef70daba7dd63e53e6a35041b255886e0f8b5fedf",
+    "backend/migrations/env.py": "aa561c74cbf9c874e40364beedab25aa11f74d808227451657b44385772ce85d",
+    "backend/migrations/script.py.mako": "eaed8915c759b55bf420a40ab08b4a92af9a198b868fd53b9d662a33b45e3355",
+    "backend/migrations/versions/ecd38e5b52ce_initial_m1.py": "cf175b30901fc3bf7575d71269c14cbab0e2e96cd271544cd05061d811c43dfb",
+    "backend/pyproject.toml": "58fa0c44be6fbc39369c9b1c436b347dbcc66cf2d0598ed588d11e5ec9760233",
+    "backend/tests/conftest.py": "d0960435243eb2b4c98cc66a2b162fff230fc9c5a0d81fe5953ae4ecb2332abb",
+    "backend/tests/test_agent.py": "3c894d5911a91c61f3ba8458ecbf2b5540732c06adb2c343fe4b2239dab12d36",
+    "backend/tests/test_auth_data.py": "bb1d3b5e825d2a73cc4bc6c1aa8f861fa28ca07a4bf49956ee236542a56b8307",
+    "backend/tests/test_knowledge.py": "22e12f97af7b1da08c4d0f4183c87e28d871015abfdffb41ec5a9866186f3e77",
+    "backend/tests/test_provider.py": "c40808bccec1fc73063c3694009a5a058e4b1577a937241cc07f649aa17387ef",
+    "backend/tests/test_recovery_migrations.py": "3d64887ac42babafaab31eda3b4f240d11b5fcdc4bb5bbf98f2425c97b6b0b27",
+    "backend/uv.lock": "17cdd93d2c2e726c0bb165c4357cd30a503dd5201d0235245acc9d82a3b49a74",
+    "frontend/package.json": "cce7d4ef27f9b5ab8167cb7956992dab499e093e045721761914d92ba7efbefc",
+    "frontend/pnpm-lock.yaml": "dd526c153318777e55e1b1d572f0a8d1f80e9921a2ab6ebc275f8532e6479b0a",
+    "frontend/scripts/generate-m1-types.mjs": "ee13caa2380fa2b46ea605843dd7a9bfe99397b1ae42d16b2f651d790841a3ca",
+    "frontend/scripts/prepare-sites-build.mjs": "b6a6adaa4fab3234676116dd1c9cb6611275ab9d92dd26f5bf402393e3744bf6",
+    "frontend/src/m1/M1App.tsx": "ecc7be14168a5d2a88ad0f91c85169ac27b063cb6827d1d418eaf0429e94e090",
+    "frontend/src/m1/api.ts": "7180ce1c140c98709613a2e2f6ecff3ddbdf42ba2b6a5cfddf1bc30d6dd7f6a7",
+    "frontend/src/m1/m1.css": "31ad6bcbbd7c3a52714bf6734d2ae24c07d105746ebf43e891f05b6e42efd4bd",
+    "frontend/src/m1/types.ts": "d9899f3fbc244994f9a6773ac7f0856c66bbdaf4f1719dbd4fcb37539e6b47d2",
+    "frontend/src/main.jsx": "749157b9a2df1e35b25e9dd306329afb81503bfe95e6ad2a87b8c21f35f3472b",
+    "frontend/vite.config.mjs": "56b749524343d3ac43e43753e7a8b29a9d145210935ce9f12cab30c1b03e0626",
+    "scripts/export_m1_evidence.py": "1fe1bed9641450252e04744a951dd6f00ce79f7163a167925145b4c6e2c09e69",
+    "scripts/start_m1.py": "b4d148e3dcca86f62c1955056900b7d934bab1f7cee96592011b8237ca35b078"
+  }
+}

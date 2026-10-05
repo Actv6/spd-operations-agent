@@ -1,0 +1,32 @@
+[
+  {
+    "id": "SIM-HA-LAB",
+    "hospital_id": "SIM-HA",
+    "name": "检验科"
+  },
+  {
+    "id": "SIM-HA-OR",
+    "hospital_id": "SIM-HA",
+    "name": "手术室"
+  },
+  {
+    "id": "SIM-HA-ER",
+    "hospital_id": "SIM-HA",
+    "name": "急诊科"
+  },
+  {
+    "id": "SIM-HB-LAB",
+    "hospital_id": "SIM-HB",
+    "name": "检验科"
+  },
+  {
+    "id": "SIM-HB-OR",
+    "hospital_id": "SIM-HB",
+    "name": "手术室"
+  },
+  {
+    "id": "SIM-HB-ER",
+    "hospital_id": "SIM-HB",
+    "name": "急诊科"
+  }
+]

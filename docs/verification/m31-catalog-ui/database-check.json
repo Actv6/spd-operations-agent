@@ -1,0 +1,22 @@
+{
+  "account": "M1 浏览器测试",
+  "migration": "m3101",
+  "existing_snapshots_checked": 7,
+  "existing_snapshots_unchanged": true,
+  "snapshot_count_before": 7,
+  "snapshot_count_after": 7,
+  "browser_created_records": [
+    {
+      "code": "QA-MAT-0928",
+      "name": "清洗液质控耗材",
+      "active": true,
+      "revision": 4
+    },
+    {
+      "code": "QA-DEP-0928",
+      "name": "质控室",
+      "active": true,
+      "revision": 1
+    }
+  ]
+}

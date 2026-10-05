@@ -1,0 +1,77 @@
+{
+  "scope": "Frontend synthetic demo only; browser interaction checks, not backend or Agent tests",
+  "checks": [
+    {
+      "test": "缺少负责人时阻止建立待办",
+      "passed": true
+    },
+    {
+      "test": "建立待办进入待确认",
+      "passed": true
+    },
+    {
+      "test": "库存证据与批次明细",
+      "passed": true
+    },
+    {
+      "test": "打开有效模拟制度原文",
+      "passed": true
+    },
+    {
+      "test": "完成任务前要求填写结果",
+      "passed": true
+    },
+    {
+      "test": "完整任务生命周期",
+      "passed": true
+    },
+    {
+      "test": "已完成任务筛选显示结果",
+      "passed": true
+    },
+    {
+      "test": "刷新后保留完成状态与结果",
+      "passed": true
+    },
+    {
+      "test": "医院 B 任务空态",
+      "passed": true
+    },
+    {
+      "test": "现行资料默认隐藏停用版",
+      "passed": true
+    },
+    {
+      "test": "历史版本筛选显示停用标签",
+      "passed": true
+    },
+    {
+      "test": "医院 A 前端不显示 B 专属资料",
+      "passed": true
+    },
+    {
+      "test": "缺失日记录暂停估计并支持物资搜索",
+      "passed": true
+    },
+    {
+      "test": "重置演示恢复初始任务",
+      "passed": true
+    },
+    {
+      "test": "弹窗支持 Escape 关闭",
+      "passed": true
+    },
+    {
+      "test": "768px 平板无页面横向溢出",
+      "passed": true
+    },
+    {
+      "test": "手机详情可收起并返回任务列表",
+      "passed": true
+    },
+    {
+      "test": "390px 手机无页面横向溢出",
+      "passed": true
+    }
+  ]
+}

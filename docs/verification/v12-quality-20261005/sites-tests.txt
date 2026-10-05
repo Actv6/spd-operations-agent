@@ -1,0 +1,12 @@
+✔ serves existing static assets without a fallback (18.705125ms)
+✔ falls back to index.html for an unknown app route (0.58975ms)
+✔ does not turn missing API or write requests into the app shell (0.259042ms)
+✔ emits the files required by Sites packaging (2.690625ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 64.775917

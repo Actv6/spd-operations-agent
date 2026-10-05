@@ -1,0 +1,37 @@
+..............F..                                                        [100%]
+=================================== FAILURES ===================================
+__________ test_ordinary_no_high_risk_remains_available_for_sampling ___________
+
+client = <starlette.testclient.TestClient object at 0x10fa9be00>
+app = <fastapi.applications.FastAPI object at 0x10ee74080>
+
+    def test_ordinary_no_high_risk_remains_available_for_sampling(client, app):
+        from test_m21 import ScanProvider
+        from app.operations import risks
+        from app.data import snapshot_for, inventory
+        project = register(client)['projects'][0]['id']
+        with app.state.factory() as db:
+            snapshot = snapshot_for(db, project)
+            affected = {f['item_id'] for f in risks(snapshot)['findings'] if f['priority'] == 'high' or f['kind'] == 'quality'}
+            item = next(row['item_id'] for row in inventory(snapshot) if row['item_id'] not in affected)
+        run = create_run(client, project, body=request_body('请扫描该物资风险', item_ids=[item]))
+        import json
+        class FactOnlyProvider(ScanProvider):
+            async def complete(self, messages, final=False):
+                msg, meta = await super().complete(messages, final)
+                if final:
+                    payload = json.loads(msg['content']); payload['insufficient_evidence'] = False
+                    msg['content'] = json.dumps(payload, ensure_ascii=False)
+                return msg, meta
+        work_once(app.state.factory, app.state.settings, FactOnlyProvider())
+        result = client.get('/api/v1/runs/' + run['run_id']).json(); assert result['status'] == 'succeeded', result
+        v = client.get('/api/v1/runs/' + run['run_id'] + '/human-review').json()
+>       assert v['status'] == 'pending' and not v['required'] and not v['blocked'] and v['can_submit']
+E       AssertionError: assert ('pending' == 'pending'
+E         
+E           pending and not True)
+
+backend/tests/test_human_review.py:213: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/test_human_review.py::test_ordinary_no_high_risk_remains_available_for_sampling
+1 failed, 16 passed in 3.51s

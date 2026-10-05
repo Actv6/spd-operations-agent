@@ -1,0 +1,56 @@
+.catalog-context {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 24px 18px;
+  color: #64748b;
+}
+.catalog-context p {
+  margin: 0;
+  line-height: 1.75;
+  font-size: 14px;
+}
+.catalog-readonly {
+  margin: 0 24px 18px;
+  color: #64748b;
+}
+.catalog-form {
+  margin-top: 16px;
+}
+.catalog-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.catalog-history ol {
+  padding-left: 18px;
+  margin: 0;
+}
+.catalog-history li {
+  padding: 0 0 16px 4px;
+}
+.catalog-history li > span {
+  display: block;
+  margin: 6px 0;
+  color: #64748b;
+  font-size: 12px;
+}
+.catalog-history p {
+  margin: 4px 0;
+  font-size: 13px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+  .catalog-context {
+    margin: 0 16px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+.catalog-table .ant-table-thead th {
+  white-space: nowrap;
+}

@@ -1,0 +1,58 @@
+{
+  "backup": "/Users/ac/Documents/ChatGPT/agent项目学习/backend/var/backups/pre-onsite-20260929-001914.db",
+  "publication": [
+    {
+      "project_id": "d185415d-2050-465e-b8d9-4b4cbe1fc9db",
+      "added": true,
+      "snapshot_id": "8d69644c-982f-4d63-bc78-2b3a03168d73",
+      "as_of": "2026-09-27T09:00:00+08:00",
+      "counts": {
+        "products": 12,
+        "departments": 4,
+        "inventory_snapshots": 18,
+        "inventory_batches": 36,
+        "consumption_daily": 252
+      },
+      "documents_added": 4
+    },
+    {
+      "project_id": "95385c35-3ce5-4003-890d-3f781bc07ce8",
+      "added": true,
+      "snapshot_id": "f2f4babf-829f-474b-af24-f42703c669de",
+      "as_of": "2026-09-27T09:00:00+08:00",
+      "counts": {
+        "products": 12,
+        "departments": 4,
+        "inventory_snapshots": 18,
+        "inventory_batches": 36,
+        "consumption_daily": 252
+      },
+      "documents_added": 4
+    }
+  ],
+  "current": [
+    {
+      "project_id": "d185415d-2050-465e-b8d9-4b4cbe1fc9db",
+      "products": 36,
+      "departments": 7,
+      "positions": 42
+    },
+    {
+      "project_id": "95385c35-3ce5-4003-890d-3f781bc07ce8",
+      "products": 36,
+      "departments": 7,
+      "positions": 42
+    }
+  ],
+  "history_snapshots_preserved": 7,
+  "history_documents_preserved": 102,
+  "history_agent_counts_preserved": {
+    "agent_runs": 25,
+    "analyses": 20,
+    "evidence": 145
+  },
+  "idempotent_replay": true,
+  "synthetic": true,
+  "real_company_data": false,
+  "tests": "49 passed: onsite + imports + versions"
+}

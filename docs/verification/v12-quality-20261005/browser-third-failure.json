@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "reason counts and named positions remain separate",
+    "existing risk counts preserved",
+    "fact quote advice and unknown labels displayed",
+    "fact button opens actual immutable tool evidence",
+    "quoted policy opens matching original excerpt"
+  ],
+  "errors": [],
+  "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(box.x>=0&&box.x+box.width<=390)\n"
+}

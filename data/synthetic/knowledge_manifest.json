@@ -1,0 +1,91 @@
+[
+  {
+    "id": "SIM-SOP-REPL-v1",
+    "title": "演示补货规则",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-01",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "synthetic_demo",
+    "path": "knowledge/SIM-SOP-REPL-v1.md",
+    "sha256": "34bfa69fd0ef879c7a908673ab3c9235cc63dacaf9cfe9de2a7ad8e3c4516c34"
+  },
+  {
+    "id": "SIM-SOP-REPL-v0",
+    "title": "演示补货规则",
+    "version": "0.1",
+    "status": "retired_demo",
+    "effective_from": "2026-06-01",
+    "effective_until": "2026-08-31",
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "synthetic_demo",
+    "path": "knowledge/SIM-SOP-REPL-v0.md",
+    "sha256": "f75623391434b5f2f5509fafe4b3a22e0c14c6f2b7416882caa1e29bc0c4b6bf"
+  },
+  {
+    "id": "SIM-SOP-EXP-v1",
+    "title": "演示效期处理规则",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-01",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "synthetic_demo",
+    "path": "knowledge/SIM-SOP-EXP-v1.md",
+    "sha256": "57522fb7631886d359b1aa3c942acdc13ac7d1e3fd51e998d9dae865bb9c95b3"
+  },
+  {
+    "id": "SIM-SOP-DATA-v1",
+    "title": "演示数据质量规则",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-01",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "synthetic_demo",
+    "path": "knowledge/SIM-SOP-DATA-v1.md",
+    "sha256": "f40d46c9cceb63d38b6b0aa01d1a608831ab18d8a8cd713ba67d18391cd5da48"
+  },
+  {
+    "id": "SIM-PRODUCT-P001-v1",
+    "title": "生化清洗液模拟资料",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-01",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "synthetic_demo",
+    "path": "knowledge/SIM-PRODUCT-P001-v1.md",
+    "sha256": "e49e5f4ac3e0a78f00d5be9af1f4444523809b20debf8f3a78ef1f08c87b2596"
+  },
+  {
+    "id": "SIM-SOP-B-v1",
+    "title": "演示医院B内部流程",
+    "version": "1.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-01",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HB"
+    ],
+    "source_type": "synthetic_demo",
+    "path": "knowledge/SIM-SOP-B-v1.md",
+    "sha256": "6c5159d8cacf2faf0a656e773f42d439e80e3a516904c0346b8a05262109babe"
+  }
+]

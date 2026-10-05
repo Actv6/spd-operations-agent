@@ -1,0 +1,90 @@
+{
+  "tokens_already_recorded": 0,
+  "cases": [
+    {
+      "case": "project",
+      "run_id": "254f294f-d52d-4023-a40c-8724c804a38a",
+      "question": "请扫描当前项目全部物资的库存覆盖、批次效期和数据质量异常，说明扫描范围与跳过估算数量，并按关注级别汇总下一步核查建议。",
+      "status": "failed",
+      "error": {
+        "code": "PROVIDER_UNAVAILABLE",
+        "message": "模型服务网络不可用",
+        "details": {},
+        "trace_id": "50b7e8c7-3b76-4421-9681-a1ed0a6cf4e7",
+        "retryable": true
+      },
+      "elapsed_seconds": 0.04,
+      "tokens_recorded": 0,
+      "usage_complete": false,
+      "calls": [],
+      "tool_steps": [],
+      "final_validations": 0,
+      "analysis": null,
+      "draft": null
+    },
+    {
+      "case": "missing",
+      "run_id": "4699c494-5bc8-4e1f-a00d-e6462a5a1842",
+      "question": "反应杯近14日消耗缺了哪两天？能否按零补齐或用12天平均估算覆盖？请查事实和制度，简洁回答。",
+      "status": "failed",
+      "error": {
+        "code": "PROVIDER_UNAVAILABLE",
+        "message": "模型服务网络不可用",
+        "details": {},
+        "trace_id": "4d68cfc3-e24b-4638-a994-3fcf7dead739",
+        "retryable": true
+      },
+      "elapsed_seconds": 0.02,
+      "tokens_recorded": 0,
+      "usage_complete": false,
+      "calls": [],
+      "tool_steps": [],
+      "final_validations": 0,
+      "analysis": null,
+      "draft": null
+    },
+    {
+      "case": "zero",
+      "run_id": "9505d3ea-5f88-4831-8bf3-c21f7bb8f111",
+      "question": "低频检测耗材消耗记录是否完整？零消耗是否意味着数据缺失？为什么不能给出覆盖天数？",
+      "status": "failed",
+      "error": {
+        "code": "PROVIDER_UNAVAILABLE",
+        "message": "模型服务网络不可用",
+        "details": {},
+        "trace_id": "a8e2a74d-3ab3-461b-bf14-81d266ff022f",
+        "retryable": true
+      },
+      "elapsed_seconds": 0.02,
+      "tokens_recorded": 0,
+      "usage_complete": false,
+      "calls": [],
+      "tool_steps": [],
+      "final_validations": 0,
+      "analysis": null,
+      "draft": null
+    },
+    {
+      "case": "no-evidence",
+      "run_id": "cddd6fc4-59fc-410d-92ff-aec0fab29f6a",
+      "question": "请检索量子宇宙星际飞船的技术制度，没有适用资料就明确不能回答，不要编造。",
+      "status": "failed",
+      "error": {
+        "code": "PROVIDER_UNAVAILABLE",
+        "message": "模型服务网络不可用",
+        "details": {},
+        "trace_id": "c9083f2b-8571-4e29-890f-d2175de6b90b",
+        "retryable": true
+      },
+      "elapsed_seconds": 0.02,
+      "tokens_recorded": 0,
+      "usage_complete": false,
+      "calls": [],
+      "tool_steps": [],
+      "final_validations": 0,
+      "analysis": null,
+      "draft": null
+    }
+  ],
+  "note": "Generated scenario; real DeepSeek calls; engineering success is not semantic approval; no tasks confirmed."
+}

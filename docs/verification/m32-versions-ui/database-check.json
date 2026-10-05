@@ -1,0 +1,49 @@
+{
+  "snapshots": {
+    "before_count": 7,
+    "after_count": 7,
+    "identical": true
+  },
+  "agent_runs": {
+    "before_count": 22,
+    "after_count": 22,
+    "identical": true
+  },
+  "evidence": {
+    "before_count": 135,
+    "after_count": 135,
+    "identical": true
+  },
+  "analyses": {
+    "before_count": 17,
+    "after_count": 17,
+    "identical": true
+  },
+  "personal_tasks": {
+    "before_count": 1,
+    "after_count": 1,
+    "identical": true
+  },
+  "project_catalog": {
+    "before_count": 56,
+    "after_count": 56,
+    "identical": true
+  },
+  "migration": "m3201",
+  "activations": [
+    {
+      "project_id": "d185415d-2050-465e-b8d9-4b4cbe1fc9db",
+      "revision": 1,
+      "snapshot_id": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+      "previous_snapshot_id": "71f9797c-cbe7-48b8-a121-543a848fd848",
+      "reason": "M3.2 本地验收：核对历史数据回退流程"
+    },
+    {
+      "project_id": "d185415d-2050-465e-b8d9-4b4cbe1fc9db",
+      "revision": 2,
+      "snapshot_id": "71f9797c-cbe7-48b8-a121-543a848fd848",
+      "previous_snapshot_id": "98b31c3f-ba9e-4500-a508-f2d257f0a27d",
+      "reason": "M3.2 本地验收完成，恢复测试前使用的数据版本"
+    }
+  ]
+}

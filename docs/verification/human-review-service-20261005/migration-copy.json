@@ -1,0 +1,95 @@
+{
+  "source_revision": "v1101",
+  "copy_revision": "v1301",
+  "existing_tables_preserved": true,
+  "existing_table_count": 20,
+  "new_tables": [
+    "human_review_records",
+    "human_review_states"
+  ],
+  "model_calls": 0,
+  "daily_db_modified": false,
+  "daily_services_restarted": false,
+  "history": {
+    "agent_runs": {
+      "rows": 30,
+      "sha256": "a121d75103f1e5566720476ea8139d151b60794f763761cb11573b0d6937ec19"
+    },
+    "analyses": {
+      "rows": 25,
+      "sha256": "2e46111cdbbe522a3c49342bc57e2c5948d4eb44e48e02a9b34d2121a2451ec9"
+    },
+    "analysis_feedback": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "chunks": {
+      "rows": 292,
+      "sha256": "c2016cc9a89b92268532c7e214d10b80cee6959cc41f150d211466555b49283a"
+    },
+    "data_imports": {
+      "rows": 4,
+      "sha256": "06ae162bdb02758d4832bbf49aba7d80629734702874f2441bebdb3019871699"
+    },
+    "documents": {
+      "rows": 110,
+      "sha256": "7a3493a3c467887e028a4131916da376bcbc9a33d3fbc77e0c5307e5dce0effb"
+    },
+    "evidence": {
+      "rows": 180,
+      "sha256": "71d04b97859a84fd7233319d91df87317add69d9c9d930a7b178404389dba123"
+    },
+    "knowledge_changes": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "login_sessions": {
+      "rows": 7,
+      "sha256": "959a3626388892e7ea6b9d7368cc036c92d624358717bbf034de8057c693d17e"
+    },
+    "memberships": {
+      "rows": 2,
+      "sha256": "55ebe7f0ae165a12173f16ee406e35c8bb3b2a2ac7972b4407b7f97f57d1da12"
+    },
+    "organizations": {
+      "rows": 2,
+      "sha256": "1a7611b9bab092b1ace2b0b165094f1813ebd522e5c52bf5c237e5ded6810ae7"
+    },
+    "personal_tasks": {
+      "rows": 1,
+      "sha256": "2a0a39537af3b99ab8cdc5c5e3a7c44f0d85466412822fae3d821e7c5d67e8df"
+    },
+    "project_catalog": {
+      "rows": 88,
+      "sha256": "8c6b930966d6db4736ff5dba5f858f53abbdbc5e8b827ff5104522fa823d9b03"
+    },
+    "projects": {
+      "rows": 2,
+      "sha256": "3f1a8454bc44ce4b7f55dffa9da8b7ba08355adcb46e2b84e6d9103746400342"
+    },
+    "rate_buckets": {
+      "rows": 3,
+      "sha256": "c267084072af0ab1249e8546348c474ed0e1bb41d597e17649c344a0557f06b7"
+    },
+    "run_events": {
+      "rows": 272,
+      "sha256": "af5e8e25a549c49dd4257eb304706a07993b935840a3914618d0b6e5bea2cbae"
+    },
+    "snapshot_activations": {
+      "rows": 4,
+      "sha256": "d80c1a7efe1f5d966c972cbee2ede01d5cc66cd61e01e868ced4d63665d75a00"
+    },
+    "snapshots": {
+      "rows": 9,
+      "sha256": "6b3fc90c13e6061b766af8381c1688c232ba3644c1607a439c63e5e43aee9725"
+    },
+    "task_drafts": {
+      "rows": 2,
+      "sha256": "c7d665da05eb65b10cc59f3ced64944400cd5515a6b25bea60b7e1838cd8e00f"
+    },
+    "users": {
+      "rows": 2,
+      "sha256": "e097440bd2a2a3a6d46480961d68e433429db0a2596dd4791d8ff51036b7e494"
+    }
+  }
+}

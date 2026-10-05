@@ -1,0 +1,81 @@
+[
+  {
+    "id": "OPS-SOP-REPL-v2",
+    "title": "库存补货与缺货核查规程",
+    "version": "2.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "path": "knowledge/OPS-SOP-REPL-v2.md",
+    "sha256": "88c8b1f3fcc018a28d438290c0aed7d8eaf36be75f0ddd4441ad15ffb9ce748a",
+    "synthetic": true
+  },
+  {
+    "id": "OPS-SOP-EXP-v2",
+    "title": "批次效期与库存隔离规程",
+    "version": "2.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "path": "knowledge/OPS-SOP-EXP-v2.md",
+    "sha256": "3d5e5ba1fd6794fbd6193b4974054887ee2b2b7f5fd1f63b269f30ec27ef4d49",
+    "synthetic": true
+  },
+  {
+    "id": "OPS-SOP-DATA-v2",
+    "title": "库存与消耗数据质量管理规范",
+    "version": "2.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "path": "knowledge/OPS-SOP-DATA-v2.md",
+    "sha256": "e9de41212c29ef81ebc6f7a153995261569c87fadb30d08832ffa432595f2c45",
+    "synthetic": true
+  },
+  {
+    "id": "OPS-PRODUCT-P001-v2",
+    "title": "生化清洗液物资档案",
+    "version": "2.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HA",
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "path": "knowledge/OPS-PRODUCT-P001-v2.md",
+    "sha256": "12d3a2f457ddfde9ad693c0e36b073cd5f931fcbebc6f1e1b89cc475d9244501",
+    "synthetic": true
+  },
+  {
+    "id": "OPS-SOP-B-v2",
+    "title": "青禾医院驻点交接流程",
+    "version": "2.0",
+    "status": "approved_demo",
+    "effective_from": "2026-09-27",
+    "effective_until": null,
+    "allowed_hospitals": [
+      "SIM-HB"
+    ],
+    "source_type": "generated_enterprise_scenario",
+    "path": "knowledge/OPS-SOP-B-v2.md",
+    "sha256": "7e9452930f30d265e5f410b08f6ea33b4d7c8fadcaec7d02b2dbffd827a4bf3d",
+    "synthetic": true
+  }
+]

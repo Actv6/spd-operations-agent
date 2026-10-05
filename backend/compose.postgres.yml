@@ -1,0 +1,20 @@
+# Optional local PostgreSQL target. Not started or validated on this machine.
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: spd
+      POSTGRES_USER: spd
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD locally}
+    ports:
+      - "127.0.0.1:5432:5432"
+    mem_limit: 512m
+    shm_size: 128m
+    volumes:
+      - spd_m1_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U spd -d spd"]
+      interval: 5s
+      retries: 10
+volumes:
+  spd_m1_data:

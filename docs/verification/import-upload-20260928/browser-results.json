@@ -1,0 +1,18 @@
+{
+  "database": "isolated SQLite",
+  "provider_calls": 0,
+  "template_downloads": 3,
+  "filled_uploads": 3,
+  "preview_status": "ready",
+  "errors": 0,
+  "warnings": 2,
+  "current_snapshot_unchanged": true,
+  "format_size_encoding_checks": true,
+  "cancel_and_stale_read_checks": true,
+  "return_to_upload_reset": true,
+  "desktop_and_390px": true,
+  "page_errors": [],
+  "large_csv_bytes": 1293725,
+  "large_csv_rows": 9000,
+  "local_read_buffer_bytes": 262144
+}

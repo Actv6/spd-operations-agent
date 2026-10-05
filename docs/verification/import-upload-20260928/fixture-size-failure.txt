@@ -1,0 +1,12 @@
+Error: Command failed: /Users/ac/Documents/ChatGPT/agent项目学习/backend/.venv/bin/python /tmp/fill-import-fixtures.py
+Traceback (most recent call last):
+  File "/tmp/fill-import-fixtures.py", line 32, in <module>
+    assert 1048576 < (folder / "batches-large-filled.csv").stat().st_size < 10 * 1048576
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at Object.execFileSync (node:child_process:978:15)
+    at /private/tmp/import-browser-full.cjs:25:5

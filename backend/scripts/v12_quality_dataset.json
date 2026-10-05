@@ -1,0 +1,35 @@
+{
+  "version": "v12-author-dev-1",
+  "blind_test": false,
+  "reasons": [
+    {"id":"R01","text":"2个因14日消耗记录缺日（数据质量原因）","error":"QUALITY_REASON_MISATTRIBUTION"},
+    {"id":"R02","text":"对2个缺日物资核对每日记录","error":"QUALITY_REASON_MISATTRIBUTION"},
+    {"id":"R03","text":"缺日共两个位置","error":"QUALITY_REASON_MISATTRIBUTION"},
+    {"id":"R04","text":"**缺日**：２个组合","error":"QUALITY_REASON_MISATTRIBUTION"},
+    {"id":"R05","text":"旧快照有二个位置","error":"QUALITY_REASON_MISATTRIBUTION"},
+    {"id":"R06","text":"零消耗共两项","error":"QUALITY_REASON_MISATTRIBUTION"},
+    {"id":"R07","text":"反应杯缺日；采样管旧快照。","error":null},
+    {"id":"R08","text":"缺日1个位置；旧快照1个位置；零消耗1个位置。","error":null},
+    {"id":"R09","text":"采样管不是缺日，反应杯缺日。","error":null},
+    {"id":"R10","text":"建议对采样管的缺日补齐记录。","error":"QUALITY_REASON_OBJECT_MISMATCH"},
+    {"id":"R11","text":"数据待核查2个位置，其中缺日1个位置、旧快照1个位置。","error":null},
+    {"id":"R12","text":"低频耗材记录为零需要确认是否存在未同步消耗。","error":null}
+  ],
+  "claims": [
+    {"id":"C01","fault":"none","error":null},
+    {"id":"C02","fault":"wrong-text","error":"CLAIM_FACT_MISMATCH"},
+    {"id":"C03","fault":"wrong-id","error":"CLAIM_FACT_MISMATCH"},
+    {"id":"C04","fault":"wrong-source","error":"CLAIM_FACT_MISMATCH"},
+    {"id":"C05","fault":"foreign-source","error":"CLAIM_CITATION_INVALID"},
+    {"id":"C06","fault":"no-claims","error":"CLAIMS_REQUIRED"},
+    {"id":"C07","fault":"extra-prose","error":"CLAIM_ANSWER_MISMATCH"},
+    {"id":"C08","fault":"unused-source","error":"CLAIM_CITATION_COVERAGE"},
+    {"id":"C09","fault":"quote","error":null},
+    {"id":"C10","fault":"fake-quote","error":"CLAIM_QUOTE_MISMATCH"},
+    {"id":"C11","fault":"tool-as-policy","error":"CLAIM_QUOTE_MISMATCH"},
+    {"id":"C12","fault":"suggestion","error":null},
+    {"id":"C13","fault":"ungrounded","error":"CLAIM_SUGGESTION_UNGROUNDED"},
+    {"id":"C14","fault":"unknown","error":"CLAIM_UNKNOWN_STATUS"},
+    {"id":"C15","fault":"draft-bypass","error":"CLAIM_DRAFT_MISMATCH"}
+  ]
+}

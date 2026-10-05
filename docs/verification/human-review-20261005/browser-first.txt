@@ -1,0 +1,17 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('option', { name: '资料不足', exact: true })[22m
+
+    at status (/Users/ac/Documents/ChatGPT/agent项目学习/docs/verification/human-review-20261005/browser-check.mjs:22:176)
+    at async file:///Users/ac/Documents/ChatGPT/agent%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0/docs/verification/human-review-20261005/browser-check.mjs:39:2 {
+  log: [
+    "  - waiting for getByRole('option', { name: '资料不足', exact: true })"
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.19.0

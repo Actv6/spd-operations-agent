@@ -1,0 +1,150 @@
+.import-intro {
+  margin: 0 24px 8px;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #e8ebef;
+}
+.import-intro strong {
+  font-size: 16px;
+}
+.import-intro p {
+  margin: 5px 0 0;
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 13px;
+}
+.import-permission {
+  margin: 0 24px 20px;
+  color: #64748b;
+}
+.import-form {
+  margin-top: 24px;
+}
+.import-preview {
+  margin-top: 28px;
+}
+.import-form h3 {
+  margin: 24px 0 12px;
+  font-size: 14px;
+}
+.import-form > p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.import-form > label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #334155;
+}
+.import-form > .ant-input {
+  max-width: 320px;
+  display: block;
+}
+.import-files {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+.import-guide {
+  margin: 20px 0;
+  padding: 12px 16px;
+  background: #f7f8fa;
+  border-radius: 6px;
+  color: #64748b;
+  font-size: 13px;
+}
+.import-guide summary {
+  cursor: pointer;
+}
+.import-guide li {
+  margin: 8px 0;
+  line-height: 1.7;
+}
+.import-feedback {
+  margin-top: 20px;
+}
+.import-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 18px 20px;
+  background: #f7f8fa;
+  border: 1px solid #e8ebef;
+  border-radius: 8px;
+  gap: 16px;
+}
+.import-metrics span {
+  color: #64748b;
+  font-size: 13px;
+  display: block;
+}
+.import-metrics strong {
+  font-size: 26px;
+  font-weight: 600;
+  display: block;
+  margin-top: 6px;
+}
+.import-metrics small {
+  font-size: 12px;
+  font-weight: 400;
+  color: #64748b;
+}
+.import-error {
+  color: #b42318;
+}
+.import-preview .data-table {
+  margin: 0;
+}
+.import-preview .ant-checkbox-wrapper {
+  margin: 20px 0;
+}
+.import-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 4px 0;
+  min-height: 44px;
+}
+.import-footer > span {
+  font-size: 12px;
+  color: #64748b;
+}
+@media (min-width: 800px) {
+  .import-files {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .csv-upload-heading {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .import-intro {
+    margin: 0 16px 16px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .import-footer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .import-footer > .ant-space {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .import-metrics {
+    padding: 12px;
+    gap: 8px;
+  }
+  .import-metrics strong {
+    font-size: 23px;
+  }
+  .import-steps .ant-steps-item-title {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,32 @@
+12:24:09 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+✔ claim labels distinguish exact facts, quotes and unverified advice (17.076916ms)
+✔ reason members remain separate and historical answers receive no invented checks (0.412834ms)
+✔ shared slots surround one native Ant Design table (21.658458ms)
+✔ default pagination renders ten rows and correct total (3.988875ms)
+✔ page override and disabled pagination are preserved (8.181459ms)
+✔ empty, error, retry and loading states remain available (6.424042ms)
+✔ compact header preserves zero count and precise timestamp (2.416416ms)
+✔ risk refresh stays pinned when current snapshot changes (0.098791ms)
+✔ mixed snapshot bundle is rejected (0.2ms)
+✔ answer presentation recognizes labels without changing numbers or claims (0.430333ms)
+✔ authored markdown and fenced code are left untouched (0.047666ms)
+✔ long prose is separated at sentence boundaries without dropping text (0.042333ms)
+✔ batch evidence renders preserved expiry, quantity and Chinese status (6.370041ms)
+✔ consumption evidence shows missing days without zero filling (2.378375ms)
+✔ risk evidence preserves distinct quality and zero-consumption counts (3.602042ms)
+✔ unknown evidence retains original excerpt instead of a blank panel (0.27825ms)
+✔ display quantities preserve small and large decimal values (0.042083ms)
+✔ bracketed historical headings get hierarchy without rewriting claims (0.044834ms)
+✔ historical risk evidence without breakdown remains readable and does not invent zeros (2.238625ms)
+✔ CSV slice decoding preserves UTF-8 across chunk boundaries and reports progress (5.5955ms)
+✔ CSV rejects wrong types, empty files, over-limit bytes and invalid UTF-8 (0.252791ms)
+✔ cancelled CSV reads stop before delivering content (0.718709ms)
+✔ bold business labels become sections while facts and numbered advice survive (0.121208ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2078.840459

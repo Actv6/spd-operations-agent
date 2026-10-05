@@ -1,0 +1,8 @@
+{
+  "kind": "read_only_v12_freeze_check",
+  "files": 196,
+  "preserved_evidence": 4,
+  "provider_calls": 0,
+  "mismatches": [],
+  "passed": true
+}

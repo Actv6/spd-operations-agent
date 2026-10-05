@@ -1,0 +1,53 @@
+..............FF.                                                        [100%]
+=================================== FAILURES ===================================
+__________ test_ordinary_no_high_risk_remains_available_for_sampling ___________
+
+client = <starlette.testclient.TestClient object at 0x10feb3b90>
+app = <fastapi.applications.FastAPI object at 0x10f91f980>
+
+    def test_ordinary_no_high_risk_remains_available_for_sampling(client, app):
+        from test_m21 import ScanProvider
+        from app.operations import risks
+        from app.data import snapshot_for, inventory
+        project = register(client)['projects'][0]['id']
+        with app.state.factory() as db:
+            snapshot = snapshot_for(db, project)
+            affected = {f['item_id'] for f in risks(snapshot)['findings'] if f['priority'] == 'high' or f['kind'] == 'quality'}
+            item = next(row['item_id'] for row in inventory(snapshot) if row['item_id'] not in affected)
+        run = create_run(client, project, body=request_body('请扫描该物资风险', item_ids=[item]))
+        work_once(app.state.factory, app.state.settings, ScanProvider())
+        result = client.get('/api/v1/runs/' + run['run_id']).json(); assert result['status'] == 'succeeded', result
+        v = client.get('/api/v1/runs/' + run['run_id'] + '/human-review').json()
+>       assert v['status'] == 'pending' and not v['required'] and not v['blocked'] and v['can_submit']
+E       AssertionError: assert ('pending' == 'pending'
+E         
+E           pending and not True)
+
+backend/tests/test_human_review.py:205: AssertionError
+____________ test_missing_key_manual_result_does_not_call_provider _____________
+
+client = <starlette.testclient.TestClient object at 0x10fced9a0>
+app = <fastapi.applications.FastAPI object at 0x10fe99cd0>
+
+    def test_missing_key_manual_result_does_not_call_provider(client, app):
+        project = register(client)['projects'][0]['id']
+        app.state.settings.llm_provider = 'deepseek'
+        app.state.settings.deepseek_api_key = ''
+        run = create_run(client, project)
+        work_once(app.state.factory, app.state.settings)
+        current = client.get('/api/v1/runs/' + run['run_id']).json()
+>       assert current['status'] == 'failed' and current['error']['code'] == 'MODEL_NOT_CONFIGURED'
+E       AssertionError: assert ('failed' == 'failed'
+E         
+E           failed and 'PROVIDER_NOT_CONFIGURED' == 'MODEL_NOT_CONFIGURED'
+E         
+E         - MODEL_NOT_CONFIGURED
+E         ? ^   ^
+E         + PROVIDER_NOT_CONFIGURED
+E         ? ^^ ++  ^)
+
+backend/tests/test_human_review.py:216: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/test_human_review.py::test_ordinary_no_high_risk_remains_available_for_sampling
+FAILED backend/tests/test_human_review.py::test_missing_key_manual_result_does_not_call_provider
+2 failed, 15 passed in 3.42s

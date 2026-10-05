@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "server risk counts 3/5 displayed",
+    "feedback reason validation and failure retry",
+    "actual colloquial retrieval displays applicable source"
+  ],
+  "errors": [],
+  "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /缺失|缺日/. Input:\n\n'资料原文'\n"
+}

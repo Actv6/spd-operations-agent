@@ -1,0 +1,120 @@
+.csv-upload {
+  border: 1px solid #e4e9f0;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  min-width: 0;
+}
+.csv-upload-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.csv-upload-heading strong {
+  font-size: 14px;
+  color: #1e293b;
+}
+.csv-upload-heading p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 5px 0 0;
+}
+.csv-upload .ant-upload-drag {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+.csv-upload .ant-upload-drag .ant-upload {
+  padding: 20px 12px;
+}
+.csv-upload-icon {
+  color: #537be8;
+}
+.csv-upload-prompt {
+  margin: 8px 0 4px;
+  font-size: 13px;
+  color: #334155;
+}
+.csv-upload-hint {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+.csv-upload-file {
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 6px;
+}
+.csv-upload-file-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #537be8;
+}
+.csv-upload-file-info > div {
+  flex: 1;
+  min-width: 0;
+}
+.csv-upload-file-info strong {
+  display: block;
+  color: #334155;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.csv-upload-file-info span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+.csv-upload-state {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.csv-upload--ready {
+  border-color: #bbdecf;
+}
+.csv-upload--error {
+  border-color: #f0b9b4;
+}
+.csv-upload-error {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #b42318;
+}
+.csv-upload .ant-tag {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+/* Dragger defaults to height:100%; inside a stretched grid card that includes
+   the heading, this makes the drop zone overflow the card. Size by content. */
+.csv-upload > .ant-upload-wrapper {
+  display: block;
+}
+.csv-upload .ant-upload-drag {
+  height: auto;
+}
+.csv-upload .ant-upload-drag .ant-upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 125px;
+  box-sizing: border-box;
+}
+.csv-upload .ant-upload-drag-container {
+  display: block;
+}

@@ -1,0 +1,104 @@
+{
+  "review": {
+    "reviewer": "Codex execution and self-review, not independent business review",
+    "status": "failed",
+    "severity": "P1",
+    "code": "QUALITY_REASON_MISATTRIBUTION",
+    "wrong_quote": "2个因14日消耗记录缺日（数据质量原因）",
+    "expected": "数据质量2个=反应杯缺日1个+采样管旧快照1个；另有低频检测耗材整窗口零消耗1个",
+    "scope_count_correct": true,
+    "priority_3_5_correct": true,
+    "tool_count_summary_correct": true,
+    "reason_claim_correct": false,
+    "citation_present_but_does_not_entail_claim": true,
+    "decision": "Stop further paid calls; do not change frozen product inside this round"
+  },
+  "tool_quality_findings": [
+    {
+      "id": "b3d002bbaec6dad4e232c2b4cb6db66cfd0ad3414d097fe77e009dc946f682b2",
+      "item_id": "SIM-P006",
+      "department_id": "SIM-HA-LAB",
+      "name": "反应杯",
+      "department_name": "检验科",
+      "kind": "quality",
+      "priority": "high",
+      "summary": "14日消耗缺日；暂停覆盖估算",
+      "source_rows": [
+        "SIM-HA-SIM-P006",
+        "LOT-SIM-HA-SIM-P006-1",
+        "LOT-SIM-HA-SIM-P006-2",
+        "LOT-SIM-HA-SIM-P006-3",
+        "USE-SIM-HA-SIM-P006-2026-09-13",
+        "USE-SIM-HA-SIM-P006-2026-09-14",
+        "USE-SIM-HA-SIM-P006-2026-09-15",
+        "USE-SIM-HA-SIM-P006-2026-09-16",
+        "USE-SIM-HA-SIM-P006-2026-09-17",
+        "USE-SIM-HA-SIM-P006-2026-09-18",
+        "USE-SIM-HA-SIM-P006-2026-09-19",
+        "USE-SIM-HA-SIM-P006-2026-09-20",
+        "USE-SIM-HA-SIM-P006-2026-09-21",
+        "USE-SIM-HA-SIM-P006-2026-09-23",
+        "USE-SIM-HA-SIM-P006-2026-09-25",
+        "USE-SIM-HA-SIM-P006-2026-09-26"
+      ]
+    },
+    {
+      "id": "afadc987960d877e8eb0806017128087fd9586d1d5c735ecbf9d328d6fae4675",
+      "item_id": "SIM-P007",
+      "department_id": "SIM-HA-LAB",
+      "name": "采样管",
+      "department_name": "检验科",
+      "kind": "quality",
+      "priority": "high",
+      "summary": "库存记录超过24小时；暂停覆盖估算",
+      "source_rows": [
+        "SIM-HA-SIM-P007",
+        "LOT-SIM-HA-SIM-P007-1",
+        "LOT-SIM-HA-SIM-P007-2",
+        "LOT-SIM-HA-SIM-P007-3",
+        "USE-SIM-HA-SIM-P007-2026-09-13",
+        "USE-SIM-HA-SIM-P007-2026-09-14",
+        "USE-SIM-HA-SIM-P007-2026-09-15",
+        "USE-SIM-HA-SIM-P007-2026-09-16",
+        "USE-SIM-HA-SIM-P007-2026-09-17",
+        "USE-SIM-HA-SIM-P007-2026-09-18",
+        "USE-SIM-HA-SIM-P007-2026-09-19",
+        "USE-SIM-HA-SIM-P007-2026-09-20",
+        "USE-SIM-HA-SIM-P007-2026-09-21",
+        "USE-SIM-HA-SIM-P007-2026-09-22",
+        "USE-SIM-HA-SIM-P007-2026-09-23",
+        "USE-SIM-HA-SIM-P007-2026-09-24",
+        "USE-SIM-HA-SIM-P007-2026-09-25",
+        "USE-SIM-HA-SIM-P007-2026-09-26"
+      ]
+    }
+  ],
+  "unestimated_positions": [
+    {
+      "name": "低频检测耗材",
+      "department": "检验科",
+      "quality_issues": [],
+      "coverage_days": null,
+      "daily_average": "0.0000"
+    },
+    {
+      "name": "反应杯",
+      "department": "检验科",
+      "quality_issues": [
+        "MISSING_CONSUMPTION_DAYS"
+      ],
+      "coverage_days": null,
+      "daily_average": null
+    },
+    {
+      "name": "采样管",
+      "department": "检验科",
+      "quality_issues": [
+        "STALE_SNAPSHOT"
+      ],
+      "coverage_days": null,
+      "daily_average": "78.2143"
+    }
+  ],
+  "personal_tasks": 0
+}

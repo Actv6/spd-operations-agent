@@ -1,0 +1,34 @@
+{
+  "method": "built-in ImageGen",
+  "created_at": "2026-09-27",
+  "selected": 3,
+  "images": [
+    {
+      "display_order": 1,
+      "file": "prototype-1.png",
+      "format": "PNG",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1102748,
+      "sha256": "195b26daaa956d49751c4702ce3b2302882c351820b939b496bc0124a82b5f25"
+    },
+    {
+      "display_order": 2,
+      "file": "prototype-2.png",
+      "format": "PNG",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1231095,
+      "sha256": "a476fef0c5e5b0ea855f374f5e34739b78debecf5ae2945100761d4ed72855cc"
+    },
+    {
+      "display_order": 3,
+      "file": "prototype-3.png",
+      "format": "PNG",
+      "width": 1484,
+      "height": 1060,
+      "bytes": 1248341,
+      "sha256": "5e752fdbac227c118ddd4110670a11e384709a5dbd5171a452256a7b037cc5b8"
+    }
+  ]
+}

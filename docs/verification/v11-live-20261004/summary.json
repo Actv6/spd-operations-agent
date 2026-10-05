@@ -1,0 +1,18 @@
+{
+  "status": "halted_semantic_failure",
+  "runs_started": 1,
+  "engineering_succeeded": 1,
+  "semantic_passed": 0,
+  "not_run": 9,
+  "model_requests": 3,
+  "tokens_recorded": 13712,
+  "input_tokens": 12792,
+  "output_tokens": 920,
+  "usage_complete": true,
+  "elapsed_seconds": 5.188,
+  "personal_tasks": 0,
+  "frozen_product_unchanged": true,
+  "langsmith": "verified",
+  "raw_case_sha256": "8d17b1ce878ec0388e94dbd0ad42015666b924a5f087eae2414eda3e9e617da6",
+  "langsmith_verified_records": 5
+}

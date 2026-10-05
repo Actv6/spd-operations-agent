@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "as_of": "2026-09-27T09:00:00+08:00",
+  "history_days": 90,
+  "consumption_window_days": 14,
+  "near_expiry_days": 30,
+  "max_snapshot_age_hours": 24,
+  "rules_status": "illustrative_not_company_policy",
+  "expiry_boundary": "expiry_date is last usable date only for this fixture; verify actual rules",
+  "empty_day_handling": "missing is unknown; an explicit zero is observed"
+}

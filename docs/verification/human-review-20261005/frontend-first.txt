@@ -1,0 +1,31 @@
+✔ claim labels distinguish exact facts, quotes and unverified advice (17.892417ms)
+✔ reason members remain separate and historical answers receive no invented checks (0.518375ms)
+✔ shared slots surround one native Ant Design table (22.771791ms)
+✔ default pagination renders ten rows and correct total (4.069083ms)
+✔ page override and disabled pagination are preserved (8.534833ms)
+✔ empty, error, retry and loading states remain available (7.159041ms)
+✔ compact header preserves zero count and precise timestamp (2.529292ms)
+✔ risk refresh stays pinned when current snapshot changes (0.102334ms)
+✔ mixed snapshot bundle is rejected (0.205417ms)
+✔ answer presentation recognizes labels without changing numbers or claims (0.447583ms)
+✔ authored markdown and fenced code are left untouched (0.058541ms)
+✔ long prose is separated at sentence boundaries without dropping text (0.097417ms)
+✔ batch evidence renders preserved expiry, quantity and Chinese status (8.360333ms)
+✔ consumption evidence shows missing days without zero filling (2.835917ms)
+✔ risk evidence preserves distinct quality and zero-consumption counts (3.60475ms)
+✔ unknown evidence retains original excerpt instead of a blank panel (0.259875ms)
+✔ display quantities preserve small and large decimal values (0.046ms)
+✔ bracketed historical headings get hierarchy without rewriting claims (0.045084ms)
+✔ historical risk evidence without breakdown remains readable and does not invent zeros (2.216208ms)
+✔ CSV slice decoding preserves UTF-8 across chunk boundaries and reports progress (6.049583ms)
+✔ CSV rejects wrong types, empty files, over-limit bytes and invalid UTF-8 (0.360916ms)
+✔ cancelled CSV reads stop before delivering content (1.990041ms)
+✔ bold business labels become sections while facts and numbered advice survive (0.138709ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1151.963292
